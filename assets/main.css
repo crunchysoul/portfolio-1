@@ -34,19 +34,22 @@ a:hover{
 div.links {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 div.link {
     flex: auto;
 /*    flex: 0 0 50px;*/
     /* border: 1px solid #ddd; */
     min-width: 190px;
-    height: 150px;
+    height: 80px;
+    line-height: 80px;
     text-align: center;
-    line-height: 150px;
     background-color: rgba(255,255,255,0.2);
+    transition: all 0.2s ease-out;
 }
 div.link:hover {
     background-color: #000;
+    transition: all 0.2s ease-out;
 }
 div.link:hover a {
     color: #fff;
