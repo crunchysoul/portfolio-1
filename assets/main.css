@@ -1,6 +1,7 @@
 body {
     font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 20px;
+    background-color: #DDEEFF;
 }
 
 h1 {
@@ -11,6 +12,11 @@ div.container {
     margin-left: auto;
     margin-right: auto;
     max-width: 30em;
+}
+
+div.heading {
+    width: 100%;
+    text-align: center;
 }
 
 /*a {
@@ -30,13 +36,14 @@ div.links {
     flex-wrap: wrap;
 }
 div.link {
+    flex: auto;
 /*    flex: 0 0 50px;*/
     /* border: 1px solid #ddd; */
     min-width: 190px;
     height: 150px;
     text-align: center;
     line-height: 150px;
-    background-color: rgba(221,221,221,0.2);
+    background-color: rgba(255,255,255,0.2);
 }
 div.link:hover {
     background-color: #000;
