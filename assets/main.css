@@ -13,7 +13,7 @@ div.container {
     max-width: 30em;
 }
 
-a {
+/*a {
     text-decoration: none;
     color: #000;
     padding: 10px 10px 10px 0px;
@@ -23,6 +23,37 @@ a:hover{
     background-color: #000;
     color: #fff;
     padding: 10px;
+}*/
+
+div.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.link {
+/*    flex: 0 0 50px;*/
+    /* border: 1px solid #ddd; */
+    min-width: 190px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    background-color: rgba(221,221,221,0.2);
+}
+div.link:hover {
+    background-color: #000;
+}
+div.link:hover a {
+    color: #fff;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 i.fa {
