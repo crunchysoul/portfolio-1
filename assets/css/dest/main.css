@@ -65,7 +65,10 @@ section.hero {
       height: 345px;
       width: 345px;
       background-color: #CCDBE3;
+      -webkit-border-radius: 100%;
       border-radius: 100%;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
       transition: all ease .5s; }
     section.hero .bannerwrapper .wolf {
       position: absolute;
@@ -91,13 +94,13 @@ section.hello {
     font-size: 24px;
     font-weight: 300;
     text-align: center;
-    color: #343E4E;
+    color: #FFFAFA;
     transition: all ease .5s; }
 
 section.services {
   position: relative;
   width: 100%;
-  height: 250px;
+  min-height: 280px;
   background-color: #CCDBE3; }
   section.services .row {
     display: -webkit-box;
@@ -113,8 +116,7 @@ section.services {
     top: -50px;
     margin-left: auto;
     margin-right: auto;
-    background: red;
-    height: 287px;
+    min-height: 287px;
     width: 96%;
     max-width: 960px;
     z-index: 1; }
@@ -124,8 +126,61 @@ section.services {
       -webkit-flex: auto;
       -ms-flex: auto;
       flex: auto;
-      background: blue;
       height: 287px; }
+      section.services .row .column .icon {
+        position: relative;
+        top: 0px;
+        height: 100px;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color: #CCDBE3;
+        transition: all ease .5s;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */ }
+        section.services .row .column .icon h4 {
+          font-size: 40px;
+          font-weight: 900;
+          line-height: 100px;
+          transition: all ease .5s; }
+      section.services .row .column h5 {
+        font-size: 25px;
+        font-weight: normal;
+        text-align: center;
+        color: #343E4E;
+        transition: all ease .5s; }
+      section.services .row .column hr {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 60px;
+        text-align: center;
+        color: #343E4E; }
+      section.services .row .column p {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 219px;
+        font-size: 16px;
+        text-align: center;
+        color: #343E4E;
+        transition: all ease .5s; }
+      section.services .row .column .development {
+        color: #343E4E;
+        border-color: #343E4E; }
+      section.services .row .column .design {
+        color: #8F847F;
+        border-color: #8F847F; }
+      section.services .row .column .agile {
+        color: #9EBDCE;
+        border-color: #9EBDCE; }
+      section.services .row .column .teamplayer {
+        color: #87A6BD;
+        border-color: #87A6BD; }
 
 section.about {
   position: relative;
@@ -142,11 +197,44 @@ section.instagram {
   height: 300px;
   background-color: #CCDBE3; }
 
+@media (max-width: 920px) {
+  section.hello {
+    height: 160px; }
+
+  section.services .row {
+    top: -40px; }
+    section.services .row .column .icon {
+      height: 80px;
+      width: 80px; }
+      section.services .row .column .icon h4 {
+        font-size: 32px;
+        line-height: 90px; }
+    section.services .row .column h5 {
+      font-size: 20px; }
+    section.services .row .column p {
+      font-size: 14px;
+      width: 180px; } }
 @media (max-width: 800px) {
   section.hero .bannerwrapper .wolf {
     right: 0px; }
   section.hero .bannerwrapper .moon {
     right: 200px; } }
+@media (max-width: 775px) {
+  section.hello h2 {
+    font-size: 20px; } }
+@media (max-width: 755px) {
+  section.services {
+    min-height: 550px; }
+    section.services .row {
+      top: 0px;
+      max-width: 500px; }
+      section.services .row .column {
+        height: auto; }
+        section.services .row .column p {
+          text-align: center; }
+        section.services .row .column hr {
+          margin-top: 15px;
+          margin-bottom: 10px; } }
 @media (max-width: 716px) {
   section.about img {
     width: 100%;
@@ -156,8 +244,7 @@ section.instagram {
     left: 40px; } }
 @media (max-width: 500px) {
   section.hello h2 {
-    top: 50px;
-    font-size: 20px; } }
+    top: 50px; } }
 @media (max-width: 480px) {
   section.hero {
     height: 471px; }
@@ -189,6 +276,11 @@ section.instagram {
     left: 35px; }
 
   section.hello h2 {
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  section.services .row {
+    padding-bottom: 30px; }
+    section.services .row .column p {
+      width: 90%; } }
 
 /*# sourceMappingURL=main.css.map */
