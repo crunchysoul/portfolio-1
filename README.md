@@ -26,7 +26,7 @@ https://goo.gl/qkK2sU
 # Inspiration
 
 Inspirational quotes
--![](http://www.glenndimaliwat.com/assets/img/inspiration/aimmoon.jpg)
+- ![](http://www.glenndimaliwat.com/assets/img/inspiration/aimmoon.jpg)
 *“Shoot for the moon. Even if you miss, you'll land among the stars.”*
 ― Norman Vincent Peale
 *"Move fast and break things"*
@@ -38,5 +38,5 @@ Popular *fail fast* slogan
 https://www.startupinstitute.com/blog/2015-5-6-inspirational-quotes-about-failure
 
 Denise Chandler - I really like how she divided her portfolio into sections with a color scheme that is not too far away from what I want to achieve. She also represented herself as a "sea monster". I believe this represented her inner spirit animal, a personlity which wants to stand out despite her known imperfections. She depicted her inner monster in a very cool and positive way.
--![](http://www.glenndimaliwat.com/assets/img/inspiration/denisechandler.png)
+- ![](http://www.glenndimaliwat.com/assets/img/inspiration/denisechandler.png)
 
