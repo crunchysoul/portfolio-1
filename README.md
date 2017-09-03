@@ -1,4 +1,4 @@
-# My Portfoilio Project
+# My Portfolio Project
 A portfolio website is something that I have always wanted to do but was never motivated to create one until this Bootcamp project. I know how important it is not only to get a job but also to represent my brand and digital services. I want to have a portfolio that I can update overtime.
 
 I initially wanted a minimalist design, but knowing that I have to put in a lot of content, it may not end up with the design that I want to achieve. Something too minimalist may also ruin the purpose of the portfolio as I need it to describe me in detail. In result, I decided to challenge myself by having a hipster design based on a recent photo that I have. The photo has a cold winter and urban mood which brings out a lot of blue (one of my favourite colors) from the color palette. Another thing that I wanted to do is have a spirit animal graphic in my design. This is an idea that I found from one of my inspirations. Lastly, given the amount of content that I want to put in my design, it still has to remain clean and simple.
