@@ -323,8 +323,129 @@ section.about {
 section.social {
     position: relative;
     width: 100%;
-    height: 300px;
+    // height: 300px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     background-color: $moonblue;
+
+    .socialwrapper {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        
+        width: 100%;
+        max-width: 960px;
+        // background: red;
+        // height: 500px;
+
+        h2 {
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: $changa;
+            font-size: 64px;
+            font-weight: normal;
+            color: $deepblue;
+            text-align: center;
+            transition: all ease .5s;
+        }
+
+        .row:first-of-type {
+            margin-top: 35px;
+        }
+        .row {
+            @include flexbox();
+            @include flex-wrap(wrap);
+            width: 100%;
+            // background: blue;
+            transition: all ease .5s;
+            .column {
+                @include flex(auto);
+                height: 150px;
+                width: 160px;
+                background: $gray;
+                transition: all ease .5s;
+
+                h3 {
+                    text-align: center;
+                    font-size: 18px;
+
+                    a {
+                        // background: red;
+                        padding-top: 70px;
+                        padding-bottom: 70px;
+                        line-height: 150px;
+                        // padding: 30px;
+                        // box-sizing: border-box;
+                        text-decoration: none;
+                    }
+                    
+                }
+            }
+            .column:hover {
+                background-color: $gray;
+                cursor: pointer;
+                a {
+                    color: $deepblue;
+                }
+            }
+            
+
+            .social1, .social2, .social5, .social6, .social9, .social10 {
+                h3 {
+                    a {
+                        color: $deepblue;
+                    }
+                }
+            }
+
+            .social3, .social4, .social7, .social8, .social11, .social12 {
+                h3 {
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+
+            .social1 {
+                background: $ashblue;
+            }
+            .social2 {
+                background: $trueblue;
+            }
+            .social3 {
+                background: $deepblue;
+            }
+            .social4 {
+                background: $brown;
+            }
+            .social5 {
+                background: $ashblue;
+            }
+            .social6 {
+                background: $trueblue;
+            }
+            .social7 {
+                background: $deepblue;
+            }
+            .social8 {
+                background: $brown;
+            }
+            .social9 {
+                background: $ashblue;
+            }
+            .social10 {
+                background: $trueblue;
+            }
+            .social11 {
+                background: $deepblue;
+            }
+            .social12 {
+                background: $brown;
+            }
+        }
+    }
 }
 
 @media (max-width: 920px) {
@@ -363,6 +484,13 @@ section.social {
                 p {
                     font-size: 15px;
                 }
+            }
+        }
+    }
+    section.social {
+        .socialwrapper {
+            h2 {
+                font-size: 45px;
             }
         }
     }

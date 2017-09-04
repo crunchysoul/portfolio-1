@@ -253,8 +253,91 @@ section.about {
 section.social {
   position: relative;
   width: 100%;
-  height: 300px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   background-color: #CCDBE3; }
+  section.social .socialwrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 960px; }
+    section.social .socialwrapper h2 {
+      position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "Changa One", cursive;
+      font-size: 64px;
+      font-weight: normal;
+      color: #343E4E;
+      text-align: center;
+      transition: all ease .5s; }
+    section.social .socialwrapper .row:first-of-type {
+      margin-top: 35px; }
+    section.social .socialwrapper .row {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 100%;
+      transition: all ease .5s; }
+      section.social .socialwrapper .row .column {
+        -webkit-box-flex: auto;
+        -moz-box-flex: auto;
+        -webkit-flex: auto;
+        -ms-flex: auto;
+        flex: auto;
+        height: 150px;
+        width: 160px;
+        background: #D4D7DD;
+        transition: all ease .5s; }
+        section.social .socialwrapper .row .column h3 {
+          text-align: center;
+          font-size: 18px; }
+          section.social .socialwrapper .row .column h3 a {
+            padding-top: 70px;
+            padding-bottom: 70px;
+            line-height: 150px;
+            text-decoration: none; }
+      section.social .socialwrapper .row .column:hover {
+        background-color: #D4D7DD;
+        cursor: pointer; }
+        section.social .socialwrapper .row .column:hover a {
+          color: #343E4E; }
+      section.social .socialwrapper .row .social1 h3 a, section.social .socialwrapper .row .social2 h3 a, section.social .socialwrapper .row .social5 h3 a, section.social .socialwrapper .row .social6 h3 a, section.social .socialwrapper .row .social9 h3 a, section.social .socialwrapper .row .social10 h3 a {
+        color: #343E4E; }
+      section.social .socialwrapper .row .social3 h3 a, section.social .socialwrapper .row .social4 h3 a, section.social .socialwrapper .row .social7 h3 a, section.social .socialwrapper .row .social8 h3 a, section.social .socialwrapper .row .social11 h3 a, section.social .socialwrapper .row .social12 h3 a {
+        color: #FFFFFF; }
+      section.social .socialwrapper .row .social1 {
+        background: #9EBDCE; }
+      section.social .socialwrapper .row .social2 {
+        background: #87A6BD; }
+      section.social .socialwrapper .row .social3 {
+        background: #343E4E; }
+      section.social .socialwrapper .row .social4 {
+        background: #8F847F; }
+      section.social .socialwrapper .row .social5 {
+        background: #9EBDCE; }
+      section.social .socialwrapper .row .social6 {
+        background: #87A6BD; }
+      section.social .socialwrapper .row .social7 {
+        background: #343E4E; }
+      section.social .socialwrapper .row .social8 {
+        background: #8F847F; }
+      section.social .socialwrapper .row .social9 {
+        background: #9EBDCE; }
+      section.social .socialwrapper .row .social10 {
+        background: #87A6BD; }
+      section.social .socialwrapper .row .social11 {
+        background: #343E4E; }
+      section.social .socialwrapper .row .social12 {
+        background: #8F847F; }
 
 @media (max-width: 920px) {
   section.hello {
@@ -277,7 +360,10 @@ section.social {
   section.about .aboutwrapper .aboutme h2 {
     font-size: 45px; }
   section.about .aboutwrapper .aboutme p {
-    font-size: 15px; } }
+    font-size: 15px; }
+
+  section.social .socialwrapper h2 {
+    font-size: 45px; } }
 @media (max-width: 800px) {
   section.hero .bannerwrapper .wolf {
     right: 0px; }
