@@ -339,6 +339,86 @@ section.social {
       section.social .socialwrapper .row .social12 {
         background: #8F847F; }
 
+section.tech {
+  position: relative;
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #FFFFFF; }
+  section.tech .techwrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 960px; }
+    section.tech .techwrapper h2 {
+      position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "Changa One", cursive;
+      font-size: 64px;
+      font-weight: normal;
+      color: #343E4E;
+      text-align: center;
+      transition: all ease .5s; }
+    section.tech .techwrapper .row:first-of-type {
+      margin-top: 35px; }
+    section.tech .techwrapper .row {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 100%;
+      transition: all ease .5s; }
+      section.tech .techwrapper .row .column {
+        -webkit-box-flex: auto;
+        -moz-box-flex: auto;
+        -webkit-flex: auto;
+        -ms-flex: auto;
+        flex: auto;
+        height: 80px;
+        width: 160px;
+        background: #D4D7DD;
+        transition: all ease .5s; }
+        section.tech .techwrapper .row .column h3 {
+          text-align: center;
+          font-size: 18px;
+          line-height: 80px; }
+      section.tech .techwrapper .row .tech1 h3, section.tech .techwrapper .row .tech2 h3, section.tech .techwrapper .row .tech5 h3, section.tech .techwrapper .row .tech6 h3, section.tech .techwrapper .row .tech9 h3, section.tech .techwrapper .row .tech10 h3 {
+        color: #343E4E; }
+      section.tech .techwrapper .row .tech3 h3, section.tech .techwrapper .row .tech4 h3, section.tech .techwrapper .row .tech7 h3, section.tech .techwrapper .row .tech8 h3, section.tech .techwrapper .row .tech11 h3, section.tech .techwrapper .row .tech12 h3 {
+        color: #FFFFFF; }
+      section.tech .techwrapper .row .tech1 {
+        background: #9EBDCE; }
+      section.tech .techwrapper .row .tech2 {
+        background: #87A6BD; }
+      section.tech .techwrapper .row .tech3 {
+        background: #343E4E; }
+      section.tech .techwrapper .row .tech4 {
+        background: #8F847F; }
+      section.tech .techwrapper .row .tech5 {
+        background: #9EBDCE; }
+      section.tech .techwrapper .row .tech6 {
+        background: #87A6BD; }
+      section.tech .techwrapper .row .tech7 {
+        background: #343E4E; }
+      section.tech .techwrapper .row .tech8 {
+        background: #8F847F; }
+      section.tech .techwrapper .row .tech9 {
+        background: #9EBDCE; }
+      section.tech .techwrapper .row .tech10 {
+        background: #87A6BD; }
+      section.tech .techwrapper .row .tech11 {
+        background: #343E4E; }
+      section.tech .techwrapper .row .tech12 {
+        background: #8F847F; }
+
 @media (max-width: 920px) {
   section.hello {
     height: 160px; }

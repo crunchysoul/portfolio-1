@@ -448,6 +448,130 @@ section.social {
     }
 }
 
+section.tech {
+    position: relative;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: $white;
+
+    .techwrapper {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 960px;
+
+        h2 {
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: $changa;
+            font-size: 64px;
+            font-weight: normal;
+            color: $deepblue;
+            text-align: center;
+            transition: all ease .5s;
+        }
+
+        .row:first-of-type {
+            margin-top: 35px;
+        }
+        .row {
+            @include flexbox();
+            @include flex-wrap(wrap);
+            width: 100%;
+            // background: blue;
+            transition: all ease .5s;
+            .column {
+                @include flex(auto);
+                height: 80px;
+                width: 160px;
+                background: $gray;
+                transition: all ease .5s;
+
+                h3 {
+                    text-align: center;
+                    font-size: 18px;
+                    line-height: 80px;
+                    // p {
+                    //     // background: red;
+                    //     padding-top: 70px;
+                    //     padding-bottom: 70px;
+                    //     line-height: 150px;
+                    //     // padding: 30px;
+                    //     // box-sizing: border-box;
+                    //     text-decoration: none;
+                    // }
+                    
+                }
+            }
+            // .column:hover {
+            //     background-color: $gray;
+            //     cursor: pointer;
+            //     a {
+            //         color: $deepblue;
+            //     }
+            // }
+            
+
+            .tech1, .tech2, .tech5, .tech6, .tech9, .tech10 {
+                h3 {
+                    // p {
+                        color: $deepblue;
+                    // }
+                }
+            }
+
+            .tech3, .tech4, .tech7, .tech8, .tech11, .tech12 {
+                h3 {
+                    // p {
+                        color: $white;
+                    // }
+                }
+            }
+
+            .tech1 {
+                background: $ashblue;
+            }
+            .tech2 {
+                background: $trueblue;
+            }
+            .tech3 {
+                background: $deepblue;
+            }
+            .tech4 {
+                background: $brown;
+            }
+            .tech5 {
+                background: $ashblue;
+            }
+            .tech6 {
+                background: $trueblue;
+            }
+            .tech7 {
+                background: $deepblue;
+            }
+            .tech8 {
+                background: $brown;
+            }
+            .tech9 {
+                background: $ashblue;
+            }
+            .tech10 {
+                background: $trueblue;
+            }
+            .tech11 {
+                background: $deepblue;
+            }
+            .tech12 {
+                background: $brown;
+            }
+        }
+    }
+}
+
 @media (max-width: 920px) {
     section.hello {
         height: 160px;
