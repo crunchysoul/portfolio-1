@@ -46,7 +46,7 @@
         <div class="row">
             <div class="column">
                 <div class="icon">
-                    <h4 class="development"><i class="fa fa-code" aria-hidden="true"></i></h4>
+                    <h4 id="dev" class="development"><i class="fa fa-code" aria-hidden="true"></i></h4>
                 </div>
                 <h5>DEVELOPMENT</h5>
                 <hr class="development"/>
@@ -60,7 +60,7 @@
             </div>
             <div class="column">
                 <div class="icon">
-                    <h4 class="design"><i class="fa fa-paint-brush" aria-hidden="true"></i></h4>
+                    <h4 id="des" class="design"><i class="fa fa-paint-brush" aria-hidden="true"></i></h4>
                 </div>
                 <h5>DESIGN</h5>
                 <hr class="design"/>
@@ -73,7 +73,7 @@
             </div>
             <div class="column">
                 <div class="icon">
-                    <h4 class="agile"><i class="fa fa-sticky-note" aria-hidden="true"></i></h4>
+                    <h4 id="agi" class="agile"><i class="fa fa-sticky-note" aria-hidden="true"></i></h4>
                 </div>
                 <h5>AGILE</h5>
                 <hr class="agile"/>
@@ -87,7 +87,7 @@
             </div>
             <div class="column">
                 <div class="icon">
-                    <h4 class="teamplayer"><i class="fa fa-users" aria-hidden="true"></i></h4>
+                    <h4 id="tpl" class="teamplayer"><i class="fa fa-users" aria-hidden="true"></i></h4>
                 </div>
                 <h5>TEAM PLAYER</h5>
                 <hr class="teamplayer"/>
@@ -104,26 +104,42 @@
     </section>
 
     <section class="about">
-        <img src="/assets/img/glenn.png"/>
+        <div class="aboutwrapper">
+            <div class="aboutphoto">
+                <!-- <img src="/assets/img/glenn.png"/> -->
+            </div>
+            <div class="aboutme">
+                <h2>About Me</h2>
+                <p>
+                    As a young kid, I have always been fascinated in working with computers but never knew that I would fall in love with building software. Thus in the university, I took the opportunity to take Computer Science as my course. After graduating, I started working as an IT Consultant in the Philippines in which I was able to practice web development and grew fond of it. In 2017, I decided to move to Melbourne to further my career by attending the Coder Academy Bootcamp course and discovered that the road ahead would lead me to better designs and more efficient software practices. I consider my career choice as my greatest success. It is the career that I have always wanted.
+                </p>
+            </div>
+
+        </div>
     </section>
 
-    <section class="instagram">
-
+    <section class="social">
+        <div class="socialwrapper">
+            
+        </div>
     </section>
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>
-        $( document ).ready(function() {
-            // alert( "ready!" );
-        });
-        $(document).scroll(function() {
+        // $( document ).ready(function() {
+        //     // alert( "ready!" );
+        // });
+        // $(document).scroll(function() {
             
-            // if ( $(document).scrollTop() >= 209 ) {
-            //     // alert('test')
-            // }
+        //     if ($(window).scrollTop() > 100){
+        //         $('#dev').toggleClass( "h4_animate");
+        //     }
+        //     else {
+        //         $('#dev').removeClass("h4_animate");
+        //     }
                 
-        });
-    </script>
+        // });
+    </script> -->
 </body>
 </html>

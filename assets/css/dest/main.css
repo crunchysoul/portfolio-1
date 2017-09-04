@@ -35,7 +35,7 @@ section.hero {
       transition: all ease .5s; }
       section.hero .bannerwrapper .tagline h2 {
         position: relative;
-        font-family: 'Changa One', cursive;
+        font-family: "Changa One", cursive;
         font-weight: normal;
         font-size: 130px;
         line-height: 104px;
@@ -119,6 +119,7 @@ section.services {
     min-height: 287px;
     width: 96%;
     max-width: 960px;
+    transition: all ease .5s;
     z-index: 1; }
     section.services .row .column {
       -webkit-box-flex: auto;
@@ -185,13 +186,71 @@ section.services {
 section.about {
   position: relative;
   width: 100%;
-  height: 440px;
   background-color: #FFFFFF; }
-  section.about img {
-    height: 440px;
-    width: auto; }
+  section.about .aboutwrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1440px;
+    min-width: 320px;
+    transition: all ease .5s; }
+    section.about .aboutwrapper .aboutphoto {
+      position: relative;
+      -webkit-box-flex: auto;
+      -moz-box-flex: auto;
+      -webkit-flex: auto;
+      -ms-flex: auto;
+      flex: auto;
+      width: 50%;
+      min-height: 440px;
+      max-width: 720px;
+      min-width: 320px;
+      background: url(/assets/img/glenn.png) #CCDBE3;
+      background-size: cover;
+      background-position: 50% 50%;
+      transition: all ease .5s; }
+    section.about .aboutwrapper .aboutme {
+      position: relative;
+      -webkit-box-flex: auto;
+      -moz-box-flex: auto;
+      -webkit-flex: auto;
+      -ms-flex: auto;
+      flex: auto;
+      width: 50%;
+      max-width: 720px;
+      min-width: 320px;
+      background: #FFFFFF;
+      transition: all ease .5s; }
+      section.about .aboutwrapper .aboutme h2 {
+        margin-top: 35px;
+        margin-left: 5vw;
+        font-family: "Changa One", cursive;
+        font-size: 64px;
+        font-weight: normal;
+        color: #343E4E;
+        transition: all ease .5s; }
+      section.about .aboutwrapper .aboutme p {
+        display: inline-block;
+        position: relative;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 5px;
+        padding-bottom: 33px;
+        font-size: 20px;
+        color: #343E4E;
+        transition: all ease .5s; }
 
-section.instagram {
+section.social {
   position: relative;
   width: 100%;
   height: 300px;
@@ -213,7 +272,12 @@ section.instagram {
       font-size: 20px; }
     section.services .row .column p {
       font-size: 14px;
-      width: 180px; } }
+      width: 180px; }
+
+  section.about .aboutwrapper .aboutme h2 {
+    font-size: 45px; }
+  section.about .aboutwrapper .aboutme p {
+    font-size: 15px; } }
 @media (max-width: 800px) {
   section.hero .bannerwrapper .wolf {
     right: 0px; }
@@ -235,10 +299,14 @@ section.instagram {
         section.services .row .column hr {
           margin-top: 15px;
           margin-bottom: 10px; } }
-@media (max-width: 716px) {
-  section.about img {
-    width: 100%;
-    height: auto; } }
+@media (max-width: 730px) {
+  section.about .aboutwrapper .aboutme {
+    width: 100%; }
+  section.about .aboutwrapper .aboutphoto {
+    height: 440px; }
+    section.about .aboutwrapper .aboutphoto img {
+      height: 440px;
+      width: auto; } }
 @media (max-width: 570px) {
   section.hero .bannerwrapper .moon {
     left: 40px; } }
