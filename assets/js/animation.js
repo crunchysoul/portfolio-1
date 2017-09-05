@@ -27,7 +27,7 @@ function hasScrolled() {
 	
 	// If they scrolled down and are past the navbar, add class .nav-up.
 	// This is necessary so you never see what is "behind" the navbar.
-	if (st <= 25) {
+	if (st <= 45) {
 		// Top of the page
 		$('nav.primary-nav').removeClass('nav-down').removeClass('nav-up').addClass('nav-top');;
 	}
