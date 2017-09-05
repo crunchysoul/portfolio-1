@@ -28,14 +28,16 @@ body {
     font-family: 'Raleway',Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+h1 {
+    display: none;
+}
+
 section.hero {
     position: relative;
     width: 100%;
     height: 600px;
-    // background-color: $ashblue;
     background: url(/assets/img/background.jpg) no-repeat $ashblue;
     background-position: top left;
-    // background-position: 50% 50%;
     background-attachment: fixed;
     background-size: cover;
 
@@ -58,16 +60,12 @@ section.hero {
         margin-right: auto;
         transition: all ease .5s;
         
-        // background-color: red;
-
         .tagline {
             position: absolute;
             left: 40px;
             top: 40px;
             transition: all ease .5s;
 
-            // background-color: yellow;
-            
             h2 {
                 position: relative;
                 font-family: $changa;
@@ -158,7 +156,6 @@ section.services {
         top: -50px;
         margin-left: auto;
         margin-right: auto;
-        // background: red;
         min-height: 287px;
         width: 96%;
         max-width: 960px;
@@ -167,7 +164,6 @@ section.services {
 
         .column {
             @include flex(auto);
-            // background: blue;
             height: 287px;
             .icon {
                 position: relative;
@@ -239,8 +235,8 @@ section.services {
 section.about {
     position: relative;
     width: 100%;
-    // height: 440px;
-    background-color: $white;// #FFFAFA;
+    background-color: $white;
+    box-shadow: $dropshadow;
 
     .aboutwrapper {
         position: relative;
@@ -252,10 +248,8 @@ section.about {
         width: 100%;
         max-width: 1440px;
         min-width: 320px;
-        // max-height: 440px;
-        // background: blue;
         transition: all ease .5s;
-        
+
         .aboutphoto {
             position: relative;
             @include flex(auto);
@@ -263,13 +257,6 @@ section.about {
             min-height: 440px;
             max-width: 720px;
             min-width: 320px;
-            
-            // img {
-            //     height: 440px;
-            //     width: auto;
-            //     // width: 100%;
-            //     // height: auto;
-            // }
             background: url(/assets/img/glenn.png) $moonblue;
             background-size: cover;
             background-position: 50% 50%;
@@ -282,14 +269,12 @@ section.about {
             width: 50%;
             max-width: 720px;
             min-width: 320px;
-            // max-height: 440px;
-            // left: 73px;
             background: $white;
             transition: all ease .5s;
 
             h2 {
                 margin-top: 35px;
-                margin-left: 5vw; //73px;
+                margin-left: 5vw;
                 font-family: $changa;
                 font-size: 64px;
                 font-weight: normal;
@@ -299,21 +284,13 @@ section.about {
             p {
                 display: inline-block;
                 position: relative;
-                margin-left: 5vw; //73px;
-                margin-right: 5vw; //73px;
+                margin-left: 5vw;
+                margin-right: 5vw;
                 margin-top: 5px;
                 padding-bottom: 33px;
-                // max-width: 573px;
-                // min-width: 573px;
-                // max-height: 353px;
-
-                // font-size: 1.2em;
-                // font-size: 1.5vw;
                 font-size: 20px;
                 color: $deepblue;
-                // background-color: red;
                 transition: all ease .5s;
-                
             }
         }
     }
@@ -323,7 +300,6 @@ section.about {
 section.social {
     position: relative;
     width: 100%;
-    // height: 300px;
     padding-top: 35px;
     padding-bottom: 35px;
     background-color: $moonblue;
@@ -332,11 +308,8 @@ section.social {
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        
         width: 100%;
-        max-width: 960px;
-        // background: red;
-        // height: 500px;
+        max-width: 960px;;
 
         h2 {
             position: relative;
@@ -358,7 +331,6 @@ section.social {
             @include flexbox();
             @include flex-wrap(wrap);
             width: 100%;
-            // background: blue;
             transition: all ease .5s;
             .column {
                 @include flex(auto);
@@ -370,14 +342,12 @@ section.social {
                 h3 {
                     text-align: center;
                     font-size: 18px;
+                    font-weight: 100;
 
                     a {
-                        // background: red;
                         padding-top: 70px;
                         padding-bottom: 70px;
                         line-height: 150px;
-                        // padding: 30px;
-                        // box-sizing: border-box;
                         text-decoration: none;
                     }
                     
@@ -391,7 +361,7 @@ section.social {
                 }
             }
             
-
+            /* List of Social Media Links */
             .social1, .social2, .social5, .social6, .social9, .social10 {
                 h3 {
                     a {
@@ -399,7 +369,6 @@ section.social {
                     }
                 }
             }
-
             .social3, .social4, .social7, .social8, .social11, .social12 {
                 h3 {
                     a {
@@ -407,41 +376,16 @@ section.social {
                     }
                 }
             }
-
-            .social1 {
+            .social1, .social5, .social9 {
                 background: $ashblue;
             }
-            .social2 {
+            .social2, .social6, .social10 {
                 background: $trueblue;
             }
-            .social3 {
+            .social3, .social7, .social11 {
                 background: $deepblue;
             }
-            .social4 {
-                background: $brown;
-            }
-            .social5 {
-                background: $ashblue;
-            }
-            .social6 {
-                background: $trueblue;
-            }
-            .social7 {
-                background: $deepblue;
-            }
-            .social8 {
-                background: $brown;
-            }
-            .social9 {
-                background: $ashblue;
-            }
-            .social10 {
-                background: $trueblue;
-            }
-            .social11 {
-                background: $deepblue;
-            }
-            .social12 {
+            .social4, .social8, .social12 {
                 background: $brown;
             }
         }
@@ -454,6 +398,7 @@ section.tech {
     padding-top: 35px;
     padding-bottom: 35px;
     background-color: $white;
+    box-shadow: $dropshadow;
 
     .techwrapper {
         position: relative;
@@ -482,7 +427,6 @@ section.tech {
             @include flexbox();
             @include flex-wrap(wrap);
             width: 100%;
-            // background: blue;
             transition: all ease .5s;
             .column {
                 @include flex(auto);
@@ -493,82 +437,225 @@ section.tech {
 
                 h3 {
                     text-align: center;
-                    font-size: 18px;
+                    font-weight: 100;
+                    font-size: 20px;
                     line-height: 80px;
-                    // p {
-                    //     // background: red;
-                    //     padding-top: 70px;
-                    //     padding-bottom: 70px;
-                    //     line-height: 150px;
-                    //     // padding: 30px;
-                    //     // box-sizing: border-box;
-                    //     text-decoration: none;
-                    // }
-                    
                 }
             }
-            // .column:hover {
-            //     background-color: $gray;
-            //     cursor: pointer;
-            //     a {
-            //         color: $deepblue;
-            //     }
-            // }
             
-
+            /* List of Tech Stack */
             .tech1, .tech2, .tech5, .tech6, .tech9, .tech10 {
                 h3 {
-                    // p {
-                        color: $deepblue;
-                    // }
+                    color: $deepblue;
                 }
             }
-
             .tech3, .tech4, .tech7, .tech8, .tech11, .tech12 {
                 h3 {
-                    // p {
-                        color: $white;
-                    // }
+                    color: $white;
                 }
             }
-
-            .tech1 {
+            .tech1, .tech5, .tech9 {
                 background: $ashblue;
             }
-            .tech2 {
+            .tech2, .tech6, .tech10 {
                 background: $trueblue;
             }
-            .tech3 {
+            .tech3, .tech7, .tech11 {
                 background: $deepblue;
             }
-            .tech4 {
-                background: $brown;
-            }
-            .tech5 {
-                background: $ashblue;
-            }
-            .tech6 {
-                background: $trueblue;
-            }
-            .tech7 {
-                background: $deepblue;
-            }
-            .tech8 {
-                background: $brown;
-            }
-            .tech9 {
-                background: $ashblue;
-            }
-            .tech10 {
-                background: $trueblue;
-            }
-            .tech11 {
-                background: $deepblue;
-            }
-            .tech12 {
+            .tech4, .tech8, .tech12 {
                 background: $brown;
             }
         }
+    }
+}
+
+section.projects {
+    position: relative;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: $moonblue;
+
+    .projectswrapper {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 960px;
+        transition: all ease .5s;
+
+        h2 {
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: $changa;
+            font-size: 64px;
+            font-weight: normal;
+            color: $deepblue;
+            text-align: center;
+            transition: all ease .5s;
+        }
+
+        .row:first-of-type {
+            margin-top: 20px;
+        }
+        .row {
+            position: relative;
+            @include flexbox();
+            @include flex-wrap(wrap);
+            @include justify-content(center);
+            width: 100%;
+            transition: all ease .5s;
+
+            .column {
+                position: relative;
+                @include flex(auto);
+                width: 285px;
+                height: 400px;
+                max-width: 285px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 12.5px;
+                margin-bottom: 12.5px;
+                background: $white;
+                box-shadow: $dropshadow;
+                transition: all ease .5s;
+
+                .title {
+                    height: 100px;
+                    width: 100%;
+                    background-size: cover;
+
+                    h3 {
+                        padding-top: 13px;
+                        font-family: $changa;
+                        font-weight: normal;
+                        color: $white;
+                        text-shadow: $dropshadow;
+                        text-align: center;
+                    }
+                }
+                .description {
+                    p {
+                        margin: 10px;
+                        font-size: 15px;
+                        color: $deepblue;
+                    }
+                }
+                .gitlink {
+                    position: absolute;
+                    bottom: 10px;
+                    width: 100%;
+                    a {
+                        text-decoration: none;
+                        .viewgit {
+                            position: relative;
+                            margin-left: auto;
+                            margin-right: 10px;
+                            padding-top: 9px;
+                            width: 135px;
+                            height: 30px;
+                            background: $brown;
+                            font-size: 15px;
+                            color: $white;
+                            text-align: center;
+                            transition: all ease .5s;
+                        }
+                    }
+                    a:hover {
+                        .viewgit {
+                            background: $gray;
+                            color: $deepblue;
+                        }
+                    }
+                }
+            }
+
+            /* List of Projects */
+            .project1 {
+                .title {
+                    background: url(/assets/img/projects/streaming-service-terminal-app.png) no-repeat $ashblue;
+                    h3 {
+                        font-size: 32px;
+                    }
+                }
+            }
+
+            .project2 {
+                .title {
+                    background: url(/assets/img/projects/smart-goals-terminal-app.png) no-repeat $brown;
+                    h3 {
+                        font-size: 32px;
+                    }
+                }
+            }
+
+            .project3 {
+                .title {
+                    background: url(/assets/img/projects/student-attendance-mobile-first-design.png) no-repeat $deepblue;
+                    h3 {
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            .project4 {
+                .title {
+                    background: url(/assets/img/projects/gopro-photography-website.png) no-repeat $deepblue;
+                    h3 {
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            .project5 {
+                .title {
+                    background: url(/assets/img/projects/toyota-olympic-website-for-toyota.png) no-repeat $ashblue;
+                    h3 {
+                        font-size: 32px;
+                    }
+                }
+            }
+
+            .project6 {
+                .title {
+                    background: url(/assets/img/projects/pokemon-responsive-design.png) no-repeat $brown;
+                    h3 {
+                        font-size: 32px;
+                    }
+                }
+            }
+
+            .project7 {
+                .title {
+                    background: url(/assets/img/projects/portfolio-website.png) no-repeat $ashblue;
+                    h3 {
+                        font-size: 36px;
+                    }
+                }
+            }
+
+            .project8 {
+                .title {
+                    background: url(/assets/img/projects/circle-of-funk-website.png) no-repeat $brown;
+                    h3 {
+                        font-size: 32px;
+                    }
+                }
+            }
+
+            .project9 {
+                .title {
+                    background: url(/assets/img/projects/rails-installfest-quick-blog.png) no-repeat $deepblue;
+                    h3 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -613,6 +700,13 @@ section.tech {
     }
     section.social {
         .socialwrapper {
+            h2 {
+                font-size: 45px;
+            }
+        }
+    }
+    section.tech {
+        .techwrapper {
             h2 {
                 font-size: 45px;
             }

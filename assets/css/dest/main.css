@@ -5,6 +5,9 @@
 body {
   font-family: 'Raleway',Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif; }
 
+h1 {
+  display: none; }
+
 section.hero {
   position: relative;
   width: 100%;
@@ -186,7 +189,8 @@ section.services {
 section.about {
   position: relative;
   width: 100%;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
   section.about .aboutwrapper {
     position: relative;
     margin-left: auto;
@@ -286,7 +290,8 @@ section.social {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       width: 100%;
-      transition: all ease .5s; }
+      transition: all ease .5s;
+      /* List of Social Media Links */ }
       section.social .socialwrapper .row .column {
         -webkit-box-flex: auto;
         -moz-box-flex: auto;
@@ -299,7 +304,8 @@ section.social {
         transition: all ease .5s; }
         section.social .socialwrapper .row .column h3 {
           text-align: center;
-          font-size: 18px; }
+          font-size: 18px;
+          font-weight: 100; }
           section.social .socialwrapper .row .column h3 a {
             padding-top: 70px;
             padding-bottom: 70px;
@@ -314,29 +320,13 @@ section.social {
         color: #343E4E; }
       section.social .socialwrapper .row .social3 h3 a, section.social .socialwrapper .row .social4 h3 a, section.social .socialwrapper .row .social7 h3 a, section.social .socialwrapper .row .social8 h3 a, section.social .socialwrapper .row .social11 h3 a, section.social .socialwrapper .row .social12 h3 a {
         color: #FFFFFF; }
-      section.social .socialwrapper .row .social1 {
+      section.social .socialwrapper .row .social1, section.social .socialwrapper .row .social5, section.social .socialwrapper .row .social9 {
         background: #9EBDCE; }
-      section.social .socialwrapper .row .social2 {
+      section.social .socialwrapper .row .social2, section.social .socialwrapper .row .social6, section.social .socialwrapper .row .social10 {
         background: #87A6BD; }
-      section.social .socialwrapper .row .social3 {
+      section.social .socialwrapper .row .social3, section.social .socialwrapper .row .social7, section.social .socialwrapper .row .social11 {
         background: #343E4E; }
-      section.social .socialwrapper .row .social4 {
-        background: #8F847F; }
-      section.social .socialwrapper .row .social5 {
-        background: #9EBDCE; }
-      section.social .socialwrapper .row .social6 {
-        background: #87A6BD; }
-      section.social .socialwrapper .row .social7 {
-        background: #343E4E; }
-      section.social .socialwrapper .row .social8 {
-        background: #8F847F; }
-      section.social .socialwrapper .row .social9 {
-        background: #9EBDCE; }
-      section.social .socialwrapper .row .social10 {
-        background: #87A6BD; }
-      section.social .socialwrapper .row .social11 {
-        background: #343E4E; }
-      section.social .socialwrapper .row .social12 {
+      section.social .socialwrapper .row .social4, section.social .socialwrapper .row .social8, section.social .socialwrapper .row .social12 {
         background: #8F847F; }
 
 section.tech {
@@ -344,7 +334,8 @@ section.tech {
   width: 100%;
   padding-top: 35px;
   padding-bottom: 35px;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
   section.tech .techwrapper {
     position: relative;
     margin-left: auto;
@@ -375,7 +366,8 @@ section.tech {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       width: 100%;
-      transition: all ease .5s; }
+      transition: all ease .5s;
+      /* List of Tech Stack */ }
       section.tech .techwrapper .row .column {
         -webkit-box-flex: auto;
         -moz-box-flex: auto;
@@ -388,36 +380,156 @@ section.tech {
         transition: all ease .5s; }
         section.tech .techwrapper .row .column h3 {
           text-align: center;
-          font-size: 18px;
+          font-weight: 100;
+          font-size: 20px;
           line-height: 80px; }
       section.tech .techwrapper .row .tech1 h3, section.tech .techwrapper .row .tech2 h3, section.tech .techwrapper .row .tech5 h3, section.tech .techwrapper .row .tech6 h3, section.tech .techwrapper .row .tech9 h3, section.tech .techwrapper .row .tech10 h3 {
         color: #343E4E; }
       section.tech .techwrapper .row .tech3 h3, section.tech .techwrapper .row .tech4 h3, section.tech .techwrapper .row .tech7 h3, section.tech .techwrapper .row .tech8 h3, section.tech .techwrapper .row .tech11 h3, section.tech .techwrapper .row .tech12 h3 {
         color: #FFFFFF; }
-      section.tech .techwrapper .row .tech1 {
+      section.tech .techwrapper .row .tech1, section.tech .techwrapper .row .tech5, section.tech .techwrapper .row .tech9 {
         background: #9EBDCE; }
-      section.tech .techwrapper .row .tech2 {
+      section.tech .techwrapper .row .tech2, section.tech .techwrapper .row .tech6, section.tech .techwrapper .row .tech10 {
         background: #87A6BD; }
-      section.tech .techwrapper .row .tech3 {
+      section.tech .techwrapper .row .tech3, section.tech .techwrapper .row .tech7, section.tech .techwrapper .row .tech11 {
         background: #343E4E; }
-      section.tech .techwrapper .row .tech4 {
+      section.tech .techwrapper .row .tech4, section.tech .techwrapper .row .tech8, section.tech .techwrapper .row .tech12 {
         background: #8F847F; }
-      section.tech .techwrapper .row .tech5 {
-        background: #9EBDCE; }
-      section.tech .techwrapper .row .tech6 {
-        background: #87A6BD; }
-      section.tech .techwrapper .row .tech7 {
-        background: #343E4E; }
-      section.tech .techwrapper .row .tech8 {
-        background: #8F847F; }
-      section.tech .techwrapper .row .tech9 {
-        background: #9EBDCE; }
-      section.tech .techwrapper .row .tech10 {
-        background: #87A6BD; }
-      section.tech .techwrapper .row .tech11 {
-        background: #343E4E; }
-      section.tech .techwrapper .row .tech12 {
-        background: #8F847F; }
+
+section.projects {
+  position: relative;
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #CCDBE3; }
+  section.projects .projectswrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 960px;
+    transition: all ease .5s; }
+    section.projects .projectswrapper h2 {
+      position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "Changa One", cursive;
+      font-size: 64px;
+      font-weight: normal;
+      color: #343E4E;
+      text-align: center;
+      transition: all ease .5s; }
+    section.projects .projectswrapper .row:first-of-type {
+      margin-top: 20px; }
+    section.projects .projectswrapper .row {
+      position: relative;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      width: 100%;
+      transition: all ease .5s;
+      /* List of Projects */ }
+      section.projects .projectswrapper .row .column {
+        position: relative;
+        -webkit-box-flex: auto;
+        -moz-box-flex: auto;
+        -webkit-flex: auto;
+        -ms-flex: auto;
+        flex: auto;
+        width: 285px;
+        height: 400px;
+        max-width: 285px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 12.5px;
+        margin-bottom: 12.5px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transition: all ease .5s; }
+        section.projects .projectswrapper .row .column .title {
+          height: 100px;
+          width: 100%;
+          background-size: cover; }
+          section.projects .projectswrapper .row .column .title h3 {
+            padding-top: 13px;
+            font-family: "Changa One", cursive;
+            font-weight: normal;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            text-align: center; }
+        section.projects .projectswrapper .row .column .description p {
+          margin: 10px;
+          font-size: 15px;
+          color: #343E4E; }
+        section.projects .projectswrapper .row .column .gitlink {
+          position: absolute;
+          bottom: 10px;
+          width: 100%; }
+          section.projects .projectswrapper .row .column .gitlink a {
+            text-decoration: none; }
+            section.projects .projectswrapper .row .column .gitlink a .viewgit {
+              position: relative;
+              margin-left: auto;
+              margin-right: 10px;
+              padding-top: 9px;
+              width: 135px;
+              height: 30px;
+              background: #8F847F;
+              font-size: 15px;
+              color: #FFFFFF;
+              text-align: center;
+              transition: all ease .5s; }
+          section.projects .projectswrapper .row .column .gitlink a:hover .viewgit {
+            background: #D4D7DD;
+            color: #343E4E; }
+      section.projects .projectswrapper .row .project1 .title {
+        background: url(/assets/img/projects/streaming-service-terminal-app.png) no-repeat #9EBDCE; }
+        section.projects .projectswrapper .row .project1 .title h3 {
+          font-size: 32px; }
+      section.projects .projectswrapper .row .project2 .title {
+        background: url(/assets/img/projects/smart-goals-terminal-app.png) no-repeat #8F847F; }
+        section.projects .projectswrapper .row .project2 .title h3 {
+          font-size: 32px; }
+      section.projects .projectswrapper .row .project3 .title {
+        background: url(/assets/img/projects/student-attendance-mobile-first-design.png) no-repeat #343E4E; }
+        section.projects .projectswrapper .row .project3 .title h3 {
+          font-size: 30px; }
+      section.projects .projectswrapper .row .project4 .title {
+        background: url(/assets/img/projects/gopro-photography-website.png) no-repeat #343E4E; }
+        section.projects .projectswrapper .row .project4 .title h3 {
+          font-size: 30px; }
+      section.projects .projectswrapper .row .project5 .title {
+        background: url(/assets/img/projects/toyota-olympic-website-for-toyota.png) no-repeat #9EBDCE; }
+        section.projects .projectswrapper .row .project5 .title h3 {
+          font-size: 32px; }
+      section.projects .projectswrapper .row .project6 .title {
+        background: url(/assets/img/projects/pokemon-responsive-design.png) no-repeat #8F847F; }
+        section.projects .projectswrapper .row .project6 .title h3 {
+          font-size: 32px; }
+      section.projects .projectswrapper .row .project7 .title {
+        background: url(/assets/img/projects/portfolio-website.png) no-repeat #9EBDCE; }
+        section.projects .projectswrapper .row .project7 .title h3 {
+          font-size: 36px; }
+      section.projects .projectswrapper .row .project8 .title {
+        background: url(/assets/img/projects/circle-of-funk-website.png) no-repeat #8F847F; }
+        section.projects .projectswrapper .row .project8 .title h3 {
+          font-size: 32px; }
+      section.projects .projectswrapper .row .project9 .title {
+        background: url(/assets/img/projects/rails-installfest-quick-blog.png) no-repeat #343E4E; }
+        section.projects .projectswrapper .row .project9 .title h3 {
+          font-size: 30px; }
 
 @media (max-width: 920px) {
   section.hello {
@@ -443,6 +555,9 @@ section.tech {
     font-size: 15px; }
 
   section.social .socialwrapper h2 {
+    font-size: 45px; }
+
+  section.tech .techwrapper h2 {
     font-size: 45px; } }
 @media (max-width: 800px) {
   section.hero .bannerwrapper .wolf {
