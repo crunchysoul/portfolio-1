@@ -6,9 +6,9 @@ $brown: #8F847F;
 $moonblue: #CCDBE3;
 $white: #FFFFFF;
 
-$deeptransparent: rgba(52, 62, 78, 0.9);
-$truetransparent: rgba(135, 166, 189, 0.5);
-$transparentblue: rgba(158, 189, 206, 0.9);
+// $deeptransparent: rgba(52, 62, 78, 0.9);
+// $truetransparent: rgba(135, 166, 189, 0.5);
+// $transparentblue: rgba(158, 189, 206, 0.9);
 
 $changa: 'Changa One', cursive;
 
@@ -47,7 +47,6 @@ h1 {
     @include animation-name(slideUp);
     @include animation-duration(1s);
     @include animation-timing-function(ease-out);
-    
     .navlinks {
         display: none;
     }
@@ -56,9 +55,8 @@ h1 {
     @include animation-name(slideDown);
     @include animation-duration(0.5s);
     @include animation-timing-function(ease-in);
-
     visibility: visible !important;
-    
+    box-shadow: $dropshadow;
     background: $ashblue;
 }
 .nav-top {
@@ -425,6 +423,7 @@ section.social {
                 max-width: 160px;
                 min-width: 160px;
                 background: $gray;
+                box-shadow: $dropshadow;
                 text-decoration: none;
                 line-height: 150px;
                 @include transition(all ease .5s);
@@ -439,9 +438,9 @@ section.social {
             }
             .column:hover {
                 background-color: $gray;
-                color: $deepblue;
                 h3 {
                     font-size: 20px;
+                    color: $deepblue
                 }
             }
             
@@ -513,6 +512,7 @@ section.tech {
                 height: 80px;
                 width: 160px;
                 background: $gray;
+                box-shadow: $dropshadow;
                 @include transition(all ease .5s);
 
                 h3 {

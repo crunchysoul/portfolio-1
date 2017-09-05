@@ -218,6 +218,7 @@ h1 {
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
   visibility: visible !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background: #9EBDCE; }
 
 .nav-top {
@@ -674,6 +675,7 @@ section.social {
         max-width: 160px;
         min-width: 160px;
         background: #D4D7DD;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         text-decoration: none;
         line-height: 150px;
         -webkit-transition: all ease 0.5s;
@@ -691,10 +693,10 @@ section.social {
           -o-transition: all ease 0.5s;
           transition: all ease 0.5s; }
       section.social .socialwrapper .row .column:hover {
-        background-color: #D4D7DD;
-        color: #343E4E; }
+        background-color: #D4D7DD; }
         section.social .socialwrapper .row .column:hover h3 {
-          font-size: 20px; }
+          font-size: 20px;
+          color: #343E4E; }
       section.social .socialwrapper .row .social1 h3, section.social .socialwrapper .row .social2 h3, section.social .socialwrapper .row .social5 h3, section.social .socialwrapper .row .social6 h3, section.social .socialwrapper .row .social9 h3, section.social .socialwrapper .row .social10 h3 {
         color: #343E4E; }
       section.social .socialwrapper .row .social3 h3, section.social .socialwrapper .row .social4 h3, section.social .socialwrapper .row .social7 h3, section.social .socialwrapper .row .social8 h3, section.social .socialwrapper .row .social11 h3, section.social .socialwrapper .row .social12 h3 {
@@ -764,6 +766,7 @@ section.tech {
         height: 80px;
         width: 160px;
         background: #D4D7DD;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         -webkit-transition: all ease 0.5s;
         -moz-transition: all ease 0.5s;
         -ms-transition: all ease 0.5s;
