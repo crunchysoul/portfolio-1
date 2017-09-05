@@ -4,14 +4,18 @@ $ashblue: #9EBDCE;
 $gray: #D4D7DD;
 $brown: #8F847F;
 $moonblue: #CCDBE3;
-$snow: #FFFAFA;
 $white: #FFFFFF;
+
+$deeptransparent: rgba(52, 62, 78, 0.9);
+$truetransparent: rgba(135, 166, 189, 0.5);
+$transparentblue: rgba(158, 189, 206, 0.9);
 
 $changa: 'Changa One', cursive;
 
 $dropshadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 @import 'flexbox';
+@import 'animation';
 
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
@@ -38,6 +42,75 @@ body {
 
 h1 {
     display: none;
+}
+.nav-up {
+    @include animation-name(slideUp);
+    @include animation-duration(1s);
+    @include animation-timing-function(ease-out);
+    
+    .navlinks {
+        display: none;
+    }
+}
+.nav-down {
+    @include animation-name(slideDown);
+    @include animation-duration(0.5s);
+    @include animation-timing-function(ease-in);
+
+    visibility: visible !important;
+    
+    background: $ashblue;
+}
+.nav-top {
+    @include animation-name(slideDown);
+    @include animation-duration(0.5s);
+    @include animation-timing-function(ease);
+    top: 0;
+    background: none !important;
+}
+nav.primary-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    z-index: 10;
+    @include transition(all ease .5s);
+
+    .navlinks {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        padding: 0;
+        margin: 0;
+        text-align: right;
+        @include transition(all ease .5s);
+
+        ul {
+            @include flexbox();
+            @include flex-wrap(wrap);
+            @include justify-content(flex-end);
+            list-style: none;
+            li {
+                text-align: center;
+                @include flex(auto);
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-left: 14px;
+                    margin-right: 14px;
+                    padding: 2px 7px;
+                    color: $white;
+                    @include transition(all ease .5s);
+                }
+                a:hover {
+                    color: $deepblue;
+                    background: $white;
+                }
+            }
+        }
+    }
 }
 
 section.hero {
@@ -111,6 +184,7 @@ section.hero {
             height: 345px;
             width: 345px;
             background-color: $moonblue;
+            visibility: hidden;
             @include border-radius(100%);
             @include transition(all ease .5s);
         }
@@ -121,6 +195,7 @@ section.hero {
             bottom: 0px;
             height: 377px;
             width: auto;
+            visibility: hidden;
             @include transition(all ease .5s);
         }
     }
@@ -142,10 +217,10 @@ section.hello {
         top: 40px;
         margin-left: auto;
         margin-right: auto;
-        font-size: 24px;
+        font-size: 26px;
         font-weight: 300;
         text-align: center;
-        color: $snow;
+        color: $deepblue; //$white;
         @include transition(all ease .5s);
     }
 }
@@ -189,6 +264,7 @@ section.services {
                     font-size: 40px;
                     font-weight: 900;
                     line-height: 100px;
+                    visibility: hidden;
                     @include transition(all ease .5s);
                 }
             }
@@ -296,7 +372,8 @@ section.about {
                 margin-right: 5vw;
                 margin-top: 5px;
                 padding-bottom: 33px;
-                font-size: 20px;
+                font-size: 19px;
+                font-weight: 300;
                 color: $deepblue;
                 @include transition(all ease .5s);
             }
@@ -317,7 +394,7 @@ section.social {
         margin-left: auto;
         margin-right: auto;
         width: 100%;
-        max-width: 960px;;
+        max-width: 960px;
 
         h2 {
             position: relative;
@@ -338,50 +415,45 @@ section.social {
         .row {
             @include flexbox();
             @include flex-wrap(wrap);
+            @include justify-content(center);
             width: 100%;
             @include transition(all ease .5s);
             .column {
                 @include flex(auto);
                 height: 150px;
                 width: 160px;
+                max-width: 160px;
+                min-width: 160px;
                 background: $gray;
+                text-decoration: none;
+                line-height: 150px;
                 @include transition(all ease .5s);
 
                 h3 {
                     text-align: center;
                     font-size: 18px;
-                    font-weight: 100;
-
-                    a {
-                        padding-top: 70px;
-                        padding-bottom: 70px;
-                        line-height: 150px;
-                        text-decoration: none;
-                    }
-                    
+                    font-weight: 300;
+                    @include transition(all ease .5s);                    
                 }
+                
             }
             .column:hover {
                 background-color: $gray;
-                cursor: pointer;
-                a {
-                    color: $deepblue;
+                color: $deepblue;
+                h3 {
+                    font-size: 20px;
                 }
             }
             
             /* List of Social Media Links */
             .social1, .social2, .social5, .social6, .social9, .social10 {
                 h3 {
-                    a {
-                        color: $deepblue;
-                    }
+                    color: $deepblue;
                 }
             }
             .social3, .social4, .social7, .social8, .social11, .social12 {
                 h3 {
-                    a {
-                        color: $white;
-                    }
+                    color: $white;
                 }
             }
             .social1, .social5, .social9 {
@@ -445,7 +517,7 @@ section.tech {
 
                 h3 {
                     text-align: center;
-                    font-weight: 100;
+                    font-weight: 300;
                     font-size: 20px;
                     line-height: 80px;
                 }
@@ -548,24 +620,27 @@ section.projects {
                     p {
                         margin: 10px;
                         font-size: 15px;
+                        font-weight: 400;
                         color: $deepblue;
                     }
                 }
                 .gitlink {
                     position: absolute;
                     bottom: 10px;
-                    width: 100%;
+                    right: 10px;
+                    width: 135px;//100%;
                     a {
                         text-decoration: none;
                         .viewgit {
                             position: relative;
-                            margin-left: auto;
-                            margin-right: 10px;
-                            padding-top: 10px;
+                            // margin-left: auto;
+                            // margin-right: 10px;
+                            padding-top: 12px;
                             width: 135px;
                             height: 30px;
+                            border-radius: 10px;
                             background: $brown;
-                            font-size: 15px;
+                            font-size: 14px;
                             color: $white;
                             text-align: center;
                             @include transition(all ease .5s);
@@ -674,7 +749,6 @@ section.contact {
     padding-bottom: 35px;
     background-color: $ashblue;
 
-    height: 800px;
     .contactwrapper {
         position: relative;
         margin-left: auto;
@@ -720,6 +794,7 @@ section.contact {
                     font-size: 16px;
                     color: $deepblue;
                     box-shadow: $dropshadow;
+                    @include transition(all ease .5s);
                 }
 
                 textarea {
@@ -733,6 +808,7 @@ section.contact {
                     font-size: 16px;
                     color: $deepblue;
                     box-shadow: $dropshadow;
+                    @include transition(all ease .5s);
                 }
 
                 input[type=text]:focus, textarea:focus {
@@ -748,10 +824,10 @@ section.contact {
                     width: 200px;
                     height: 80px;
                     margin-top: 15px;
-                    background-color: $brown;
-                    color: $white;
                     border: none;
                     border-radius: 15px;
+                    background-color: $brown;
+                    color: $white;
                     font-family: $changa;
                     font-size: 36px;
                     box-shadow: $dropshadow;
@@ -835,6 +911,20 @@ section.contact {
             }
         }
     }
+    section.projects {
+        .projectswrapper {
+            h2 {
+                font-size: 45px;
+            }
+        }
+    }
+    section.contact {
+        .contactwrapper {
+            h2 {
+                font-size: 45px;
+            }
+        }
+    }
 }
 
 @media (max-width: 800px) {
@@ -899,6 +989,14 @@ section.contact {
     }     
 }
 
+@media (max-width: 680px) {
+    nav.primary-nav {
+    
+        .navlinks {
+            display: none;
+        }
+    }
+}
 @media (max-width: 570px) {
     section.hero {
         .bannerwrapper {
@@ -961,13 +1059,15 @@ section.contact {
     }
 }
 
-// @media (max-width: 420px) {
-//     section.hello {
-//         h2 {
-//             font-size: 18px;
-//         }
-//     }
-// }
+@media (max-width: 400px) {
+    section.contact {
+        .contactwrapper {
+            .contactform {
+                max-width: 300px;
+            }
+        }
+    }
+}
 
 @media (max-width: 320px) {
     section.hero {
