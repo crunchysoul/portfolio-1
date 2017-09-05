@@ -355,7 +355,7 @@ section.about {
             @include transition(all ease .5s);
 
             h2 {
-                margin-top: 35px;
+                margin-top: 30px;
                 margin-left: 5vw;
                 font-family: $changa;
                 font-size: 64px;
@@ -384,7 +384,7 @@ section.social {
     position: relative;
     width: 100%;
     padding-top: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 30px;
     background-color: $moonblue;
 
     .socialwrapper {
@@ -408,13 +408,14 @@ section.social {
         }
 
         .row:first-of-type {
-            margin-top: 35px;
+            margin-top: 30px;
         }
         .row {
             @include flexbox();
             @include flex-wrap(wrap);
             @include justify-content(center);
             width: 100%;
+            box-shadow: $dropshadow;
             @include transition(all ease .5s);
             .column {
                 @include flex(auto);
@@ -423,7 +424,7 @@ section.social {
                 max-width: 160px;
                 min-width: 160px;
                 background: $gray;
-                box-shadow: $dropshadow;
+                
                 text-decoration: none;
                 line-height: 150px;
                 @include transition(all ease .5s);
@@ -474,8 +475,8 @@ section.social {
 section.tech {
     position: relative;
     width: 100%;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: $white;
     box-shadow: $dropshadow;
 
@@ -506,13 +507,13 @@ section.tech {
             @include flexbox();
             @include flex-wrap(wrap);
             width: 100%;
+            box-shadow: $dropshadow;
             @include transition(all ease .5s);
             .column {
                 @include flex(auto);
                 height: 80px;
                 width: 160px;
                 background: $gray;
-                box-shadow: $dropshadow;
                 @include transition(all ease .5s);
 
                 h3 {
@@ -553,8 +554,8 @@ section.tech {
 section.projects {
     position: relative;
     width: 100%;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: $moonblue;
 
     .projectswrapper {
@@ -745,8 +746,8 @@ section.projects {
 section.contact {
     position: relative;
     width: 100%;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: $ashblue;
 
     .contactwrapper {
@@ -823,7 +824,7 @@ section.contact {
                     position: relative;
                     width: 200px;
                     height: 80px;
-                    margin-top: 15px;
+                    margin-top: 5px;
                     border: none;
                     border-radius: 15px;
                     background-color: $brown;

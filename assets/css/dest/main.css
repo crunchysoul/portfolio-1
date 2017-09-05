@@ -586,7 +586,7 @@ section.about {
       -o-transition: all ease 0.5s;
       transition: all ease 0.5s; }
       section.about .aboutwrapper .aboutme h2 {
-        margin-top: 35px;
+        margin-top: 30px;
         margin-left: 5vw;
         font-family: "Changa One", cursive;
         font-size: 64px;
@@ -617,7 +617,7 @@ section.social {
   position: relative;
   width: 100%;
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   background-color: #CCDBE3; }
   section.social .socialwrapper {
     position: relative;
@@ -641,7 +641,7 @@ section.social {
       -o-transition: all ease 0.5s;
       transition: all ease 0.5s; }
     section.social .socialwrapper .row:first-of-type {
-      margin-top: 35px; }
+      margin-top: 30px; }
     section.social .socialwrapper .row {
       display: -webkit-box;
       display: -moz-box;
@@ -658,6 +658,7 @@ section.social {
       justify-content: center;
       -ms-flex-pack: center;
       width: 100%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       -webkit-transition: all ease 0.5s;
       -moz-transition: all ease 0.5s;
       -ms-transition: all ease 0.5s;
@@ -675,7 +676,6 @@ section.social {
         max-width: 160px;
         min-width: 160px;
         background: #D4D7DD;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         text-decoration: none;
         line-height: 150px;
         -webkit-transition: all ease 0.5s;
@@ -713,8 +713,8 @@ section.social {
 section.tech {
   position: relative;
   width: 100%;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
   section.tech .techwrapper {
@@ -751,6 +751,7 @@ section.tech {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       width: 100%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       -webkit-transition: all ease 0.5s;
       -moz-transition: all ease 0.5s;
       -ms-transition: all ease 0.5s;
@@ -766,7 +767,6 @@ section.tech {
         height: 80px;
         width: 160px;
         background: #D4D7DD;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         -webkit-transition: all ease 0.5s;
         -moz-transition: all ease 0.5s;
         -ms-transition: all ease 0.5s;
@@ -793,8 +793,8 @@ section.tech {
 section.projects {
   position: relative;
   width: 100%;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #CCDBE3; }
   section.projects .projectswrapper {
     position: relative;
@@ -945,8 +945,8 @@ section.projects {
 section.contact {
   position: relative;
   width: 100%;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #9EBDCE; }
   section.contact .contactwrapper {
     position: relative;
@@ -1024,7 +1024,7 @@ section.contact {
           position: relative;
           width: 200px;
           height: 80px;
-          margin-top: 15px;
+          margin-top: 5px;
           border: none;
           border-radius: 15px;
           background-color: #8F847F;
