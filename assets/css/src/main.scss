@@ -19,6 +19,14 @@ $dropshadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-clip: padding-box;  /* stops bg color from leaking outside the border: */
 }
 
+@mixin transition($value) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+    -o-transition: $value;
+    transition: $value;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -58,13 +66,13 @@ section.hero {
         max-width: 960px;
         margin-left: auto;
         margin-right: auto;
-        transition: all ease .5s;
+        @include transition(all ease .5s);
         
         .tagline {
             position: absolute;
             left: 40px;
             top: 40px;
-            transition: all ease .5s;
+            @include transition(all ease .5s);
 
             h2 {
                 position: relative;
@@ -78,7 +86,7 @@ section.hero {
                 color: $white;
                 text-align: right;
                 text-shadow: $dropshadow;
-                transition: all ease .5s;
+                @include transition(all ease .5s);
                 z-index: 1;
             }
     
@@ -91,7 +99,7 @@ section.hero {
                 color: $white;
                 text-align: right; 
                 text-shadow: $dropshadow;
-                transition: all ease .5s;
+                @include transition(all ease .5s);
                 z-index: 1;
             }
         }
@@ -104,7 +112,7 @@ section.hero {
             width: 345px;
             background-color: $moonblue;
             @include border-radius(100%);
-            transition: all ease .5s;
+            @include transition(all ease .5s);
         }
     
         .wolf {
@@ -113,7 +121,7 @@ section.hero {
             bottom: 0px;
             height: 377px;
             width: auto;
-            transition: all ease .5s;
+            @include transition(all ease .5s);
         }
     }
     
@@ -138,7 +146,7 @@ section.hello {
         font-weight: 300;
         text-align: center;
         color: $snow;
-        transition: all ease .5s;
+        @include transition(all ease .5s);
     }
 }
 
@@ -159,7 +167,7 @@ section.services {
         min-height: 287px;
         width: 96%;
         max-width: 960px;
-        transition: all ease .5s;
+        @include transition(all ease .5s);
         z-index: 1;
 
         .column {
@@ -174,14 +182,14 @@ section.services {
                 margin-right: auto;
                 text-align: center;
                 background-color: $moonblue;
-                transition: all ease .5s;
+                @include transition(all ease .5s);
                 @include border-radius(100%);
 
                 h4 {
                     font-size: 40px;
                     font-weight: 900;
                     line-height: 100px;
-                    transition: all ease .5s;
+                    @include transition(all ease .5s);
                 }
             }
 
@@ -190,7 +198,7 @@ section.services {
                 font-weight: normal;
                 text-align: center;
                 color: $deepblue;
-                transition: all ease .5s;
+                @include transition(all ease .5s);
             }
             hr {
                 margin-left: auto;
@@ -209,7 +217,7 @@ section.services {
                 font-size: 16px;
                 text-align: center;
                 color: $deepblue;
-                transition: all ease .5s;
+                @include transition(all ease .5s);
             }
 
             .development {
@@ -248,7 +256,7 @@ section.about {
         width: 100%;
         max-width: 1440px;
         min-width: 320px;
-        transition: all ease .5s;
+        @include transition(all ease .5s);
 
         .aboutphoto {
             position: relative;
@@ -260,7 +268,7 @@ section.about {
             background: url(/assets/img/glenn.png) $moonblue;
             background-size: cover;
             background-position: 50% 50%;
-            transition: all ease .5s;
+            @include transition(all ease .5s);
         }
         
         .aboutme {
@@ -270,7 +278,7 @@ section.about {
             max-width: 720px;
             min-width: 320px;
             background: $white;
-            transition: all ease .5s;
+            @include transition(all ease .5s);
 
             h2 {
                 margin-top: 35px;
@@ -279,7 +287,7 @@ section.about {
                 font-size: 64px;
                 font-weight: normal;
                 color: $deepblue;
-                transition: all ease .5s;
+                @include transition(all ease .5s);
             }
             p {
                 display: inline-block;
@@ -290,7 +298,7 @@ section.about {
                 padding-bottom: 33px;
                 font-size: 20px;
                 color: $deepblue;
-                transition: all ease .5s;
+                @include transition(all ease .5s);
             }
         }
     }
@@ -321,7 +329,7 @@ section.social {
             font-weight: normal;
             color: $deepblue;
             text-align: center;
-            transition: all ease .5s;
+            @include transition(all ease .5s);
         }
 
         .row:first-of-type {
@@ -331,13 +339,13 @@ section.social {
             @include flexbox();
             @include flex-wrap(wrap);
             width: 100%;
-            transition: all ease .5s;
+            @include transition(all ease .5s);
             .column {
                 @include flex(auto);
                 height: 150px;
                 width: 160px;
                 background: $gray;
-                transition: all ease .5s;
+                @include transition(all ease .5s);
 
                 h3 {
                     text-align: center;
@@ -417,7 +425,7 @@ section.tech {
             font-weight: normal;
             color: $deepblue;
             text-align: center;
-            transition: all ease .5s;
+            @include transition(all ease .5s);
         }
 
         .row:first-of-type {
@@ -427,13 +435,13 @@ section.tech {
             @include flexbox();
             @include flex-wrap(wrap);
             width: 100%;
-            transition: all ease .5s;
+            @include transition(all ease .5s);
             .column {
                 @include flex(auto);
                 height: 80px;
                 width: 160px;
                 background: $gray;
-                transition: all ease .5s;
+                @include transition(all ease .5s);
 
                 h3 {
                     text-align: center;
@@ -494,7 +502,7 @@ section.projects {
             font-weight: normal;
             color: $deepblue;
             text-align: center;
-            transition: all ease .5s;
+            @include transition(all ease .5s);
         }
 
         .row:first-of-type {
@@ -506,7 +514,7 @@ section.projects {
             @include flex-wrap(wrap);
             @include justify-content(center);
             width: 100%;
-            transition: all ease .5s;
+            @include transition(all ease .5s);
 
             .column {
                 position: relative;
@@ -520,7 +528,7 @@ section.projects {
                 margin-bottom: 12.5px;
                 background: $white;
                 box-shadow: $dropshadow;
-                transition: all ease .5s;
+                @include transition(all ease .5s);
 
                 .title {
                     height: 100px;
@@ -560,7 +568,7 @@ section.projects {
                             font-size: 15px;
                             color: $white;
                             text-align: center;
-                            transition: all ease .5s;
+                            @include transition(all ease .5s);
                             box-shadow: $dropshadow;
                         }
                     }
@@ -684,7 +692,7 @@ section.contact {
             font-weight: normal;
             color: $deepblue;
             text-align: center;
-            transition: all ease .5s;
+            @include transition(all ease .5s);
         }
 
         .contactform {
@@ -696,19 +704,18 @@ section.contact {
             form {
                 position: relative;
                 width: 100%;
-                // background:yellow;
+                margin-top: 25px;
                 text-align: center;
 
                 /* Style inputs with type="text", select elements and textareas */
-                input[type=info] {
+                input[type=text] {
                     width: 100%;
                     height: 45px;
                     padding: 12px; 
-                    // border: 1px solid #ccc; /* Gray border */
+                    border: 1px solid $gray;
                     border-radius: 4px;
                     box-sizing: border-box;
-                    margin-top: 6px; /* Add a top margin */
-                    margin-bottom: 16px; /* Bottom margin */
+                    margin-bottom: 15px;
                     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
                     font-size: 16px;
                     color: $deepblue;
@@ -719,12 +726,20 @@ section.contact {
                     width: 100%;
                     height: 200px;
                     padding: 12px;
-                    box-sizing: border-box;
+                    border: 1px solid $gray;
                     border-radius: 4px;
+                    box-sizing: border-box;
+                    margin-bottom: 15px;
                     font-size: 16px;
                     color: $deepblue;
-                    border: 0;
                     box-shadow: $dropshadow;
+                }
+
+                input[type=text]:focus, textarea:focus {
+                    box-shadow: 0 0 5px $deepblue;
+                    // padding: 3px 0px 3px 3px;
+                    // margin: 5px 1px 3px 0px;
+                    border: 1px solid $deepblue;
                 }
 
                 /* Style the submit button with a specific background color etc */
@@ -739,9 +754,9 @@ section.contact {
                     border-radius: 15px;
                     font-family: $changa;
                     font-size: 36px;
-                    
+                    box-shadow: $dropshadow;
                     cursor: pointer;
-                    transition: all ease .5s;
+                    @include transition(all ease .5s);
 
                     .fa {
                         padding-left: 5px;

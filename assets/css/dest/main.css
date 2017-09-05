@@ -30,12 +30,20 @@ section.hero {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
-    transition: all ease .5s; }
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s; }
     section.hero .bannerwrapper .tagline {
       position: absolute;
       left: 40px;
       top: 40px;
-      transition: all ease .5s; }
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s; }
       section.hero .bannerwrapper .tagline h2 {
         position: relative;
         font-family: "Changa One", cursive;
@@ -48,7 +56,11 @@ section.hero {
         color: #FFFFFF;
         text-align: right;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        transition: all ease .5s;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s;
         z-index: 1; }
       section.hero .bannerwrapper .tagline h4 {
         margin-top: 5px;
@@ -59,7 +71,11 @@ section.hero {
         color: #FFFFFF;
         text-align: right;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        transition: all ease .5s;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s;
         z-index: 1; }
     section.hero .bannerwrapper .moon {
       position: absolute;
@@ -72,14 +88,22 @@ section.hero {
       border-radius: 100%;
       background-clip: padding-box;
       /* stops bg color from leaking outside the border: */
-      transition: all ease .5s; }
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s; }
     section.hero .bannerwrapper .wolf {
       position: absolute;
       right: 30px;
       bottom: 0px;
       height: 377px;
       width: auto;
-      transition: all ease .5s; }
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s; }
 
 section.hello {
   position: relative;
@@ -98,7 +122,11 @@ section.hello {
     font-weight: 300;
     text-align: center;
     color: #FFFAFA;
-    transition: all ease .5s; }
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s; }
 
 section.services {
   position: relative;
@@ -122,7 +150,11 @@ section.services {
     min-height: 287px;
     width: 96%;
     max-width: 960px;
-    transition: all ease .5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
     z-index: 1; }
     section.services .row .column {
       -webkit-box-flex: auto;
@@ -140,7 +172,11 @@ section.services {
         margin-right: auto;
         text-align: center;
         background-color: #CCDBE3;
-        transition: all ease .5s;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s;
         -webkit-border-radius: 100%;
         border-radius: 100%;
         background-clip: padding-box;
@@ -149,13 +185,21 @@ section.services {
           font-size: 40px;
           font-weight: 900;
           line-height: 100px;
-          transition: all ease .5s; }
+          -webkit-transition: all ease 0.5s;
+          -moz-transition: all ease 0.5s;
+          -ms-transition: all ease 0.5s;
+          -o-transition: all ease 0.5s;
+          transition: all ease 0.5s; }
       section.services .row .column h5 {
         font-size: 25px;
         font-weight: normal;
         text-align: center;
         color: #343E4E;
-        transition: all ease .5s; }
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s; }
       section.services .row .column hr {
         margin-left: auto;
         margin-right: auto;
@@ -172,7 +216,11 @@ section.services {
         font-size: 16px;
         text-align: center;
         color: #343E4E;
-        transition: all ease .5s; }
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s; }
       section.services .row .column .development {
         color: #343E4E;
         border-color: #343E4E; }
@@ -207,7 +255,11 @@ section.about {
     width: 100%;
     max-width: 1440px;
     min-width: 320px;
-    transition: all ease .5s; }
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s; }
     section.about .aboutwrapper .aboutphoto {
       position: relative;
       -webkit-box-flex: auto;
@@ -222,7 +274,11 @@ section.about {
       background: url(/assets/img/glenn.png) #CCDBE3;
       background-size: cover;
       background-position: 50% 50%;
-      transition: all ease .5s; }
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s; }
     section.about .aboutwrapper .aboutme {
       position: relative;
       -webkit-box-flex: auto;
@@ -234,7 +290,11 @@ section.about {
       max-width: 720px;
       min-width: 320px;
       background: #FFFFFF;
-      transition: all ease .5s; }
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s; }
       section.about .aboutwrapper .aboutme h2 {
         margin-top: 35px;
         margin-left: 5vw;
@@ -242,7 +302,11 @@ section.about {
         font-size: 64px;
         font-weight: normal;
         color: #343E4E;
-        transition: all ease .5s; }
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s; }
       section.about .aboutwrapper .aboutme p {
         display: inline-block;
         position: relative;
@@ -252,7 +316,11 @@ section.about {
         padding-bottom: 33px;
         font-size: 20px;
         color: #343E4E;
-        transition: all ease .5s; }
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s; }
 
 section.social {
   position: relative;
@@ -276,7 +344,11 @@ section.social {
       font-weight: normal;
       color: #343E4E;
       text-align: center;
-      transition: all ease .5s; }
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s; }
     section.social .socialwrapper .row:first-of-type {
       margin-top: 35px; }
     section.social .socialwrapper .row {
@@ -290,7 +362,11 @@ section.social {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       width: 100%;
-      transition: all ease .5s;
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s;
       /* List of Social Media Links */ }
       section.social .socialwrapper .row .column {
         -webkit-box-flex: auto;
@@ -301,7 +377,11 @@ section.social {
         height: 150px;
         width: 160px;
         background: #D4D7DD;
-        transition: all ease .5s; }
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s; }
         section.social .socialwrapper .row .column h3 {
           text-align: center;
           font-size: 18px;
@@ -352,7 +432,11 @@ section.tech {
       font-weight: normal;
       color: #343E4E;
       text-align: center;
-      transition: all ease .5s; }
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s; }
     section.tech .techwrapper .row:first-of-type {
       margin-top: 35px; }
     section.tech .techwrapper .row {
@@ -366,7 +450,11 @@ section.tech {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       width: 100%;
-      transition: all ease .5s;
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s;
       /* List of Tech Stack */ }
       section.tech .techwrapper .row .column {
         -webkit-box-flex: auto;
@@ -377,7 +465,11 @@ section.tech {
         height: 80px;
         width: 160px;
         background: #D4D7DD;
-        transition: all ease .5s; }
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s; }
         section.tech .techwrapper .row .column h3 {
           text-align: center;
           font-weight: 100;
@@ -418,7 +510,11 @@ section.projects {
       font-weight: normal;
       color: #343E4E;
       text-align: center;
-      transition: all ease .5s; }
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s; }
     section.projects .projectswrapper .row:first-of-type {
       margin-top: 20px; }
     section.projects .projectswrapper .row {
@@ -438,7 +534,11 @@ section.projects {
       justify-content: center;
       -ms-flex-pack: center;
       width: 100%;
-      transition: all ease .5s;
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s;
       /* List of Projects */ }
       section.projects .projectswrapper .row .column {
         position: relative;
@@ -456,7 +556,11 @@ section.projects {
         margin-bottom: 12.5px;
         background: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        transition: all ease .5s; }
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s; }
         section.projects .projectswrapper .row .column .title {
           height: 100px;
           width: 100%;
@@ -489,7 +593,11 @@ section.projects {
               font-size: 15px;
               color: #FFFFFF;
               text-align: center;
-              transition: all ease .5s;
+              -webkit-transition: all ease 0.5s;
+              -moz-transition: all ease 0.5s;
+              -ms-transition: all ease 0.5s;
+              -o-transition: all ease 0.5s;
+              transition: all ease 0.5s;
               box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
           section.projects .projectswrapper .row .column .gitlink a:hover .viewgit {
             background: #D4D7DD;
@@ -554,7 +662,11 @@ section.contact {
       font-weight: normal;
       color: #343E4E;
       text-align: center;
-      transition: all ease .5s; }
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s; }
     section.contact .contactwrapper .contactform {
       position: relative;
       max-width: 420px;
@@ -563,21 +675,20 @@ section.contact {
       section.contact .contactwrapper .contactform form {
         position: relative;
         width: 100%;
+        margin-top: 25px;
         text-align: center;
         /* Style inputs with type="text", select elements and textareas */
         /* Style the submit button with a specific background color etc */
         /* When moving the mouse over the submit button, add a darker green color */
         /* Add a background color and some padding around the form */ }
-        section.contact .contactwrapper .contactform form input[type=info] {
+        section.contact .contactwrapper .contactform form input[type=text] {
           width: 100%;
           height: 45px;
           padding: 12px;
+          border: 1px solid #D4D7DD;
           border-radius: 4px;
           box-sizing: border-box;
-          margin-top: 6px;
-          /* Add a top margin */
-          margin-bottom: 16px;
-          /* Bottom margin */
+          margin-bottom: 15px;
           resize: vertical;
           /* Allow the user to vertically resize the textarea (not horizontally) */
           font-size: 16px;
@@ -587,12 +698,16 @@ section.contact {
           width: 100%;
           height: 200px;
           padding: 12px;
-          box-sizing: border-box;
+          border: 1px solid #D4D7DD;
           border-radius: 4px;
+          box-sizing: border-box;
+          margin-bottom: 15px;
           font-size: 16px;
           color: #343E4E;
-          border: 0;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+        section.contact .contactwrapper .contactform form input[type=text]:focus, section.contact .contactwrapper .contactform form textarea:focus {
+          box-shadow: 0 0 5px #343E4E;
+          border: 1px solid #343E4E; }
         section.contact .contactwrapper .contactform form button[type=submit] {
           position: relative;
           width: 200px;
@@ -604,8 +719,13 @@ section.contact {
           border-radius: 15px;
           font-family: "Changa One", cursive;
           font-size: 36px;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           cursor: pointer;
-          transition: all ease .5s; }
+          -webkit-transition: all ease 0.5s;
+          -moz-transition: all ease 0.5s;
+          -ms-transition: all ease 0.5s;
+          -o-transition: all ease 0.5s;
+          transition: all ease 0.5s; }
           section.contact .contactwrapper .contactform form button[type=submit] .fa {
             padding-left: 5px; }
         section.contact .contactwrapper .contactform form button[type=submit]:hover {
