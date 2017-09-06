@@ -8,7 +8,7 @@ For my design, I decided to go with cool and calm blue colours with a hint of gr
 - Mood board
 - Inspiration
 - Style Guide and Wireframes
-- Typography
+- Features
 - Challenges
 - Coding
 - Final product
@@ -47,7 +47,11 @@ For my mockup design, I used Figma. The full figma project can be viewed at the 
 - ![](http://www.glenndimaliwat.com/assets/img/wireframes/figma.png)
 
 
-# Typography
+# Features
++ SCSS
++ JQuery
++ Google Analytics
+
 # Challenges
 # Coding
 # Final product
