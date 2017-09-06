@@ -240,8 +240,8 @@
 .nav-up {
   animation-name: slideUp;
   -webkit-animation-name: slideUp;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out; }
   .nav-up .navlinks {
@@ -250,23 +250,11 @@
     visibility: hidden; }
 
 .nav-down {
-  animation-name: slideDown;
-  -webkit-animation-name: slideDown;
-  animation-duration: 0.5s;
-  -webkit-animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: ease-in-out;
   visibility: visible !important;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background: #9EBDCE; }
+  background: #87A6BD; }
 
 .nav-top {
-  animation-name: slideDown;
-  -webkit-animation-name: slideDown;
-  animation-duration: 0.5s;
-  -webkit-animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: ease-in-out;
   top: 0;
   background: none !important; }
 
@@ -301,17 +289,12 @@ nav.primary-nav {
   width: 100%;
   height: 45px;
   z-index: 10;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  -ms-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  transition: all ease 0.5s;
   /* Desktop Navigation */
   /* Mobile Navigation Icon */ }
   nav.primary-nav .navlinks {
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 14px;
     text-align: right;
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
@@ -348,8 +331,9 @@ nav.primary-nav {
           font-weight: 500;
           margin-left: 14px;
           margin-right: 14px;
-          padding: 2px 7px;
+          padding: 5px 7px;
           color: #FFFFFF;
+          text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
           -webkit-transition: all ease 0.5s;
           -moz-transition: all ease 0.5s;
           -ms-transition: all ease 0.5s;
@@ -396,11 +380,11 @@ nav.primary-nav {
         font-size: 20px;
         font-weight: 300;
         text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        -webkit-transition: all ease 0.5s;
-        -moz-transition: all ease 0.5s;
-        -ms-transition: all ease 0.5s;
-        -o-transition: all ease 0.5s;
-        transition: all ease 0.5s; }
+        -webkit-transition: all ease 0.2s;
+        -moz-transition: all ease 0.2s;
+        -ms-transition: all ease 0.2s;
+        -o-transition: all ease 0.2s;
+        transition: all ease 0.2s; }
       nav.primary-nav .hamburgerwrapper .burgericon .hamburger {
         width: 24px;
         height: 2px;
@@ -412,11 +396,11 @@ nav.primary-nav {
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        -webkit-transition: all ease 0.5s;
-        -moz-transition: all ease 0.5s;
-        -ms-transition: all ease 0.5s;
-        -o-transition: all ease 0.5s;
-        transition: all ease 0.5s; }
+        -webkit-transition: all ease 0.2s;
+        -moz-transition: all ease 0.2s;
+        -ms-transition: all ease 0.2s;
+        -o-transition: all ease 0.2s;
+        transition: all ease 0.2s; }
       nav.primary-nav .hamburgerwrapper .burgericon .hamburger:before,
       nav.primary-nav .hamburgerwrapper .burgericon .hamburger:after {
         content: '';
@@ -425,11 +409,11 @@ nav.primary-nav {
         height: 2px;
         background: #FFFFFF;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        -webkit-transition: all ease 0.5s;
-        -moz-transition: all ease 0.5s;
-        -ms-transition: all ease 0.5s;
-        -o-transition: all ease 0.5s;
-        transition: all ease 0.5s; }
+        -webkit-transition: all ease 0.2s;
+        -moz-transition: all ease 0.2s;
+        -ms-transition: all ease 0.2s;
+        -o-transition: all ease 0.2s;
+        transition: all ease 0.2s; }
       nav.primary-nav .hamburgerwrapper .burgericon .hamburger:before {
         top: -7px; }
       nav.primary-nav .hamburgerwrapper .burgericon .hamburger:after {
@@ -454,7 +438,7 @@ div.mobile-nav {
   top: 40px;
   width: 100%;
   padding-bottom: 35px;
-  background: #9EBDCE;
+  background: #87A6BD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   visibility: hidden;
   z-index: 15; }
@@ -488,7 +472,7 @@ div.mobile-nav {
         color: #FFFFFF;
         font-size: 20px;
         text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        padding: 10px; }
+        padding: 10px 20px; }
       div.mobile-nav ul li a:hover {
         background: #FFFFFF;
         color: #343E4E; }
@@ -605,7 +589,7 @@ section.hello {
   position: relative;
   width: 100%;
   height: 180px;
-  background-color: #87A6BD; }
+  background-color: #9EBDCE; }
   section.hello h2 {
     position: relative;
     width: 96%;
@@ -618,6 +602,7 @@ section.hello {
     font-weight: 300;
     text-align: center;
     color: #343E4E;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
     -ms-transition: all ease 0.5s;
@@ -682,6 +667,7 @@ section.services {
           font-size: 40px;
           font-weight: 900;
           line-height: 100px;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           visibility: hidden;
           -webkit-transition: all ease 0.5s;
           -moz-transition: all ease 0.5s;
@@ -693,6 +679,7 @@ section.services {
         font-weight: normal;
         text-align: center;
         color: #343E4E;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         -webkit-transition: all ease 0.5s;
         -moz-transition: all ease 0.5s;
         -ms-transition: all ease 0.5s;
@@ -801,6 +788,7 @@ section.about {
         font-size: 64px;
         font-weight: normal;
         color: #343E4E;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         -webkit-transition: all ease 0.5s;
         -moz-transition: all ease 0.5s;
         -ms-transition: all ease 0.5s;
@@ -829,7 +817,7 @@ section.social {
   position: relative;
   width: 100%;
   padding-top: 35px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   background-color: #CCDBE3; }
   section.social .socialwrapper {
     position: relative;
@@ -847,6 +835,7 @@ section.social {
       font-weight: normal;
       color: #343E4E;
       text-align: center;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       -webkit-transition: all ease 0.5s;
       -moz-transition: all ease 0.5s;
       -ms-transition: all ease 0.5s;
@@ -927,7 +916,7 @@ section.tech {
   position: relative;
   width: 100%;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
   section.tech .techwrapper {
@@ -946,6 +935,7 @@ section.tech {
       font-weight: normal;
       color: #343E4E;
       text-align: center;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       -webkit-transition: all ease 0.5s;
       -moz-transition: all ease 0.5s;
       -ms-transition: all ease 0.5s;
@@ -1015,7 +1005,7 @@ section.projects {
   position: relative;
   width: 100%;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   background-color: #CCDBE3; }
   section.projects .projectswrapper {
     position: relative;
@@ -1033,6 +1023,7 @@ section.projects {
       font-weight: normal;
       color: #343E4E;
       text-align: center;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       -webkit-transition: all ease 0.5s;
       -moz-transition: all ease 0.5s;
       -ms-transition: all ease 0.5s;
@@ -1169,7 +1160,7 @@ section.contact {
   position: relative;
   width: 100%;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   background-color: #9EBDCE; }
   section.contact .contactwrapper {
     position: relative;
@@ -1187,6 +1178,7 @@ section.contact {
       font-weight: normal;
       color: #343E4E;
       text-align: center;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       -webkit-transition: all ease 0.5s;
       -moz-transition: all ease 0.5s;
       -ms-transition: all ease 0.5s;
@@ -1389,6 +1381,12 @@ section.contact {
     margin-left: 0px;
     margin-right: 0px; } }
 @media (max-width: 320px) {
+  nav.primary-nav .hamburgerwrapper {
+    right: 10px; }
+
+  section.hero .logo {
+    margin-top: 10px;
+    margin-left: 10px; }
   section.hero .bannerwrapper .moon {
     left: 35px; }
 

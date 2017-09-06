@@ -285,7 +285,7 @@
 /* Toggle Classes for Navigation Bar Animations */
 .nav-up {
     @include animation-name(slideUp);
-    @include animation-duration(1s);
+    @include animation-duration(0.5s);
     @include animation-timing-function(ease-out);
     .navlinks {
         display: none;
@@ -295,17 +295,17 @@
     }
 }
 .nav-down {
-    @include animation-name(slideDown);
-    @include animation-duration(0.5s);
-    @include animation-timing-function(ease-in);
+    // @include animation-name(slideDown);
+    // @include animation-duration(0.5s);
+    // @include animation-timing-function(ease-in);
     visibility: visible !important;
     box-shadow: $dropshadow;
-    background: $ashblue;
+    background: $trueblue;
 }
 .nav-top {
-    @include animation-name(slideDown);
-    @include animation-duration(0.5s);
-    @include animation-timing-function(ease);
+    // @include animation-name(slideDown);
+    // @include animation-duration(0.5s);
+    // @include animation-timing-function(ease-in);
     top: 0;
     background: none !important;
 }

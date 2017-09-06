@@ -227,7 +227,18 @@
 }
 
 @media (max-width: 320px) {
+    
+    nav.primary-nav {
+        .hamburgerwrapper {
+            right: 10px;
+        }
+    }
+
     section.hero {
+        .logo {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
         .bannerwrapper {
             .moon {
                 left: 35px;
