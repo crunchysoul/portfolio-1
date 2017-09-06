@@ -42,7 +42,7 @@ Denise Chandler
 - ![](http://www.glenndimaliwat.com/assets/img/inspiration/denisechandler.png)
 
 # Style Guide and Wireframes
-For my mockup design, I used Figma. The figma project can be viewed at the following [link](https://www.figma.com/file/VNYTgiznPFjlymYOYqoL6rDv/Portfolio)
+For my mockup design, I used Figma. The full figma project can be viewed at the following [link](https://www.figma.com/file/VNYTgiznPFjlymYOYqoL6rDv/Portfolio)
 
 - ![](http://www.glenndimaliwat.com/assets/img/wireframes/figma.png)
 
