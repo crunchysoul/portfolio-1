@@ -46,3 +46,8 @@ For my mockup design, I used Figma. The full figma project can be viewed at the 
 
 - ![](http://www.glenndimaliwat.com/assets/img/wireframes/figma.png)
 
+
+# Typography
+# Challenges
+# Coding
+# Final product
