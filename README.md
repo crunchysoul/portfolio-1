@@ -7,7 +7,7 @@ For my design, I decided to go with cool and calm blue colours with a hint of gr
 - Trello board
 - Mood board
 - Inspiration
-- Wireframes
+- Style Guide and Wireframes
 - Typography
 - Challenges
 - Coding
@@ -16,16 +16,16 @@ For my design, I decided to go with cool and calm blue colours with a hint of gr
 # Trello Board
 I am using agile methodologies in building my project which is why I opened a public Trello board. This kept me organized all throughout the project and minimize the stress in remembering all the details and putting them into action.
 
-The trello board can be found at https://trello.com/b/pEZaMjod
+The trello board can be found at this [link](https://trello.com/b/pEZaMjod)
 
 # Mood Board
 My Pinterest mood board is composed of photos from keywords "Winter", "Wolf", "Hipster", "Vikings" and "Beards". Mostly, what I got on this board are the Runic Typography and symbols for my logo and the Hazy Nature background idea for my hero image. My colour choice was already decided upon even before I completed my mood board and I am quite happy with it.
 
-My pinterest mood board can be found at https://au.pinterest.com/glenndimaliwat/portfolio-moodboard/
+My pinterest mood board can be found at this [link](https://au.pinterest.com/glenndimaliwat/portfolio-moodboard/)
 
 My Spotify playlist set most of the mood on my website. I believe it has created a very calm ambience and a good balance between content and theme. I appreciated this mood board more than the Pinterest because the music also kept me productive as I was designing my mockup in Figma.
 
-The spotify playlist can be found at https://goo.gl/qkK2sU
+The spotify playlist can be found at this [link](https://goo.gl/qkK2sU)
 
 # Inspiration
 My tagline is inspired by these popular quotes.
@@ -35,10 +35,14 @@ My tagline is inspired by these popular quotes.
 - ![](http://www.glenndimaliwat.com/assets/img/inspiration/zuckerberg.jpg)
 + *"Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better."* — Samuel Beckett
 
-+ Other popular *fail fast* slogan - https://www.startupinstitute.com/blog/2015-5-6-inspirational-quotes-about-failure
-
++ Other popular *fail fast* slogan - [link](https://www.startupinstitute.com/blog/2015-5-6-inspirational-quotes-about-failure)
 
 Denise Chandler
-Among all the websites that I visited, Denise's website really got my attention. The choice of colour scheme is quite unique and it works with her theme. Like my design, she also incorporated a tagline "Stand Out" and a character in her theme which is a "sea monster". I believe this really represented her objective to stand out and it did as her website is among the top 15 developer portfolio website.
+- Among all the websites that I visited, Denise's website really got my attention and it became my sole inspiration. Her choice of colour scheme is quite unique and it works really well with her theme. Like my design, she also incorporated a tagline "Stand Out" and a character in her theme which is a "sea monster". I believe this really represented her objective to stand out and it did as her website is among the top 15 developer portfolio website.
 - ![](http://www.glenndimaliwat.com/assets/img/inspiration/denisechandler.png)
+
+# Style Guide and Wireframes
+For my mockup design, I used Figma. The figma project can be viewed at the following [link](https://www.figma.com/file/VNYTgiznPFjlymYOYqoL6rDv/Portfolio)
+
+- ![](http://www.glenndimaliwat.com/assets/img/wireframes/figma.png)
 
