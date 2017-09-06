@@ -371,7 +371,9 @@ nav.primary-nav {
       top: 50%;
       width: 30px;
       height: 30px;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+      /* Remove button highlight from touch screen devices */ }
       nav.primary-nav .hamburgerwrapper .burgericon p {
         position: relative;
         top: 3px;
