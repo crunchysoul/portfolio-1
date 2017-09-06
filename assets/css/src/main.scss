@@ -1,3 +1,6 @@
+/*
+*   Color Scheme
+*/
 $deepblue: #343E4E;
 $trueblue: #87A6BD;
 $ashblue: #9EBDCE;
@@ -6,66 +9,61 @@ $brown: #8F847F;
 $moonblue: #CCDBE3;
 $white: #FFFFFF;
 
+/*
+*   Transparent Colors
+*/
 // $deeptransparent: rgba(52, 62, 78, 0.9);
 // $truetransparent: rgba(135, 166, 189, 0.5);
 // $transparentblue: rgba(158, 189, 206, 0.9);
 
+/*
+*   Fonts
+*/
 $changa: 'Changa One', cursive;
+$raleway: 'Raleway',Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 
+/*
+*   Shadows
+*/
 $dropshadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$burgershadow: 0 2px 5px rgba(0,0,0,.2);
+$noshadow: 0 2px 5px rgba(0,0,0,0);
 
-@import 'flexbox';
-@import 'animation';
+/*
+*   Other CSS Files
+*/
+@import 'mixins';       /* Some custom mixins */
+@import 'flexbox';      /* Mixins for Cross-browser Flexbox */
+@import 'animation';    /* CSS for all the Animations */
 
-@mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-    border-radius: $radius;
-    background-clip: padding-box;  /* stops bg color from leaking outside the border: */
-}
 
-@mixin transition($value) {
-    -webkit-transition: $value;
-    -moz-transition: $value;
-    -ms-transition: $value;
-    -o-transition: $value;
-    transition: $value;
-}
-
+/* Set all elements to margin 0 and padding 0 */
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Raleway',Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+/* Change colors for text highlighting */
+::selection {
+    background: $trueblue;
+    color: $white;
+}
+::-moz-selection {
+    background: $trueblue;
+    color: $white;
 }
 
+/* Body */
+body {
+    font-family: $raleway;
+}
+
+/* Set Heading 1 to None - for SEO purposes */
 h1 {
     display: none;
 }
-.nav-up {
-    @include animation-name(slideUp);
-    @include animation-duration(1s);
-    @include animation-timing-function(ease-out);
-    .navlinks {
-        display: none;
-    }
-}
-.nav-down {
-    @include animation-name(slideDown);
-    @include animation-duration(0.5s);
-    @include animation-timing-function(ease-in);
-    visibility: visible !important;
-    box-shadow: $dropshadow;
-    background: $ashblue;
-}
-.nav-top {
-    @include animation-name(slideDown);
-    @include animation-duration(0.5s);
-    @include animation-timing-function(ease);
-    top: 0;
-    background: none !important;
-}
+
+/* Primary Navigation */
 nav.primary-nav {
     position: fixed;
     top: 0;
@@ -75,12 +73,13 @@ nav.primary-nav {
     z-index: 10;
     @include transition(all ease .5s);
 
+    /* Desktop Navigation */
     .navlinks {
         position: absolute;
         right: 10px;
         top: 10px;
-        padding: 0;
-        margin: 0;
+        // padding: 0;
+        // margin: 0;
         text-align: right;
         @include transition(all ease .5s);
 
@@ -102,6 +101,7 @@ nav.primary-nav {
                     color: $white;
                     @include transition(all ease .5s);
                 }
+                /* When navigation is hovered, add background color and font color */
                 a:hover {
                     color: $deepblue;
                     background: $white;
@@ -109,8 +109,127 @@ nav.primary-nav {
             }
         }
     }
+
+    /* Mobile Navigation Icon */
+    .hamburgerwrapper {
+        
+        position: absolute;
+        right: 15px;
+        top: 8px;
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @include justify-content(flex-end);
+
+        .burgericon {
+            @include flex(auto);            
+            position: relative;
+            top: 50%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            
+            p {
+                position: relative;
+                top: 3px;
+                right: 65px;
+                color: $white;
+                font-size: 20px;
+                font-weight: 300;
+                text-shadow: $burgershadow;
+                @include transition(all ease .5s);
+            }
+
+            .hamburger {
+                width: 24px;
+                height: 2px;
+                background: $white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include transform(translate(-50%,-50%));
+                box-shadow: $burgershadow;
+                @include transition(all ease .5s);
+            }
+            .hamburger:before,
+            .hamburger:after {
+                content: '';
+                position: absolute;
+                width: 24px;
+                height: 2px;
+                background: $white;
+                box-shadow: $burgershadow;
+                @include transition(all ease .5s);
+            }
+            .hamburger:before {
+                top: -7px;
+            }
+            .hamburger:after {
+                top: 7px;
+            }
+        }
+        /* CSS for when the Hamburger is Clicked */
+        .burgericon.active .hamburger {
+            background: none;
+            box-shadow: $noshadow;
+        }
+        .burgericon.active .hamburger:before {
+            top: 0px;
+            @include transform(rotate(45deg));
+        }
+        .burgericon.active .hamburger:after {
+            top: 0px;
+            @include transform(rotate(135deg));
+        }
+    }
 }
 
+/* Mobile Navigation Icon */
+div.mobile-nav {
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    // height: 75%;
+    padding-bottom: 35px;
+    background: $ashblue;
+    box-shadow: $dropshadow;
+    visibility: hidden;
+    z-index: 15;
+
+    ul {
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @include justify-content(flex-end);
+        list-style: none;
+        li {
+            text-align: center;
+            min-width: 100%;
+            padding: 10px;
+            @include flex(auto);
+            a {
+                text-decoration: none;
+                color: $white;
+                font-size: 20px;
+                text-shadow: $burgershadow;
+                padding: 10px;
+            }
+            a:hover {
+                background: $white;
+                color: $deepblue;
+                & {
+                    background: $white;
+                    color: $deepblue;
+                }
+            }
+        }
+    }
+}
+/* Hide Mobile Navigation */
+.mobile-nav-active {
+    visibility: visible !important;
+}
+
+
+/* Hero Section */
 section.hero {
     position: relative;
     width: 100%;
@@ -201,6 +320,7 @@ section.hero {
     
 }
 
+/* Hello Section */
 section.hello {
     position: relative;
     width: 100%;
@@ -218,11 +338,12 @@ section.hello {
         font-size: 26px;
         font-weight: 300;
         text-align: center;
-        color: $deepblue; //$white;
+        color: $deepblue;
         @include transition(all ease .5s);
     }
 }
 
+/* Services Section */
 section.services {
     position: relative;
     width: 100%;
@@ -314,6 +435,7 @@ section.services {
     }
 }
 
+/* About Section */
 section.about {
     position: relative;
     width: 100%;
@@ -363,12 +485,15 @@ section.about {
                 color: $deepblue;
                 @include transition(all ease .5s);
             }
+            p:first-of-type {
+                margin-top: 5px;
+            }
             p {
                 display: inline-block;
                 position: relative;
                 margin-left: 5vw;
                 margin-right: 5vw;
-                margin-top: 5px;
+                margin-top: -15px;
                 padding-bottom: 33px;
                 font-size: 19px;
                 font-weight: 300;
@@ -380,6 +505,7 @@ section.about {
     
 }
 
+/* Social Section */
 section.social {
     position: relative;
     width: 100%;
@@ -415,7 +541,6 @@ section.social {
             @include flex-wrap(wrap);
             @include justify-content(center);
             width: 100%;
-            box-shadow: $dropshadow;
             @include transition(all ease .5s);
             .column {
                 @include flex(auto);
@@ -437,6 +562,8 @@ section.social {
                 }
                 
             }
+
+            /* When a social media icon is hovered, add background color and increase font size */
             .column:hover {
                 background-color: $gray;
                 h3 {
@@ -472,6 +599,7 @@ section.social {
     }
 }
 
+/* Tech Stack Section */
 section.tech {
     position: relative;
     width: 100%;
@@ -506,14 +634,18 @@ section.tech {
         .row {
             @include flexbox();
             @include flex-wrap(wrap);
+            @include justify-content(center);
             width: 100%;
-            box-shadow: $dropshadow;
+            
             @include transition(all ease .5s);
             .column {
                 @include flex(auto);
                 height: 80px;
                 width: 160px;
+                max-width: 160px;
+                margin: 5px;
                 background: $gray;
+                box-shadow: $dropshadow;
                 @include transition(all ease .5s);
 
                 h3 {
@@ -551,6 +683,7 @@ section.tech {
     }
 }
 
+/* Projects Section */
 section.projects {
     position: relative;
     width: 100%;
@@ -629,13 +762,11 @@ section.projects {
                     position: absolute;
                     bottom: 10px;
                     right: 10px;
-                    width: 135px;//100%;
+                    width: 135px;
                     a {
                         text-decoration: none;
                         .viewgit {
                             position: relative;
-                            // margin-left: auto;
-                            // margin-right: 10px;
                             padding-top: 12px;
                             width: 135px;
                             height: 30px;
@@ -648,6 +779,8 @@ section.projects {
                             box-shadow: $dropshadow;
                         }
                     }
+
+                    /* When git/figma link is hovered, add background color and font color */
                     a:hover {
                         .viewgit {
                             background: $gray;
@@ -666,7 +799,6 @@ section.projects {
                     }
                 }
             }
-
             .project2 {
                 .title {
                     background: url(/assets/img/projects/smart-goals-terminal-app.png) no-repeat $brown;
@@ -675,7 +807,6 @@ section.projects {
                     }
                 }
             }
-
             .project3 {
                 .title {
                     background: url(/assets/img/projects/student-attendance-mobile-first-design.png) no-repeat $deepblue;
@@ -684,7 +815,6 @@ section.projects {
                     }
                 }
             }
-
             .project4 {
                 .title {
                     background: url(/assets/img/projects/gopro-photography-website.png) no-repeat $deepblue;
@@ -693,7 +823,6 @@ section.projects {
                     }
                 }
             }
-
             .project5 {
                 .title {
                     background: url(/assets/img/projects/toyota-olympic-website-for-toyota.png) no-repeat $ashblue;
@@ -702,7 +831,6 @@ section.projects {
                     }
                 }
             }
-
             .project6 {
                 .title {
                     background: url(/assets/img/projects/pokemon-responsive-design.png) no-repeat $brown;
@@ -711,7 +839,6 @@ section.projects {
                     }
                 }
             }
-
             .project7 {
                 .title {
                     background: url(/assets/img/projects/portfolio-website.png) no-repeat $ashblue;
@@ -720,7 +847,6 @@ section.projects {
                     }
                 }
             }
-
             .project8 {
                 .title {
                     background: url(/assets/img/projects/circle-of-funk-website.png) no-repeat $brown;
@@ -729,7 +855,6 @@ section.projects {
                     }
                 }
             }
-
             .project9 {
                 .title {
                     background: url(/assets/img/projects/rails-installfest-quick-blog.png) no-repeat $deepblue;
@@ -739,10 +864,10 @@ section.projects {
                 }
             }
         }
-
     }
 }
 
+/* Contact Me Section */
 section.contact {
     position: relative;
     width: 100%;
@@ -782,7 +907,6 @@ section.contact {
                 margin-top: 25px;
                 text-align: center;
 
-                /* Style inputs with type="text", select elements and textareas */
                 input[type=text] {
                     width: 100%;
                     height: 45px;
@@ -814,12 +938,9 @@ section.contact {
 
                 input[type=text]:focus, textarea:focus {
                     box-shadow: 0 0 5px $deepblue;
-                    // padding: 3px 0px 3px 3px;
-                    // margin: 5px 1px 3px 0px;
                     border: 1px solid $deepblue;
                 }
 
-                /* Style the submit button with a specific background color etc */
                 button[type=submit] {
                     position: relative;
                     width: 200px;
@@ -835,12 +956,13 @@ section.contact {
                     cursor: pointer;
                     @include transition(all ease .5s);
 
+                    /* Add some padding to font awesome */
                     .fa {
                         padding-left: 5px;
                     }
                 }
 
-                /* When moving the mouse over the submit button, add a darker green color */
+                /* When moving the mouse over the submit button, add a background and font color */
                 button[type=submit]:hover {
                     background-color: $gray;
                     color: $deepblue;
@@ -857,256 +979,5 @@ section.contact {
     }
 }
 
-/* Start of Media Queries */
-
-@media (max-width: 920px) {
-    section.hello {
-        height: 160px;
-    }
-    section.services {
-        .row {
-            top: -40px;
-            .column {
-                .icon {
-                    height: 80px;
-                    width: 80px;
-
-                    h4 {
-                        font-size: 32px;
-                        line-height: 90px;
-                    }
-                }
-                h5 {
-                    font-size: 20px;
-                }
-                p {
-                    font-size: 14px;
-                    width: 180px;
-                }
-            }
-        }
-    }
-    section.about {
-        .aboutwrapper {
-            .aboutme {
-                h2 {
-                    font-size: 45px;
-                }
-                p {
-                    font-size: 15px;
-                }
-            }
-        }
-    }
-    section.social {
-        .socialwrapper {
-            h2 {
-                font-size: 45px;
-            }
-        }
-    }
-    section.tech {
-        .techwrapper {
-            h2 {
-                font-size: 45px;
-            }
-        }
-    }
-    section.projects {
-        .projectswrapper {
-            h2 {
-                font-size: 45px;
-            }
-        }
-    }
-    section.contact {
-        .contactwrapper {
-            h2 {
-                font-size: 45px;
-            }
-        }
-    }
-}
-
-@media (max-width: 800px) {
-    section.hero {
-        .bannerwrapper {
-            .wolf {
-                right: 0px;
-            }
-            .moon {
-                right: 200px;
-            }
-        }
-    }
-}
-
-@media (max-width: 775px) {
-    section.hello {
-        h2 {
-            // top: 50px;
-            font-size: 20px;
-        }
-    }
-}
-
-@media (max-width: 755px) {
-    section.services {
-        min-height: 550px;
-        .row {
-            top: 0px;
-            max-width: 500px;
-            .column {
-                height: auto;
-                p {
-                    text-align: center;
-                }
-                hr {
-                    margin-top: 15px;
-                    margin-bottom: 10px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 730px) {
-    section.about {
-        .aboutwrapper {
-            .aboutme {
-                width: 100%;
-            }
-            .aboutphoto {
-                height: 440px;
-                img {
-                    // width: 100%;
-                    // height: auto;
-                    height: 440px;
-                    width: auto;
-                }
-            }
-        }
-        
-    }     
-}
-
-@media (max-width: 680px) {
-    nav.primary-nav {
-    
-        .navlinks {
-            display: none;
-        }
-    }
-}
-@media (max-width: 570px) {
-    section.hero {
-        .bannerwrapper {
-            .moon {
-                left: 40px;
-            }
-        }
-    }
-}
-
-@media (max-width: 500px) {
-    section.hello {
-        h2 {
-            top: 50px;
-            // font-size: 20px;
-        }
-    }
-}
-
-@media (max-width: 480px) {
-    section.hero {
-        height: 471px;
-        .bannerwrapper {
-            // width: 80%;
-            // background: red;
-            height: 426px;
-            left: 0px;
-            .tagline {
-                // left: 20px;
-                left: 0px;
-                width: 96%;
-                // margin-left: auto;
-                // margin-right: auto;
-
-                h2 {
-                    margin-left: auto;
-                    margin-right: auto;
-                    font-size: 80px;
-                    line-height: 64px;                 
-                    text-align: center;
-                }
-                h4 {
-                    margin-left: auto;
-                    margin-right: auto;
-                    text-align: center;
-                }
-            }
-            
-            .moon {
-                top: 20px;
-                left: 70px;
-                height: 230px;
-                width: 230px;
-            }
-            .wolf {
-                height: 250px;
-            }
-            
-        }
-    }
-}
-
-@media (max-width: 400px) {
-    section.contact {
-        .contactwrapper {
-            .contactform {
-                max-width: 300px;
-            }
-        }
-    }
-}
-
-@media (max-width: 320px) {
-    section.hero {
-        .bannerwrapper {
-            .moon {
-                left: 35px;
-            }
-        }
-    }
-
-    section.hello {
-        h2 {
-            font-size: 18px;
-        }
-    }
-
-    section.services {
-        .row {
-            .column {
-                p {
-                    width: 90%;    
-                }
-            }
-            padding-bottom: 30px;
-        }
-    }
-}
-
-// @media (max-width: 320px) {
-//     div.hero {
-//         .bannerwrapper {
-//             .tagline {
-//                 left: 0px;
-//             }
-//         }
-//     }
-// }
-
-
-
-
+/* All Media Queries */
+@import 'responsive';   /* CSS for all Media Queries */

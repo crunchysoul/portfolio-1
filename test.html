@@ -20,6 +20,8 @@
 </head>
 <body>
     <h1>Glenn Dimaliwat | Software Developer and Designer</h1>
+
+    <!-- Primary Navigation -->
     <nav class="primary-nav">
         <div class="navlinks">
             <ul>
@@ -43,8 +45,42 @@
                 </li>
             </ul>
         </div>
+
+        <div class="hamburgerwrapper">
+            <div class="burgericon">
+                <p id="menutext">MENU</p>
+                <div class="hamburger"></div>
+            </div>
+        </div>
     </nav>
 
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="navlinks">
+            <ul>
+                <li>
+                    <a id="#homebtn2" href="#" onclick="navigate(this.id);">HOME</a>
+                </li>
+                <li>
+                    <a id="#aboutbtn2" href="#" onclick="navigate(this.id);">ABOUT</a>
+                </li>
+                <li>
+                    <a id="#socialbtn2" href="#" onclick="navigate(this.id);">SOCIAL</a>
+                </li>
+                <li>
+                    <a id="#techbtn2" href="#" onclick="navigate(this.id);">TECH</a>
+                </li>
+                <li>
+                    <a id="#projectsbtn2" href="#" onclick="navigate(this.id);">PROJECTS</a>
+                </li>
+                <li>
+                    <a id="#contactbtn2" href="#" onclick="navigate(this.id);">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
     <section id="hero" class="hero">
         <img class="logo" src="/assets/img/logo.svg"/>
 
@@ -62,13 +98,15 @@
         </div>
     </section>
 
+    <!-- Hello Section -->
     <section id="hello" class="hello">
         <h2>
-            Hello! My name is Glenn, and I build <strong>creative</strong> and <strong>well-engineered</strong><br/>
+            Hello! My name is <strong>Glenn</strong>, and I build <strong>digitally handcrafted</strong><br/>
             software for the web and mobile.
         </h2>
     </section>
 
+    <!-- Services -->
     <section id="services" class="services">
         <div class="row">
             <div class="column">
@@ -130,6 +168,7 @@
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="aboutwrapper">
             <div class="aboutphoto"></div>
@@ -146,6 +185,7 @@
         </div>
     </section>
 
+    <!-- Social Section -->
     <section id="social" class="social">
         <div class="socialwrapper">
             <h2>Social Media</h2>
@@ -190,7 +230,7 @@
         </div>
     </section>
 
-    
+    <!-- Tech Stack Section -->
     <section id="tech" class="tech">
         <div class="techwrapper">
             <h2>Tech Stack</h2>
@@ -213,8 +253,8 @@
                 <div class="column tech6">
                     <h3>SCSS/SASS</h3>
                 </div>
-            </div>
-            <div class="row">
+            <!-- </div>
+            <div class="row"> -->
                 <div class="column tech7">
                     <h3>JavaScript</h3>
                 </div>
@@ -237,6 +277,7 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="projectswrapper">
             <h2>Projects</h2>
@@ -425,6 +466,7 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="contactwrapper">
             <h2>Contact Me</h2>
@@ -440,7 +482,6 @@
     </section>
     
     <!-- jQuery -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
     <script src="/assets/js/jquery-3.2.1.min.js"></script>
     <!-- Animations -->
     <script src="/assets/js/animation.js"></script>

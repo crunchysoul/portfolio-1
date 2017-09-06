@@ -1,0 +1,254 @@
+/* 
+*   All Media Queries
+*/
+
+@media (max-width: 920px) {
+    section.hello {
+        height: 160px;
+    }
+    section.services {
+        .row {
+            top: -40px;
+            .column {
+                .icon {
+                    height: 80px;
+                    width: 80px;
+
+                    h4 {
+                        font-size: 32px;
+                        line-height: 90px;
+                    }
+                }
+                h5 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 14px;
+                    width: 180px;
+                }
+            }
+        }
+    }
+    section.about {
+        .aboutwrapper {
+            .aboutme {
+                h2 {
+                    font-size: 45px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    section.social {
+        .socialwrapper {
+            h2 {
+                font-size: 45px;
+            }
+        }
+    }
+    section.tech {
+        .techwrapper {
+            h2 {
+                font-size: 45px;
+            }
+        }
+    }
+    section.projects {
+        .projectswrapper {
+            h2 {
+                font-size: 45px;
+            }
+        }
+    }
+    section.contact {
+        .contactwrapper {
+            h2 {
+                font-size: 45px;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    section.hero {
+        .bannerwrapper {
+            .wolf {
+                right: 0px;
+            }
+            .moon {
+                right: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 775px) {
+    section.hello {
+        h2 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 755px) {
+    section.services {
+        min-height: 550px;
+        .row {
+            top: 0px;
+            max-width: 500px;
+            .column {
+                height: auto;
+                p {
+                    text-align: center;
+                }
+                hr {
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    section.about {
+        .aboutwrapper {
+            .aboutme {
+                width: 100%;
+            }
+            .aboutphoto {
+                height: 440px;
+                img {
+                    height: 440px;
+                    width: auto;
+                }
+            }
+        }
+        
+    }     
+}
+
+/* Switch to Regular Menu */
+@media (max-width: 680px) {
+    nav.primary-nav {
+        /* Hide Desktop Navigation */
+        .navlinks {
+            display: none;
+        }
+    }
+}
+/* Switch to Hamburger Menu */
+@media (min-width: 680px) {
+    nav.primary-nav {
+        /* Hide Hamburger Icon */
+        .hamburgerwrapper {
+            display: none;
+        }
+    }
+}    
+
+@media (max-width: 570px) {
+    section.hero {
+        .bannerwrapper {
+            .moon {
+                left: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    section.hello {
+        h2 {
+            top: 50px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    section.hero {
+        height: 471px;
+        .bannerwrapper {
+            height: 426px;
+            left: 0px;
+            .tagline {
+                left: 0px;
+                width: 96%;
+
+                h2 {
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-size: 80px;
+                    line-height: 64px;                 
+                    text-align: center;
+                }
+                h4 {
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                }
+            }
+            
+            .moon {
+                top: 20px;
+                left: 70px;
+                height: 230px;
+                width: 230px;
+            }
+            .wolf {
+                height: 250px;
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    section.contact {
+        .contactwrapper {
+            .contactform {
+                max-width: 300px;
+            }
+        }
+    }
+
+    section.tech {
+        .techwrapper {
+            .row {
+                .column {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    section.hero {
+        .bannerwrapper {
+            .moon {
+                left: 35px;
+            }
+        }
+    }
+
+    section.hello {
+        h2 {
+            font-size: 18px;
+        }
+    }
+
+    section.services {
+        .row {
+            .column {
+                p {
+                    width: 90%;    
+                }
+            }
+            padding-bottom: 30px;
+        }
+    }
+}

@@ -1,3 +1,6 @@
+/*
+*   Cross Browser Mixins
+*/
 @mixin animation-name($value) {
     animation-name: $value;
     -webkit-animation-name: $value;
@@ -11,13 +14,15 @@
     -webkit-animation-timing-function: ease-in-out;
 }
 
+/*
+*   Fade-in Effect 0.8s
+*/
 .fadeIn{
     @include animation-name(fadeIn);
     @include animation-duration(0.8s);
     @include animation-timing-function(ease-in-out);
     visibility: visible !important;
 }
-
 @keyframes fadeIn {
     0% {
         transform: scale(0);
@@ -35,7 +40,6 @@
         opacity: 1;
     }
 }
-
 @-webkit-keyframes fadeIn {
     0% {
         -webkit-transform: scale(0);
@@ -54,13 +58,15 @@
     }
 }
 
+/*
+*   Fade-in Effect 1.0s
+*/
 .fadeIn2{
     @include animation-name(fadeIn2);
     @include animation-duration(1.0s);
     @include animation-timing-function(ease-in-out);
     visibility: visible !important;
 }
-
 @keyframes fadeIn2 {
     0% {
         transform: scale(0);
@@ -78,7 +84,6 @@
         opacity: 1;
     }
 }
-
 @-webkit-keyframes fadeIn2 {
     0% {
         -webkit-transform: scale(0);
@@ -97,13 +102,15 @@
     }
 }
 
+/*
+*   Fade-in Effect 1.2s
+*/
 .fadeIn3{
     @include animation-name(fadeIn3);
     @include animation-duration(1.2s);
     @include animation-timing-function(ease-in-out);
     visibility: visible !important;
 }
-
 @keyframes fadeIn3 {
     0% {
         transform: scale(0);
@@ -121,7 +128,6 @@
         opacity: 1;
     }
 }
-
 @-webkit-keyframes fadeIn3 {
     0% {
         -webkit-transform: scale(0);
@@ -140,13 +146,15 @@
     }
 }
 
+/*
+*   Fade-in Effect 1.4s
+*/
 .fadeIn4{
     @include animation-name(fadeIn4);
     @include animation-duration(1.4s);
     @include animation-timing-function(ease-in-out);
     visibility: visible !important;
 }
-
 @keyframes fadeIn4 {
     0% {
         transform: scale(0);
@@ -164,7 +172,6 @@
         opacity: 1;
     }
 }
-
 @-webkit-keyframes fadeIn4 {
     0% {
         -webkit-transform: scale(0);
@@ -183,6 +190,10 @@
     }
 }
 
+/*
+*   Fade-in Effect 4.5s
+*   But don't transform -- This is used for the Wolf
+*/
 .fadeIn5 {
     @include animation-name(fadeIn5);
     @include animation-duration(4.5s);
@@ -206,8 +217,7 @@
     }
 }
 
-/* Navigation Menu Sliders */
-
+/* Navigation Menu Slide Down */
 @keyframes slideDown {
 	0% {
         top: -45px;
@@ -239,6 +249,7 @@
     }
 }
 
+/* Navigation Menu Slide Up */
 @keyframes slideUp {
 	0% {
         top: 0px;
@@ -270,3 +281,32 @@
         opacity: 0.0;
     }
 }
+
+/* Toggle Classes for Navigation Bar Animations */
+.nav-up {
+    @include animation-name(slideUp);
+    @include animation-duration(1s);
+    @include animation-timing-function(ease-out);
+    .navlinks {
+        display: none;
+    }
+    .hamburgerwrapper {
+        visibility: hidden;
+    }
+}
+.nav-down {
+    @include animation-name(slideDown);
+    @include animation-duration(0.5s);
+    @include animation-timing-function(ease-in);
+    visibility: visible !important;
+    box-shadow: $dropshadow;
+    background: $ashblue;
+}
+.nav-top {
+    @include animation-name(slideDown);
+    @include animation-duration(0.5s);
+    @include animation-timing-function(ease);
+    top: 0;
+    background: none !important;
+}
+

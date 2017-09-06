@@ -7,17 +7,33 @@ var lastScrollTop = 0;
 var delta = 2;
 var navbarHeight = $('nav.primary-nav').outerHeight();
 
+/*
+*	For mobile navigation
+*/
+var mobile_navigation_displayed = false;
+
+/*
+*	Detect page Scroll
+*/
 $(window).scroll(function(event){
 	didScroll = true;
 });
 
 setInterval(function() {
-	if (didScroll) {
-		hasScrolled();
-		didScroll = false;
+	/* If mobile navigation is off */
+	if(mobile_navigation_displayed == false) {
+		
+		/* Detect Scrolling */
+		if (didScroll) {
+			hasScrolled();
+			didScroll = false;
+		}
 	}
 }, 250);
 
+/*
+* When page is scrolled
+*/
 function hasScrolled() {
 	var st = $(this).scrollTop();
 	
@@ -29,11 +45,12 @@ function hasScrolled() {
 	// This is necessary so you never see what is "behind" the navbar.
 	if (st <= 45) {
 		// Top of the page
-		$('nav.primary-nav').removeClass('nav-down').removeClass('nav-up').addClass('nav-top');;
+		$('nav.primary-nav').removeClass('nav-down').removeClass('nav-up').addClass('nav-top');
 	}
 	else if (st > lastScrollTop && st > navbarHeight){
 		// Scroll Down
 		$('nav.primary-nav').removeClass('nav-top').removeClass('nav-down').addClass('nav-up');
+
 	} else {
 		// Scroll Up
 		if(st + $(window).height() < $(document).height()) {
@@ -88,23 +105,75 @@ $(window).scroll(function() {
 	});
 });
 
-
+/*
+*	When page is loaded
+*/
 $(document).ready(function() {
+
 	/* Load the Moon */
 	$('#moon').each(function(){
 		$(this).addClass("fadeIn4");
 	});
+
 	/* Load the Wolf */
 	$('#wolf').each(function(){
 		$(this).addClass("fadeIn5");
 	});
 
-	/* If scroll bar is not a top on page reload */
+	/* If scroll bar is not on top on page reload */
 	var st = $(this).scrollTop();
 	if (st!=0) {
 		$('nav.primary-nav').removeClass('nav-top').removeClass('nav-down').addClass('nav-up');	
+		
 	}
+
+	/* Hamburger Icon */
+	$('.burgericon').click(function(){
+		var top_page = false;
+
+		if(mobile_navigation_displayed==true) {
+			mobile_navigation_displayed = false;
+			menutext.innerHTML = 'MENU';
+			if(lastScrollTop==0) {
+				/* Show Nav Bar Transparent since we are at the top of the page */
+				$('nav.primary-nav').removeClass('nav-down').removeClass('nav-up').addClass('nav-top');
+				top_page = true;
+			}
+		}
+		else {
+			mobile_navigation_displayed = true;
+			menutext.innerHTML = 'CLOSE';
+		}
+		
+		/* Toggle Mobile Navigation Icon */
+		$('.burgericon').toggleClass('active');
+
+		/* Show Mobile Navigation */
+		$('div.mobile-nav').toggleClass('mobile-nav-active');
+	
+		/* Show Nav Bar with Color only if we are not at the top of the page */
+		if(top_page==false) {
+			$('nav.primary-nav').removeClass('nav-top').removeClass('nav-up').addClass('nav-down');
+		}
+	})
 });
+
+function hide_mobile_navigation() {
+	/* Remove Mobile Navigation Active */
+	$('div.mobile-nav').removeClass('mobile-nav-active');
+
+	/* Remove Mobile Icon Active */
+	$('.burgericon').removeClass('active');
+
+	/* Hide Mobile Navigation Menu */
+	$('nav.primary-nav').removeClass('nav-top').removeClass('nav-down').addClass('nav-up');
+
+	/* Set variable to off */
+	mobile_navigation_displayed = false;
+
+	/* Set menutext to MENU */
+	menutext.innerHTML = 'MENU';
+}
 
 /* Navigation for Sections */
 function navigate(btn) {
@@ -129,7 +198,7 @@ function navigate(btn) {
 			scrollTop: $("#tech").offset().top
 		}, 1000);
 	}
-	else if (btn == "#projectsbtnn") {
+	else if (btn == "#projectsbtn") {
 		$('html, body').animate({
 			scrollTop: $("#projects").offset().top
 		}, 1000);
@@ -138,5 +207,43 @@ function navigate(btn) {
 		$('html, body').animate({
 			scrollTop: $("#contact").offset().top
 		}, 1000);
+	}
+	else if (btn == "#homebtn2") {
+		$('html, body').animate({
+			scrollTop: $("#hero").offset().top
+		}, 1000);
+		hide_mobile_navigation();
+		// Top of the page -- Since Home is top of the page
+		$('nav.primary-nav').removeClass('nav-down').removeClass('nav-up').addClass('nav-top');;
+	}
+	else if (btn == "#aboutbtn2") {
+		$('html, body').animate({
+			scrollTop: $("#about").offset().top
+		}, 1000);
+		hide_mobile_navigation();
+	}
+	else if (btn == "#socialbtn2") {
+		$('html, body').animate({
+			scrollTop: $("#social").offset().top
+		}, 1000);
+		hide_mobile_navigation();
+	}
+	else if (btn == "#techbtn2") {
+		$('html, body').animate({
+			scrollTop: $("#tech").offset().top
+		}, 1000);
+		hide_mobile_navigation();
+	}
+	else if (btn == "#projectsbtn2") {
+		$('html, body').animate({
+			scrollTop: $("#projects").offset().top
+		}, 1000);
+		hide_mobile_navigation();
+	}
+	else if (btn == "#contactbtn2") {
+		$('html, body').animate({
+			scrollTop: $("#contact").offset().top
+		}, 1000);
+		hide_mobile_navigation();
 	}
 }

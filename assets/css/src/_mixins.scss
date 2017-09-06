@@ -1,0 +1,28 @@
+/*
+*   Mixins for Cross-browser Border Radius
+*/
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+/*
+*   Mixins for Cross-browser Transition
+*/
+@mixin transition($value) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+    -o-transition: $value;
+    transition: $value;
+}
+
+/*
+* Mixins for Cross-browser Transform
+*/
+@mixin transform($value) {
+    -ms-transform: $value;
+    -webkit-transform: $value;
+    transform: $value;
+}

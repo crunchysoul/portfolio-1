@@ -1,3 +1,35 @@
+/*
+*   Color Scheme
+*/
+/*
+*   Transparent Colors
+*/
+/*
+*   Fonts
+*/
+/*
+*   Shadows
+*/
+/*
+*   Other CSS Files
+*/
+/*
+*   Mixins for Cross-browser Border Radius
+*/
+/*
+*   Mixins for Cross-browser Transition
+*/
+/*
+* Mixins for Cross-browser Transform
+*/
+/* Some custom mixins */
+/* Mixins for Cross-browser Flexbox */
+/*
+*   Cross Browser Mixins
+*/
+/*
+*   Fade-in Effect 0.8s
+*/
 .fadeIn {
   animation-name: fadeIn;
   -webkit-animation-name: fadeIn;
@@ -31,6 +63,9 @@
   100% {
     -webkit-transform: scale(1);
     opacity: 1; } }
+/*
+*   Fade-in Effect 1.0s
+*/
 .fadeIn2 {
   animation-name: fadeIn2;
   -webkit-animation-name: fadeIn2;
@@ -64,6 +99,9 @@
   100% {
     -webkit-transform: scale(1);
     opacity: 1; } }
+/*
+*   Fade-in Effect 1.2s
+*/
 .fadeIn3 {
   animation-name: fadeIn3;
   -webkit-animation-name: fadeIn3;
@@ -97,6 +135,9 @@
   100% {
     -webkit-transform: scale(1);
     opacity: 1; } }
+/*
+*   Fade-in Effect 1.4s
+*/
 .fadeIn4 {
   animation-name: fadeIn4;
   -webkit-animation-name: fadeIn4;
@@ -130,6 +171,10 @@
   100% {
     -webkit-transform: scale(1);
     opacity: 1; } }
+/*
+*   Fade-in Effect 4.5s
+*   But don't transform -- This is used for the Wolf
+*/
 .fadeIn5 {
   animation-name: fadeIn5;
   -webkit-animation-name: fadeIn5;
@@ -149,7 +194,7 @@
     opacity: 0.0; }
   100% {
     opacity: 1; } }
-/* Navigation Menu Sliders */
+/* Navigation Menu Slide Down */
 @keyframes slideDown {
   0% {
     top: -45px;
@@ -170,6 +215,7 @@
   100% {
     top: 0px;
     opacity: 1; } }
+/* Navigation Menu Slide Up */
 @keyframes slideUp {
   0% {
     top: 0px;
@@ -190,16 +236,7 @@
   100% {
     top: -45px;
     opacity: 0.0; } }
-* {
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: 'Raleway',Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif; }
-
-h1 {
-  display: none; }
-
+/* Toggle Classes for Navigation Bar Animations */
 .nav-up {
   animation-name: slideUp;
   -webkit-animation-name: slideUp;
@@ -209,6 +246,8 @@ h1 {
   -webkit-animation-timing-function: ease-in-out; }
   .nav-up .navlinks {
     display: none; }
+  .nav-up .hamburgerwrapper {
+    visibility: hidden; }
 
 .nav-down {
   animation-name: slideDown;
@@ -231,6 +270,30 @@ h1 {
   top: 0;
   background: none !important; }
 
+/* CSS for all the Animations */
+/* Set all elements to margin 0 and padding 0 */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Change colors for text highlighting */
+::selection {
+  background: #87A6BD;
+  color: #FFFFFF; }
+
+::-moz-selection {
+  background: #87A6BD;
+  color: #FFFFFF; }
+
+/* Body */
+body {
+  font-family: "Raleway", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* Set Heading 1 to None - for SEO purposes */
+h1 {
+  display: none; }
+
+/* Primary Navigation */
 nav.primary-nav {
   position: fixed;
   top: 0;
@@ -242,13 +305,13 @@ nav.primary-nav {
   -moz-transition: all ease 0.5s;
   -ms-transition: all ease 0.5s;
   -o-transition: all ease 0.5s;
-  transition: all ease 0.5s; }
+  transition: all ease 0.5s;
+  /* Desktop Navigation */
+  /* Mobile Navigation Icon */ }
   nav.primary-nav .navlinks {
     position: absolute;
     right: 10px;
     top: 10px;
-    padding: 0;
-    margin: 0;
     text-align: right;
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
@@ -277,7 +340,8 @@ nav.primary-nav {
         -moz-box-flex: auto;
         -webkit-flex: auto;
         -ms-flex: auto;
-        flex: auto; }
+        flex: auto;
+        /* When navigation is hovered, add background color and font color */ }
         nav.primary-nav .navlinks ul li a {
           text-decoration: none;
           font-size: 14px;
@@ -294,7 +358,149 @@ nav.primary-nav {
         nav.primary-nav .navlinks ul li a:hover {
           color: #343E4E;
           background: #FFFFFF; }
+  nav.primary-nav .hamburgerwrapper {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    justify-content: flex-end;
+    -ms-flex-pack: flex-end;
+    /* CSS for when the Hamburger is Clicked */ }
+    nav.primary-nav .hamburgerwrapper .burgericon {
+      -webkit-box-flex: auto;
+      -moz-box-flex: auto;
+      -webkit-flex: auto;
+      -ms-flex: auto;
+      flex: auto;
+      position: relative;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      cursor: pointer; }
+      nav.primary-nav .hamburgerwrapper .burgericon p {
+        position: relative;
+        top: 3px;
+        right: 65px;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 300;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s; }
+      nav.primary-nav .hamburgerwrapper .burgericon .hamburger {
+        width: 24px;
+        height: 2px;
+        background: #FFFFFF;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s; }
+      nav.primary-nav .hamburgerwrapper .burgericon .hamburger:before,
+      nav.primary-nav .hamburgerwrapper .burgericon .hamburger:after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background: #FFFFFF;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s; }
+      nav.primary-nav .hamburgerwrapper .burgericon .hamburger:before {
+        top: -7px; }
+      nav.primary-nav .hamburgerwrapper .burgericon .hamburger:after {
+        top: 7px; }
+    nav.primary-nav .hamburgerwrapper .burgericon.active .hamburger {
+      background: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0); }
+    nav.primary-nav .hamburgerwrapper .burgericon.active .hamburger:before {
+      top: 0px;
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    nav.primary-nav .hamburgerwrapper .burgericon.active .hamburger:after {
+      top: 0px;
+      -ms-transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+      transform: rotate(135deg); }
 
+/* Mobile Navigation Icon */
+div.mobile-nav {
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  padding-bottom: 35px;
+  background: #9EBDCE;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  visibility: hidden;
+  z-index: 15; }
+  div.mobile-nav ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    justify-content: flex-end;
+    -ms-flex-pack: flex-end;
+    list-style: none; }
+    div.mobile-nav ul li {
+      text-align: center;
+      min-width: 100%;
+      padding: 10px;
+      -webkit-box-flex: auto;
+      -moz-box-flex: auto;
+      -webkit-flex: auto;
+      -ms-flex: auto;
+      flex: auto; }
+      div.mobile-nav ul li a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 20px;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        padding: 10px; }
+      div.mobile-nav ul li a:hover {
+        background: #FFFFFF;
+        color: #343E4E; }
+        div.mobile-nav ul li a:hover {
+          background: #FFFFFF;
+          color: #343E4E; }
+
+/* Hide Mobile Navigation */
+.mobile-nav-active {
+  visibility: visible !important; }
+
+/* Hero Section */
 section.hero {
   position: relative;
   width: 100%;
@@ -394,6 +600,7 @@ section.hero {
       -o-transition: all ease 0.5s;
       transition: all ease 0.5s; }
 
+/* Hello Section */
 section.hello {
   position: relative;
   width: 100%;
@@ -417,6 +624,7 @@ section.hello {
     -o-transition: all ease 0.5s;
     transition: all ease 0.5s; }
 
+/* Services Section */
 section.services {
   position: relative;
   width: 100%;
@@ -524,6 +732,7 @@ section.services {
         color: #87A6BD;
         border-color: #87A6BD; }
 
+/* About Section */
 section.about {
   position: relative;
   width: 100%;
@@ -597,12 +806,14 @@ section.about {
         -ms-transition: all ease 0.5s;
         -o-transition: all ease 0.5s;
         transition: all ease 0.5s; }
+      section.about .aboutwrapper .aboutme p:first-of-type {
+        margin-top: 5px; }
       section.about .aboutwrapper .aboutme p {
         display: inline-block;
         position: relative;
         margin-left: 5vw;
         margin-right: 5vw;
-        margin-top: 5px;
+        margin-top: -15px;
         padding-bottom: 33px;
         font-size: 19px;
         font-weight: 300;
@@ -613,6 +824,7 @@ section.about {
         -o-transition: all ease 0.5s;
         transition: all ease 0.5s; }
 
+/* Social Section */
 section.social {
   position: relative;
   width: 100%;
@@ -658,12 +870,12 @@ section.social {
       justify-content: center;
       -ms-flex-pack: center;
       width: 100%;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       -webkit-transition: all ease 0.5s;
       -moz-transition: all ease 0.5s;
       -ms-transition: all ease 0.5s;
       -o-transition: all ease 0.5s;
       transition: all ease 0.5s;
+      /* When a social media icon is hovered, add background color and increase font size */
       /* List of Social Media Links */ }
       section.social .socialwrapper .row .column {
         -webkit-box-flex: auto;
@@ -710,6 +922,7 @@ section.social {
       section.social .socialwrapper .row .social4, section.social .socialwrapper .row .social8, section.social .socialwrapper .row .social12 {
         background: #8F847F; }
 
+/* Tech Stack Section */
 section.tech {
   position: relative;
   width: 100%;
@@ -750,8 +963,12 @@ section.tech {
       -moz-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
       width: 100%;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       -webkit-transition: all ease 0.5s;
       -moz-transition: all ease 0.5s;
       -ms-transition: all ease 0.5s;
@@ -766,7 +983,10 @@ section.tech {
         flex: auto;
         height: 80px;
         width: 160px;
+        max-width: 160px;
+        margin: 5px;
         background: #D4D7DD;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         -webkit-transition: all ease 0.5s;
         -moz-transition: all ease 0.5s;
         -ms-transition: all ease 0.5s;
@@ -790,6 +1010,7 @@ section.tech {
       section.tech .techwrapper .row .tech4, section.tech .techwrapper .row .tech8, section.tech .techwrapper .row .tech12 {
         background: #8F847F; }
 
+/* Projects Section */
 section.projects {
   position: relative;
   width: 100%;
@@ -883,7 +1104,8 @@ section.projects {
           position: absolute;
           bottom: 10px;
           right: 10px;
-          width: 135px; }
+          width: 135px;
+          /* When git/figma link is hovered, add background color and font color */ }
           section.projects .projectswrapper .row .column .gitlink a {
             text-decoration: none; }
             section.projects .projectswrapper .row .column .gitlink a .viewgit {
@@ -942,6 +1164,7 @@ section.projects {
         section.projects .projectswrapper .row .project9 .title h3 {
           font-size: 30px; }
 
+/* Contact Me Section */
 section.contact {
   position: relative;
   width: 100%;
@@ -979,9 +1202,7 @@ section.contact {
         width: 100%;
         margin-top: 25px;
         text-align: center;
-        /* Style inputs with type="text", select elements and textareas */
-        /* Style the submit button with a specific background color etc */
-        /* When moving the mouse over the submit button, add a darker green color */
+        /* When moving the mouse over the submit button, add a background and font color */
         /* Add a background color and some padding around the form */ }
         section.contact .contactwrapper .contactform form input[type=text] {
           width: 100%;
@@ -1037,7 +1258,8 @@ section.contact {
           -moz-transition: all ease 0.5s;
           -ms-transition: all ease 0.5s;
           -o-transition: all ease 0.5s;
-          transition: all ease 0.5s; }
+          transition: all ease 0.5s;
+          /* Add some padding to font awesome */ }
           section.contact .contactwrapper .contactform form button[type=submit] .fa {
             padding-left: 5px; }
         section.contact .contactwrapper .contactform form button[type=submit]:hover {
@@ -1048,7 +1270,10 @@ section.contact {
           background-color: #f2f2f2;
           padding: 20px; }
 
-/* Start of Media Queries */
+/* All Media Queries */
+/* 
+*   All Media Queries
+*/
 @media (max-width: 920px) {
   section.hello {
     height: 160px; }
@@ -1112,9 +1337,18 @@ section.contact {
     section.about .aboutwrapper .aboutphoto img {
       height: 440px;
       width: auto; } }
+/* Switch to Regular Menu */
 @media (max-width: 680px) {
-  nav.primary-nav .navlinks {
-    display: none; } }
+  nav.primary-nav {
+    /* Hide Desktop Navigation */ }
+    nav.primary-nav .navlinks {
+      display: none; } }
+/* Switch to Hamburger Menu */
+@media (min-width: 680px) {
+  nav.primary-nav {
+    /* Hide Hamburger Icon */ }
+    nav.primary-nav .hamburgerwrapper {
+      display: none; } }
 @media (max-width: 570px) {
   section.hero .bannerwrapper .moon {
     left: 40px; } }
@@ -1149,7 +1383,11 @@ section.contact {
         height: 250px; } }
 @media (max-width: 400px) {
   section.contact .contactwrapper .contactform {
-    max-width: 300px; } }
+    max-width: 300px; }
+
+  section.tech .techwrapper .row .column {
+    margin-left: 0px;
+    margin-right: 0px; } }
 @media (max-width: 320px) {
   section.hero .bannerwrapper .moon {
     left: 35px; }
@@ -1161,5 +1399,6 @@ section.contact {
     padding-bottom: 30px; }
     section.services .row .column p {
       width: 90%; } }
+/* CSS for all Media Queries */
 
 /*# sourceMappingURL=main.css.map */
