@@ -30,9 +30,9 @@ The spotify playlist can be found at https://goo.gl/qkK2sU
 # Inspiration
 My tagline is inspired by these popular quotes.
 + *“Shoot for the moon. Even if you miss, you'll land among the stars.”* ― Norman Vincent Peale
-![](http://www.glenndimaliwat.com/assets/img/inspiration/aimmoon.jpg)
+- ![](http://www.glenndimaliwat.com/assets/img/inspiration/aimmoon.jpg)
 + *"Move fast and break things"* — Mark Zuckerberg
-![](![](http://www.glenndimaliwat.com/assets/img/inspiration/aimmoon.jpg)
+- ![](![](http://www.glenndimaliwat.com/assets/img/inspiration/zuckerberg.jpg)
 + *"Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better."* — Samuel Beckett
 
 + Other popular *fail fast* slogan - https://www.startupinstitute.com/blog/2015-5-6-inspirational-quotes-about-failure
