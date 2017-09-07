@@ -13,9 +13,6 @@ $white: #FFFFFF;
 *   Transparent Colors
 */
 $colorless: rgba(255, 255, 255, 0);
-// $deeptransparent: rgba(52, 62, 78, 0.9);
-// $truetransparent: rgba(135, 166, 189, 0.5);
-// $transparentblue: rgba(158, 189, 206, 0.9);
 
 /*
 *   Fonts
@@ -31,7 +28,7 @@ $lightshadow: 0 2px 5px rgba(0,0,0,.2);
 $noshadow: 0 2px 5px rgba(0,0,0,0);
 
 /*
-*   Other CSS Files
+*   Other SCSS Files
 */
 @import 'mixins';       /* Some custom mixins */
 @import 'flexbox';      /* Mixins for Cross-browser Flexbox */
@@ -270,8 +267,6 @@ section.hero {
                 font-weight: normal;            
                 font-size: 130px;
                 line-height: 104px;
-                margin: 0;
-                padding: 0;
                 right: 0px;
                 color: $white;
                 text-align: right;
@@ -784,7 +779,6 @@ section.projects {
                             text-align: center;
                             @include transition(all ease .5s);
                             box-shadow: $dropshadow;
-                            // -webkit-tap-highlight-color: $colorless; /* Remove button highlight from touch screen devices */
                         }
                     }
 

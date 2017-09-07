@@ -131,6 +131,7 @@ $(document).ready(function() {
 	$('.burgericon').click(function(){
 		var top_page = false;
 
+		/* Is the mobile navigation displayed on screen? */
 		if(mobile_navigation_displayed==true) {
 			mobile_navigation_displayed = false;
 			menutext.innerHTML = 'MENU';
