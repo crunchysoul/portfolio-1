@@ -767,14 +767,14 @@ section.projects {
                     width: 135px;
                     a {
                         text-decoration: none;
-                        .viewgit {
+                        .view {
                             position: relative;
                             padding-top: 12px;
                             width: 135px;
                             height: 30px;
                             border-radius: 10px;
                             background: $brown;
-                            font-size: 14px;
+                            font-size: 15px;
                             color: $white;
                             text-align: center;
                             @include transition(all ease .5s);
@@ -784,7 +784,7 @@ section.projects {
 
                     /* When git/figma link is hovered, add background color and font color */
                     a:hover {
-                        .viewgit {
+                        .view {
                             background: $gray;
                             color: $deepblue;
                         }
@@ -925,6 +925,7 @@ section.resume {
                 color: $white;
                 font-family: $changa;
                 font-size: 36px;
+                font-weight: normal;
                 box-shadow: $dropshadow;
                 cursor: pointer;
                 @include transition(all ease .5s);
@@ -1031,6 +1032,7 @@ section.contact {
                     background-color: $brown;
                     color: $white;
                     font-family: $changa;
+                    font-weight: normal;
                     font-size: 36px;
                     box-shadow: $dropshadow;
                     cursor: pointer;
