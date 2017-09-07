@@ -1354,7 +1354,7 @@ section.contact {
 section.footer {
   position: relative;
   width: 100%;
-  padding-top: 24px;
+  padding-top: 25px;
   padding-bottom: 20px;
   background-color: #343E4E; }
   section.footer .footerwrapper {
@@ -1376,14 +1376,9 @@ section.footer {
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
       section.footer .footerwrapper h4 a {
         text-decoration: none;
-        color: #FFFFFF;
-        -webkit-transition: all ease 0.5s;
-        -moz-transition: all ease 0.5s;
-        -ms-transition: all ease 0.5s;
-        -o-transition: all ease 0.5s;
-        transition: all ease 0.5s; }
+        color: #FFFFFF; }
       section.footer .footerwrapper h4 a:hover {
-        color: #CCDBE3; }
+        color: #D4D7DD; }
       section.footer .footerwrapper h4 .fa {
         padding-left: 5px; }
     section.footer .footerwrapper .logo {

@@ -1069,7 +1069,7 @@ section.contact {
 section.footer {
     position: relative;
     width: 100%;
-    padding-top: 24px;
+    padding-top: 25px;
     padding-bottom: 20px;
     background-color: $deepblue;
 
@@ -1096,10 +1096,9 @@ section.footer {
             a {
                 text-decoration: none;
                 color: $white;
-                @include transition(all ease .5s);
             }
             a:hover {
-                color: $moonblue;
+                color: $gray;
             }
             .fa {
                 padding-left: 5px;
