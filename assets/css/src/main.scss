@@ -12,6 +12,7 @@ $white: #FFFFFF;
 /*
 *   Transparent Colors
 */
+$colorless: rgba(255, 255, 255, 0);
 // $deeptransparent: rgba(52, 62, 78, 0.9);
 // $truetransparent: rgba(135, 166, 189, 0.5);
 // $transparentblue: rgba(158, 189, 206, 0.9);
@@ -126,7 +127,7 @@ nav.primary-nav {
             width: 30px;
             height: 30px;
             cursor: pointer;
-            -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); /* Remove button highlight from touch screen devices */
+            -webkit-tap-highlight-color: $colorless; /* Remove button highlight from touch screen devices */
             
             p {
                 position: relative;
@@ -227,7 +228,6 @@ div.mobile-nav {
 .mobile-nav-active {
     visibility: visible !important;
 }
-
 
 /* Hero Section */
 section.hero {
@@ -507,7 +507,6 @@ section.about {
             }
         }
     }
-    
 }
 
 /* Social Section */
@@ -785,6 +784,7 @@ section.projects {
                             text-align: center;
                             @include transition(all ease .5s);
                             box-shadow: $dropshadow;
+                            // -webkit-tap-highlight-color: $colorless; /* Remove button highlight from touch screen devices */
                         }
                     }
 
@@ -875,6 +875,79 @@ section.projects {
     }
 }
 
+/* Resume Section */
+section.resume {
+    position: relative;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: $white;
+    box-shadow: $dropshadow;
+
+    .resumewrapper {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 960px;
+        text-align: center;
+
+        h2 {
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 25px;
+            font-family: $changa;
+            font-size: 64px;
+            font-weight: normal;
+            color: $deepblue;
+            text-align: center;
+            text-shadow: $dropshadow;
+            @include transition(all ease .5s);
+        }
+
+        .resumebuttons {
+            margin-left: auto;
+            margin-right: auto;
+            @include flexbox();
+            @include flex-wrap(wrap);
+            @include justify-content(center);
+        
+            button:focus {
+                outline:0;
+            }
+            button[type=button] {
+                @include flex(auto);
+                position: relative;
+                width: 200px;
+                max-width: 200px;
+                max-width: 200px;
+                height: 80px;
+                margin: 10px;
+                border: none;
+                border-radius: 15px;
+                background-color: $brown;
+                color: $white;
+                font-family: $changa;
+                font-size: 36px;
+                box-shadow: $dropshadow;
+                cursor: pointer;
+                @include transition(all ease .5s);
+                
+                .fa {
+                    padding-right: 5px;
+                }
+            }
+
+            /* When moving the mouse over the submit button, add a background and font color */
+            button[type=button]:hover {
+                background-color: $gray;
+                color: $deepblue;
+            }
+        }
+    }
+}
 /* Contact Me Section */
 section.contact {
     position: relative;
@@ -950,6 +1023,9 @@ section.contact {
                     border: 1px solid $deepblue;
                 }
 
+                button:focus {
+                    outline:0;
+                }
                 button[type=submit] {
                     position: relative;
                     width: 200px;
@@ -964,7 +1040,7 @@ section.contact {
                     box-shadow: $dropshadow;
                     cursor: pointer;
                     @include transition(all ease .5s);
-
+                    
                     /* Add some padding to font awesome */
                     .fa {
                         padding-left: 5px;

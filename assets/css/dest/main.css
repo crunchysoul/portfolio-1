@@ -1158,6 +1158,89 @@ section.projects {
         section.projects .projectswrapper .row .project9 .title h3 {
           font-size: 30px; }
 
+/* Resume Section */
+section.resume {
+  position: relative;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  section.resume .resumewrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 960px;
+    text-align: center; }
+    section.resume .resumewrapper h2 {
+      position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 25px;
+      font-family: "Changa One", cursive;
+      font-size: 64px;
+      font-weight: normal;
+      color: #343E4E;
+      text-align: center;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      transition: all ease 0.5s; }
+    section.resume .resumewrapper .resumebuttons {
+      margin-left: auto;
+      margin-right: auto;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      /* When moving the mouse over the submit button, add a background and font color */ }
+      section.resume .resumewrapper .resumebuttons button:focus {
+        outline: 0; }
+      section.resume .resumewrapper .resumebuttons button[type=button] {
+        -webkit-box-flex: auto;
+        -moz-box-flex: auto;
+        -webkit-flex: auto;
+        -ms-flex: auto;
+        flex: auto;
+        position: relative;
+        width: 200px;
+        max-width: 200px;
+        max-width: 200px;
+        height: 80px;
+        margin: 10px;
+        border: none;
+        border-radius: 15px;
+        background-color: #8F847F;
+        color: #FFFFFF;
+        font-family: "Changa One", cursive;
+        font-size: 36px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s; }
+        section.resume .resumewrapper .resumebuttons button[type=button] .fa {
+          padding-right: 5px; }
+      section.resume .resumewrapper .resumebuttons button[type=button]:hover {
+        background-color: #D4D7DD;
+        color: #343E4E; }
+
 /* Contact Me Section */
 section.contact {
   position: relative;
@@ -1236,6 +1319,8 @@ section.contact {
         section.contact .contactwrapper .contactform form input[type=text]:focus, section.contact .contactwrapper .contactform form textarea:focus {
           box-shadow: 0 0 5px #343E4E;
           border: 1px solid #343E4E; }
+        section.contact .contactwrapper .contactform form button:focus {
+          outline: 0; }
         section.contact .contactwrapper .contactform form button[type=submit] {
           position: relative;
           width: 200px;
@@ -1299,6 +1384,9 @@ section.contact {
     font-size: 45px; }
 
   section.projects .projectswrapper h2 {
+    font-size: 45px; }
+
+  section.resume .resumewrapper h2 {
     font-size: 45px; }
 
   section.contact .contactwrapper h2 {
