@@ -217,63 +217,63 @@
     }
 }
 
-/*
-*   Fade-out Effect 0.8s
-*/
-.fadeOut {
-    @include animation-name(fadeOut);
-    @include animation-duration(0.8s);
-    @include animation-timing-function(ease-out);
-    visibility: visible !important;
-}
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@-webkit-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
+// /*
+// *   Fade-out Effect 0.8s
+// */
+// .fadeOut {
+//     @include animation-name(fadeOut);
+//     @include animation-duration(0.8s);
+//     @include animation-timing-function(ease-out);
+//     visibility: visible !important;
+// }
+// @keyframes fadeOut {
+//     0% {
+//         opacity: 1;
+//     }
+//     100% {
+//         opacity: 0;
+//     }
+// }
+// @-webkit-keyframes fadeOut {
+//     0% {
+//         opacity: 1;
+//     }
+//     100% {
+//         opacity: 0;
+//     }
+// }
 
-/* Navigation Menu Slide Down */
-@keyframes slideDown {
-	0% {
-        top: -45px;
-        opacity: 0.0;
-    }
+// /* Navigation Menu Slide Down */
+// @keyframes slideDown {
+// 	0% {
+//         top: -45px;
+//         opacity: 0.0;
+//     }
 
-    60% {
-        top: 0px;
-        opacity: 1;
-    }
-    100% {
-        top: 0px;
-        opacity: 1;
-    }
-}
-@-webkit-keyframes slideDown {
-    0% {
-        top: -45px;
-        opacity: 0.0;
-    }
+//     60% {
+//         top: 0px;
+//         opacity: 1;
+//     }
+//     100% {
+//         top: 0px;
+//         opacity: 1;
+//     }
+// }
+// @-webkit-keyframes slideDown {
+//     0% {
+//         top: -45px;
+//         opacity: 0.0;
+//     }
 
-    60% {
-        top: 0px;
-        opacity: 1;
-    }
-    100% {
-        top: 0px;
-        opacity: 1;
-    }
-}
+//     60% {
+//         top: 0px;
+//         opacity: 1;
+//     }
+//     100% {
+//         top: 0px;
+//         opacity: 1;
+//     }
+// }
 
 /* Navigation Menu Slide Up */
 @keyframes slideUp {
@@ -332,7 +332,7 @@
     // @include animation-name(fadeOut);
     // @include animation-duration(0.5s);
     // @include animation-timing-function(ease-out);
-    // top: 0;
+    // top: 0;  
     background: none !important;
 }
 
