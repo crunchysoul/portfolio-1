@@ -17,7 +17,7 @@ $colorless: rgba(255, 255, 255, 0);
 /*
 *   Fonts
 */
-$changa: 'Changa One', cursive;
+$changa: 'Changa One',Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 $raleway: 'Raleway',Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 
 /*
@@ -1112,13 +1112,22 @@ section.footer {
         p {
             display: block;
             position: relative;
-            width: 200px;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
             font-size: 14px;
             color: $white;
             text-align: center;
             text-shadow: $dropshadow;
+
+            a {
+                font-size: 14px;
+                color: $white;
+                text-shadow: $dropshadow;
+            }
+            a:hover {
+                color: $gray;
+            }
         }
     }
 }

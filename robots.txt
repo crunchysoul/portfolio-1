@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: test.html
+Disallow: mvp.html
+Disallow: /css/
+Disallow: /img/
+Disallow: /js/
