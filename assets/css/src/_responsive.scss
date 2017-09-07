@@ -91,10 +91,30 @@
     }
 }
 
+/* Lower the Hello message font size */
 @media (max-width: 775px) {
     section.hello {
         h2 {
             font-size: 20px;
+        }
+    }
+}
+
+/* Switch to Regular Menu */
+@media (max-width: 760px) {
+    nav.primary-nav {
+        /* Hide Desktop Navigation */
+        .navlinks {
+            display: none;
+        }
+    }
+}
+/* Switch to Hamburger Menu */
+@media (min-width: 760px) {
+    nav.primary-nav {
+        /* Hide Hamburger Icon */
+        .hamburgerwrapper {
+            display: none;
         }
     }
 }
@@ -136,25 +156,6 @@
         
     }     
 }
-
-/* Switch to Regular Menu */
-@media (max-width: 680px) {
-    nav.primary-nav {
-        /* Hide Desktop Navigation */
-        .navlinks {
-            display: none;
-        }
-    }
-}
-/* Switch to Hamburger Menu */
-@media (min-width: 680px) {
-    nav.primary-nav {
-        /* Hide Hamburger Icon */
-        .hamburgerwrapper {
-            display: none;
-        }
-    }
-}    
 
 @media (max-width: 570px) {
     section.hero {
