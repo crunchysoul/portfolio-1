@@ -948,6 +948,7 @@ section.resume {
         }
     }
 }
+
 /* Contact Me Section */
 section.contact {
     position: relative;
@@ -1060,6 +1061,71 @@ section.contact {
                     padding: 20px;
                 }
             }
+        }
+    }
+}
+
+/* Footer Section */
+section.footer {
+    position: relative;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 20px;
+    background-color: $deepblue;
+
+    .footerwrapper {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 960px;
+
+        h4 {
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            font-family: $changa;
+            font-size: 36px;
+            font-weight: normal;
+            
+            text-align: center;
+            text-shadow: $dropshadow;
+
+            a {
+                text-decoration: none;
+                color: $white;
+                @include transition(all ease .5s);
+            }
+            a:hover {
+                color: $moonblue;
+            }
+            .fa {
+                padding-left: 5px;
+            }
+        }
+
+        .logo {
+            display: block;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5px;
+            height: 70px;
+            width: auto;
+        }
+
+        p {
+            display: block;
+            position: relative;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 14px;
+            color: $white;
+            text-align: center;
+            text-shadow: $dropshadow;
         }
     }
 }

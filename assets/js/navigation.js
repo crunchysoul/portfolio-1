@@ -79,5 +79,11 @@ function navigate(btn) {
 			scrollTop: $("#resume").offset().top
 		}, 1000);
 		hide_mobile_navigation();
-	}
+    }
+    else if (btn == "#backbtn") {
+        $('html, body').animate({
+			scrollTop: $("#hero").offset().top
+		}, 1000);
+		hide_mobile_navigation();
+    }
 }
