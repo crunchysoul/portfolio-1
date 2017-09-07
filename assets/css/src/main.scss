@@ -259,6 +259,7 @@ section.hero {
             position: absolute;
             left: 40px;
             top: 40px;
+            visibility: hidden;
             @include transition(all ease .5s);
             z-index: 1;
 
