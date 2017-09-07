@@ -28,30 +28,43 @@ My Spotify playlist set most of the mood on my website. I believe it has created
 The spotify playlist can be found at this [link](https://goo.gl/qkK2sU)     
 
 # Inspiration
-My tagline is inspired by these popular quotes.
-+ *“Shoot for the moon. Even if you miss, you'll land among the stars.”* ― Norman Vincent Peale     
+My tagline "Aim for the moon. Move fast, fail better and break stuff" is inspired by these popular quotes. For me, a tagline creates a first impression once someone visits your website.        
+
+*“Shoot for the moon. Even if you miss, you'll land among the stars.”* ― Norman Vincent Peale     
 ![](http://www.glenndimaliwat.com/assets/img/inspiration/aimmoon.jpg)       
 
-+ *"Move fast and break things"* — Mark Zuckerberg      
+*"Move fast and break things"* — Mark Zuckerberg      
 ![](http://www.glenndimaliwat.com/assets/img/inspiration/zuckerberg.jpg)        
 
-+ *"Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better."* — Samuel Beckett      
-+ Other popular *fail fast* slogan - [link](https://www.startupinstitute.com/blog/2015-5-6-inspirational-quotes-about-failure)      
-        
-Denise Chandler
+*"Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better."* — Samuel Beckett      
+Other popular *fail fast* slogan - [link](https://www.startupinstitute.com/blog/2015-5-6-inspirational-quotes-about-failure)      
+
++ Denise Chandler
 - Among all the websites that I visited, Denise's website really got my attention and it became my sole inspiration. Her choice of colour scheme is quite unique and it works really well with her theme. Like my design, she also incorporated a tagline "Stand Out" and a character in her theme which is a "sea monster". I believe this really represented her objective to stand out and it did as her website is among the top 15 developer portfolio website.            
 ![](http://www.glenndimaliwat.com/assets/img/inspiration/denisechandler.png)        
 
 # Style Guide and Wireframes
-For my mockup design, I used Figma. The full figma project can be viewed at the following [link](https://www.figma.com/file/VNYTgiznPFjlymYOYqoL6rDv/Portfolio)     
+For my mockup design, I used Figma while my colour scheme is extracted from [colormind.io](colormind.io). Designing my website from Figma was a wonderful experience as I could visually predict the outcome of my website without having to code anything.     
+
+I however coded small parts as I went through my design because I needed to know my options in terms of CSS possibilities. This resulted in me having multiple versions of my designs. Each version is a milestone of certain decisions such as "Should I use flexbox to list down my skills?", "Should I create a separate section for my Instagram photos?", or "What would happen to this photo on a certain screen size breakpoint?".       
+
+This strategy worked for me as every time I am in doubt, I would just create a new version of my design in Figma.    
+
+The full figma project can be viewed at the following [link](https://www.figma.com/file/VNYTgiznPFjlymYOYqoL6rDv/Portfolio)     
 ![](http://www.glenndimaliwat.com/assets/img/wireframes/figma.png)      
 
 # Features
-+ SCSS
-+ JQuery
++ SCSS      
+SCSS is a godsend feature me as not only was I more organized in sectioning my website, I was also able to use to Mixins for cross-browser CSS and Variables for Colors, Fonts and Shadows. I am really happy that I learned SCSS and used it on this project.      
+
++ JQuery        
+JQuery is something that I wanted to avoid for this portfolio until I needed it for page animations. It, however, saved me a lot of time especially with my navigation bars.        
+
 + Google Analytics
 
-+ Optimize images using [Optimizilla](http://www.optimizilla.com)
++ Page Performance validation using Google PageSpeed Insights
+
++ Optimized images using [Optimizilla](http://www.optimizilla.com)
 
 * Optimized CSS and JavaScript using [Minify](https://www.npmjs.com/package/minifier)        
     ```npm install -g minify```     
