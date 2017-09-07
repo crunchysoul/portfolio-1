@@ -28,6 +28,8 @@ My Spotify playlist set most of the mood on my website. I believe it has created
 The spotify playlist can be found at this [link](https://goo.gl/qkK2sU)     
 
 # Inspiration
+
+## Tagline
 My tagline "Aim for the moon. Move fast, fail better and break stuff" is inspired by these popular quotes. For me, a tagline creates a first impression once someone visits your website.        
 
 *“Shoot for the moon. Even if you miss, you'll land among the stars.”* ― Norman Vincent Peale     
@@ -39,8 +41,9 @@ My tagline "Aim for the moon. Move fast, fail better and break stuff" is inspire
 *"Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better."* — Samuel Beckett      
 Other popular *fail fast* slogan - [link](https://www.startupinstitute.com/blog/2015-5-6-inspirational-quotes-about-failure)      
 
-+ Denise Chandler
-- Among all the websites that I visited, Denise's website really got my attention and it became my sole inspiration. Her choice of colour scheme is quite unique and it works really well with her theme. Like my design, she also incorporated a tagline "Stand Out" and a character in her theme which is a "sea monster". I believe this really represented her objective to stand out and it did as her website is among the top 15 developer portfolio website.            
+
+## Denise Chandler
+Among all the websites that I visited, Denise's website really got my attention and it became my sole inspiration. Her choice of colour scheme is quite unique and it works really well with her theme. Like my design, she also incorporated a tagline "Stand Out" and a character in her theme which is a "sea monster". I believe this really represented her objective to stand out and it did as her website is among the top 15 developer portfolio website.            
 ![](http://www.glenndimaliwat.com/assets/img/inspiration/denisechandler.png)        
 
 # Style Guide and Wireframes

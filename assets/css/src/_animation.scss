@@ -217,6 +217,32 @@
     }
 }
 
+/*
+*   Fade-out Effect 0.8s
+*/
+.fadeOut {
+    @include animation-name(fadeOut);
+    @include animation-duration(0.8s);
+    @include animation-timing-function(ease-out);
+    visibility: visible !important;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /* Navigation Menu Slide Down */
 @keyframes slideDown {
 	0% {
@@ -286,7 +312,7 @@
 .nav-up {
     @include animation-name(slideUp);
     @include animation-duration(0.5s);
-    @include animation-timing-function(ease-out);
+    @include animation-timing-function(ease-in);
     .navlinks {
         display: none;
     }
@@ -303,10 +329,10 @@
     background: $trueblue;
 }
 .nav-top {
-    // @include animation-name(slideDown);
+    // @include animation-name(fadeOut);
     // @include animation-duration(0.5s);
-    // @include animation-timing-function(ease-in);
-    top: 0;
+    // @include animation-timing-function(ease-out);
+    // top: 0;
     background: none !important;
 }
 

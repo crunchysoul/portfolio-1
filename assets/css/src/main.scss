@@ -260,7 +260,8 @@ section.hero {
             left: 40px;
             top: 40px;
             @include transition(all ease .5s);
-
+            z-index: 1;
+            
             h2 {
                 position: relative;
                 font-family: $changa;

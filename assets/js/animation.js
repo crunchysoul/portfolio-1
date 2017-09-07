@@ -12,24 +12,67 @@ var navbarHeight = $('nav.primary-nav').outerHeight();
 */
 var mobile_navigation_displayed = false;
 
+
 /*
-*	Detect page Scroll
+* When page is scrolled
 */
-$(window).scroll(function(event){
-	didScroll = true;
+$(window).scroll(function() {
+
+	/* Load first icon */
+	$('#dev').each(function(){
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+		if (imagePos < topOfWindow+500) {
+			$(this).addClass("fadeIn");
+		}
+	});
+
+	/* Load second icon */
+	$('#des').each(function(){
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+		if (imagePos < topOfWindow+500) {
+			$(this).addClass("fadeIn2");
+		}
+	});
+
+	/* Load third icon */
+	$('#agi').each(function(){
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+		if (imagePos < topOfWindow+500) {
+			$(this).addClass("fadeIn3");
+		}
+	});
+
+	/* Load fourth icon */
+	$('#tpl').each(function(){
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+		if (imagePos < topOfWindow+500) {
+			$(this).addClass("fadeIn4");
+		}
+	});
+
+	if(mobile_navigation_displayed == false) {
+		setTimeout(function() {
+			hasScrolled();
+		}, 250);
+	}
+	// didScroll = true;
 });
 
-setInterval(function() {
-	/* If mobile navigation is off */
-	if(mobile_navigation_displayed == false) {
+// setInterval(function() {
+// 	/* If mobile navigation is off */
+// 	if(mobile_navigation_displayed == false) {
 		
-		/* Detect Scrolling */
-		if (didScroll) {
-			hasScrolled();
-			didScroll = false;
-		}
-	}
-}, 250);
+// 		/* Detect Scrolling */
+// 		if (didScroll) {
+// 			hasScrolled();
+// 			didScroll = false;
+// 		}
+// 	}
+// }, 250);
 
 /*
 * When page is scrolled
@@ -61,54 +104,16 @@ function hasScrolled() {
 	lastScrollTop = st;
 }
 
-/* Load first icon */
-$(window).scroll(function() {
-	$('#dev').each(function(){
-		var imagePos = $(this).offset().top;
-		var topOfWindow = $(window).scrollTop();
-		if (imagePos < topOfWindow+500) {
-			$(this).addClass("fadeIn");
-		}
-	});
-});
-
-/* Load second icon */
-$(window).scroll(function() {
-	$('#des').each(function(){
-		var imagePos = $(this).offset().top;
-		var topOfWindow = $(window).scrollTop();
-		if (imagePos < topOfWindow+500) {
-			$(this).addClass("fadeIn2");
-		}
-	});
-});
-
-/* Load third icon */
-$(window).scroll(function() {
-	$('#agi').each(function(){
-		var imagePos = $(this).offset().top;
-		var topOfWindow = $(window).scrollTop();
-		if (imagePos < topOfWindow+500) {
-			$(this).addClass("fadeIn3");
-		}
-	});
-});
-
-/* Load fourth icon */
-$(window).scroll(function() {
-	$('#tpl').each(function(){
-		var imagePos = $(this).offset().top;
-		var topOfWindow = $(window).scrollTop();
-		if (imagePos < topOfWindow+500) {
-			$(this).addClass("fadeIn4");
-		}
-	});
-});
 
 /*
 *	When page is loaded
 */
 $(document).ready(function() {
+
+	/* Load the Tagline */
+	$('#tagline').each(function(){
+		$(this).addClass("fadeIn4");
+	});
 
 	/* Load the Moon */
 	$('#moon').each(function(){
