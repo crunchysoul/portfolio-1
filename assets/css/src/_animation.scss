@@ -191,16 +191,102 @@
 }
 
 /*
-*   Fade-in Effect 4.5s
-*   But don't transform -- This is used for the Wolf
+*   Fade-in Tagline Effect 2s
 */
-.fadeIn5 {
-    @include animation-name(fadeIn5);
+.fadeInTagline {
+    @include animation-name(fadeInTagline);
+    @include animation-duration(2.0s);
+    @include animation-timing-function(ease-in-out);
+    visibility: visible !important;
+}
+@keyframes fadeInTagline {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    80% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeInTagline {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0.0;
+    }
+    60% {
+        -webkit-transform: scale(1.1);
+    }
+    80% {
+        -webkit-transform: scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+/*
+*   Fade-in Moon Effect 4s
+*/
+.fadeInMoon {
+    @include animation-name(fadeInMoon);
+    @include animation-duration(4.0s);
+    @include animation-timing-function(ease-in-out);
+    visibility: visible !important;
+}
+@keyframes fadeInMoon {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    80% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeInMoon {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0.0;
+    }
+    60% {
+        -webkit-transform: scale(1.1);
+    }
+    80% {
+        -webkit-transform: scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+/*
+*   Fade-in Wolf 4.5s
+*   But don't transform
+*/
+.fadeInWolf {
+    @include animation-name(fadeInWolf);
     @include animation-duration(4.5s);
     @include animation-timing-function(ease-in-out);
     visibility: visible !important;
 }
-@keyframes fadeIn5 {
+@keyframes fadeInWolf {
     0% {
         opacity: 0.0;
     }
@@ -208,7 +294,7 @@
         opacity: 1;
     }
 }
-@-webkit-keyframes fadeIn5 {
+@-webkit-keyframes fadeInWolf {
     0% {
         opacity: 0.0;
     }
@@ -217,31 +303,31 @@
     }
 }
 
-// /*
-// *   Fade-out Effect 0.8s
-// */
-// .fadeOut {
-//     @include animation-name(fadeOut);
-//     @include animation-duration(0.8s);
-//     @include animation-timing-function(ease-out);
-//     visibility: visible !important;
-// }
-// @keyframes fadeOut {
-//     0% {
-//         opacity: 1;
-//     }
-//     100% {
-//         opacity: 0;
-//     }
-// }
-// @-webkit-keyframes fadeOut {
-//     0% {
-//         opacity: 1;
-//     }
-//     100% {
-//         opacity: 0;
-//     }
-// }
+/*
+*   Fade-out Effect 0.8s
+*/
+.fadeOut {
+    @include animation-name(fadeOut);
+    @include animation-duration(0.8s);
+    @include animation-timing-function(ease-out);
+    visibility: visible !important;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 // /* Navigation Menu Slide Down */
 // @keyframes slideDown {
@@ -331,8 +417,7 @@
 .nav-top {
     // @include animation-name(fadeOut);
     // @include animation-duration(0.5s);
-    // @include animation-timing-function(ease-out);
-    // top: 0;  
+    // @include animation-timing-function(ease-in);
     background: none !important;
 }
 

@@ -112,17 +112,17 @@ $(document).ready(function() {
 
 	/* Load the Tagline */
 	$('#tagline').each(function(){
-		$(this).addClass("fadeIn4");
+		$(this).addClass("fadeInTagline");
 	});
 
 	/* Load the Moon */
 	$('#moon').each(function(){
-		$(this).addClass("fadeIn4");
+		$(this).addClass("fadeInMoon");
 	});
 
 	/* Load the Wolf */
 	$('#wolf').each(function(){
-		$(this).addClass("fadeIn5");
+		$(this).addClass("fadeInWolf");
 	});
 
 	/* If scroll bar is not on top on page reload */

@@ -89,7 +89,7 @@ nav.primary-nav {
                 @include flex(auto);
                 a {
                     text-decoration: none;
-                    font-size: 14px;
+                    font-size: 16px;
                     font-weight: 500;
                     margin-left: 14px;
                     margin-right: 14px;
@@ -186,7 +186,6 @@ div.mobile-nav {
     position: fixed;
     top: 40px;
     width: 100%;
-    // height: 75%;
     padding-bottom: 35px;
     background: $trueblue;
     box-shadow: $dropshadow;
@@ -201,14 +200,15 @@ div.mobile-nav {
         li {
             text-align: center;
             min-width: 100%;
-            padding: 10px;
+            // padding: 10px 0px;
             @include flex(auto);
             a {
+                display: block;
                 text-decoration: none;
                 color: $white;
                 font-size: 20px;
                 text-shadow: $lightshadow;
-                padding: 10px 20px;
+                padding: 10px 0;
             }
             a:hover {
                 background: $white;
@@ -261,7 +261,7 @@ section.hero {
             top: 40px;
             @include transition(all ease .5s);
             z-index: 1;
-            
+
             h2 {
                 position: relative;
                 font-family: $changa;

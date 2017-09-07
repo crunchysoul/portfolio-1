@@ -78,6 +78,25 @@
     }
 }
 
+/* Switch to Regular Menu */
+@media (max-width: 805px) {
+    nav.primary-nav {
+        /* Hide Desktop Navigation */
+        .navlinks {
+            display: none;
+        }
+    }
+}
+/* Switch to Hamburger Menu */
+@media (min-width: 806px) {
+    nav.primary-nav {
+        /* Hide Hamburger Icon */
+        .hamburgerwrapper {
+            display: none;
+        }
+    }
+}
+
 /* Move the moon 200px from the right and the wolf 0px from the right */
 @media (max-width: 800px) {
     section.hero {
@@ -97,25 +116,6 @@
     section.hello {
         h2 {
             font-size: 20px;
-        }
-    }
-}
-
-/* Switch to Regular Menu */
-@media (max-width: 760px) {
-    nav.primary-nav {
-        /* Hide Desktop Navigation */
-        .navlinks {
-            display: none;
-        }
-    }
-}
-/* Switch to Hamburger Menu */
-@media (min-width: 760px) {
-    nav.primary-nav {
-        /* Hide Hamburger Icon */
-        .hamburgerwrapper {
-            display: none;
         }
     }
 }
