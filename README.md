@@ -11,6 +11,7 @@ For my design, I decided to go with cool and calm blue colours with a hint of gr
 - Features
 - Challenges
 - Coding
+- Manual Testing
 - Final product
 
 # Trello Board
@@ -61,21 +62,37 @@ The full figma project can be viewed at the following [link](https://www.figma.c
 SCSS is a godsend feature me as not only was I more organized in sectioning my website, I was also able to use to Mixins for cross-browser CSS and Variables for Colors, Fonts and Shadows. I am really happy that I learned SCSS and used it on this project.      
 
 + JQuery        
-JQuery is something that I wanted to avoid for this portfolio until I needed it for page animations. It, however, saved me a lot of time especially with my navigation bars.        
+JQuery is something that I wanted to avoid for this portfolio until I needed it for page animations. It, however, saved me a lot of time, especially with my navigation bars.       
 
-+ Google Analytics
++ Google Analytics      
+I incorporated Google Analytics as early as when I created my minimum viable product because it was easy to implement and Netlify allows me to insert the code snippet in every page of the website.        
 
-+ Page Performance validation using Google PageSpeed Insights
++ Personalised Domain Name      
+I also bought my domain name [www.glenndimaliwat.com](www.glenndimaliwat.com) as early as when I started the project. This motivated me more to work on the project as I did not want to waste the annual subscription fee on an empty domain.      
 
-+ Optimized images using [Optimizilla](http://www.optimizilla.com)
++ Optimized images using [Optimizilla](http://www.optimizilla.com) and SASS Compression     
+I wanted to improve the page load of my images and discovered this website. It dramatically reduced my main background image from 3.1 megabytes to 306 kilobytes. It also effectively reduced the size of my profile photo from 1 megabyte to 309 kilobytes.        
 
-* Optimized CSS and JavaScript using [Minify](https://www.npmjs.com/package/minifier)        
++ Optimized CSS and JavaScript using [Minify](https://www.npmjs.com/package/minifier)        
+Like my images, I needed to improve the page load by minifying my CSS and JavaScript files. Minify allowed me to do this easily:        
     ```npm install -g minify```     
     ```minify animation.js --output animation.min.js --no-comments```       
     ```minify navigation.js --output navigation.min.js --no-comments```     
 
++ For CSS, SASS compression was able to optimise my SCSS automatically using the following syntax       
+    ```sass --watch src/style.scss:dest/style.css --style compressed```
+        
 # Challenges
 
 # Coding
+
+# Manual Testing
++ Page Performance validation using Google PageSpeed Insights
++ HTML Code validation using W3 Validator
++ Page Load Performance testing on public wifi
++ Usability Testing on multiple mobile devices
++ Usability Testing on different browsers
+
+
 
 # Final product
