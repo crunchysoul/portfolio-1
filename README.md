@@ -86,9 +86,7 @@ Like my images, I needed to improve the page load by minifying my CSS and JavaSc
 
 + For CSS, SASS compression was able to optimise my SCSS automatically using the following syntax       
     ```sass --watch src/style.scss:dest/style.css --style compressed```
-        
-+ Optimized HTML using [html]-minifier](https://github.com/kangax/html-minifier)
-
+    
 # Manual Testing
 + Page Performance validation using Google PageSpeed Insights
 ![](http://www.glenndimaliwat.com/assets/screenshots/google-pagespeed-insights-desktop.png)
