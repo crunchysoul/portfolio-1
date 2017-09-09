@@ -1,7 +1,8 @@
-# My Portfolio Project (www.glenndimaliwat.com)
-A portfolio website is something that will not only help me get a job, but it will also represent my brand and all my digital services. What I have in mind is a portfolio that I can update over time. It is a project that will never be finished.
+# My Portfolio Website Project (www.glenndimaliwat.com)
+A portfolio website is a project that will not only help me get a job, but it will also represent my brand and all the digital services I provide as a Software Developer and Designer. What I have in mind is a portfolio that can be updated over time. For me, it is a project that is never finished and more content will be added as I get more experience and projects.      
 
-For my design, I decided to go with cool and calm blue colours with a hint of grey and brown. For me, these colours are very flexible as they can be transformed from urban to corporate. Although for the theme that I chose, it will have to be suitable for the photo which I recently took in Melbourne.  I also went with a modern hipster logo to represent my brand and a wolf theme to express my values as a pack leader or a team member.
+For my design, I decided to go with a cool and calm colour scheme which are multiple blue colours with a hint of grey and brown. These colours seem very flexible as they can be transformed from urban, corporate or hipster. The theme that I, however, is a modern hipster design which matches my logo and my profile photo. I want to represent my brand as someone who is familiar with the current style of the web and familiar with the popular culture. I believe that this extends my target demographic globally and it represents my identity.     
+
 
 # Contents
 - Trello board
@@ -12,7 +13,7 @@ For my design, I decided to go with cool and calm blue colours with a hint of gr
 - Coding
 - Tools and Optimisation
 - Manual Testing
-- Final product
+- Final Product
 
 # Trello Board
 I am using agile methodologies in building my project which is why I opened a public Trello board. This kept me organized all throughout the project and minimize the stress in remembering all the details and putting them into action.       
@@ -86,14 +87,34 @@ Like my images, I needed to improve the page load by minifying my CSS and JavaSc
 + For CSS, SASS compression was able to optimise my SCSS automatically using the following syntax       
     ```sass --watch src/style.scss:dest/style.css --style compressed```
         
++ Optimized HTML using [html]-minifier](https://github.com/kangax/html-minifier)
 
 # Manual Testing
 + Page Performance validation using Google PageSpeed Insights
+![](http://www.glenndimaliwat.com/assets/screenshots/google-pagespeed-insights-desktop.png)
+![](http://www.glenndimaliwat.com/assets/screenshots/google-pagespeed-insights-mobile.png)
+
 + HTML Code validation using W3 Validator
+![](http://www.glenndimaliwat.com/assets/screenshots/w3-validator.png)
+
 + Page Load Performance testing on public wifi
+    - Chadtone Shopping Centre        
+    - Southern Cross Station      
+    - Telstra Air Access Points       
+
 + Usability Testing on multiple mobile devices
+    - Google Chrome Developer Tool         
+    - Samsung Galaxy Note 4      
+    - Apple iPhone/iPad Simulator (X-Code)       
+    - Apple iPad Mini 2      
+    - Apple iPhone 5s       
+    - Apple iPhone 6s       
+    - Asus Zenfone 3      
+
 + Usability Testing on different browsers
 
 
 
-# Final product
+# Final Product
+![](http://www.glenndimaliwat.com/assets/screenshots/laptop-screenshot.png)
+![](http://www.glenndimaliwat.com/assets/screenshots/mobile-screenshot.png)
