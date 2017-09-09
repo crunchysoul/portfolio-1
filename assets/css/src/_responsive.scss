@@ -2,7 +2,7 @@
 *   All Media Queries
 */
 
-@media (max-width: 940px) {
+@media (max-width: 920px) {
     section.hello {
         height: 160px;
     }
@@ -121,7 +121,7 @@
 }
 
 /* Bring down the services icons */
-@media (max-width: 770px) {
+@media (max-width: 755px) {
     section.services {
         min-height: 550px;
         .row {
