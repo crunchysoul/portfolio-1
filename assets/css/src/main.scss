@@ -28,6 +28,12 @@ $lightshadow: 0 2px 5px rgba(0,0,0,.2);
 $noshadow: 0 2px 5px rgba(0,0,0,0);
 
 /*
+*   Special Variables for Counting Classes
+*/
+$social_count: 12;
+$tech_count: 12;
+
+/*
 *   Other SCSS Files
 */
 @import 'mixins';       /* Some custom mixins */

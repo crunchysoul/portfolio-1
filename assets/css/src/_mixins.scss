@@ -53,7 +53,17 @@
 *   Mixin for Box Color and Font Color
 */
 @mixin box_theme($className) {
-    @for $i from 1 through 100 {
+    /* Determine Class Count */
+    $class_count: 0;
+    @if $className == 'tech' {
+        $class_count: $tech_count;
+    }
+    @else if $className == 'social' {
+        $class_count: $social_count;
+    }
+
+    /* Loop through Classes */
+    @for $i from 1 through $class_count {
         @if $i % 4 == 1 {
             .#{$className}#{$i} {
                 @include box_color($ashblue);
