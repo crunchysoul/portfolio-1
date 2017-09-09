@@ -47,6 +47,12 @@ $tech_count: 15;
     padding: 0;
 }
 
+/* IE: Disable border for anchors and images */
+a img {
+    border:none;
+    outline:none;
+}
+
 /* Change colors for text highlighting */
 ::selection {
     background: $trueblue;
@@ -242,7 +248,7 @@ section.hero {
     width: 100%;
     height: 600px;
     background: url(/assets/img/background.min.jpg) no-repeat $trueblue;
-    background-position: top left;
+    background-position: bottom left;
     background-attachment: fixed;
     background-size: cover;
 

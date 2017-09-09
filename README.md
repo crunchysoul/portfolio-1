@@ -110,7 +110,10 @@ Like my images, I needed to improve the page load by minifying my CSS and JavaSc
     - Asus Zenfone 3      
 
 + Usability Testing on different browsers
-
+    - Google Chrome (Version 60.0.3112.113)
+    - Mozilla Firefox (Version 55.0.3)
+    - Mozilla Firefox Focus
+    - Safari (Version 10.1.2 (12603.3.8)
 
 
 # Final Product
