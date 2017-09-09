@@ -55,7 +55,7 @@ I however coded small parts as I went through my design because I needed to know
 This strategy worked for me as every time I am in doubt, I would just create a new version of my design in Figma.    
 
 The full figma project can be viewed at the following [link](https://www.figma.com/file/VNYTgiznPFjlymYOYqoL6rDv/Portfolio)     
-![](http://www.glenndimaliwat.com/assets/img/wireframes/figma.png)      
+![](http://www.glenndimaliwat.com/assets/screenshots/figma.png)      
 
 # Challenges
 
