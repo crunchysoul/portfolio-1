@@ -8,9 +8,9 @@ For my design, I decided to go with cool and calm blue colours with a hint of gr
 - Mood board
 - Inspiration
 - Style Guide and Wireframes
-- Features
 - Challenges
 - Coding
+- Tools and Optimisation
 - Manual Testing
 - Final product
 
@@ -57,9 +57,13 @@ This strategy worked for me as every time I am in doubt, I would just create a n
 The full figma project can be viewed at the following [link](https://www.figma.com/file/VNYTgiznPFjlymYOYqoL6rDv/Portfolio)     
 ![](http://www.glenndimaliwat.com/assets/img/wireframes/figma.png)      
 
-# Features
+# Challenges
+
+# Coding
+
+# Tools and Optimisation
 + SCSS      
-SCSS is a godsend feature me as not only was I more organized in sectioning my website, I was also able to use to Mixins for cross-browser CSS and Variables for Colors, Fonts and Shadows. I am really happy that I learned SCSS and used it on this project.      
+SCSS is a godsend feature for me as not only was I more organized in sectioning my website, I was also able to use Mixins for cross-browser CSS and Variables for Colors, Fonts and Shadows. I am really happy that I learned SCSS and used it on this project.      
 
 + JQuery        
 JQuery is something that I wanted to avoid for this portfolio until I needed it for page animations. It, however, saved me a lot of time, especially with my navigation bars.       
@@ -82,9 +86,6 @@ Like my images, I needed to improve the page load by minifying my CSS and JavaSc
 + For CSS, SASS compression was able to optimise my SCSS automatically using the following syntax       
     ```sass --watch src/style.scss:dest/style.css --style compressed```
         
-# Challenges
-
-# Coding
 
 # Manual Testing
 + Page Performance validation using Google PageSpeed Insights

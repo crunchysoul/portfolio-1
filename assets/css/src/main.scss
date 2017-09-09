@@ -54,6 +54,7 @@ $noshadow: 0 2px 5px rgba(0,0,0,0);
 /* Body */
 body {
     font-family: $raleway;
+    background: $white;
 }
 
 /* Set Heading 1 to None - for SEO purposes */
@@ -96,12 +97,15 @@ nav.primary-nav {
                     padding: 5px 7px;
                     color: $white;
                     text-shadow: $lightshadow;
+                    @include border-radius(10px);
                     @include transition(all ease .5s);
                 }
                 /* When navigation is hovered, add background color and font color */
                 a:hover {
                     color: $deepblue;
                     background: $white;
+                    text-shadow: $noshadow;
+                    box-shadow: $dropshadow;
                 }
             }
         }
@@ -428,7 +432,7 @@ section.services {
                 color: $ashblue;
                 border-color: $ashblue;
             }
-            .teamplayer {
+            .people {
                 color: $trueblue;
                 border-color: $trueblue;
             }
@@ -442,7 +446,8 @@ section.about {
     width: 100%;
     background-color: $white;
     box-shadow: $dropshadow;
-
+    z-index: 1;
+    
     .aboutwrapper {
         position: relative;
         margin-left: auto;
@@ -550,10 +555,10 @@ section.social {
                 width: 160px;
                 max-width: 160px;
                 min-width: 160px;
-                background: $gray;
-                
+                background: $gray;                
                 text-decoration: none;
                 line-height: 150px;
+                overflow: hidden;
                 @include transition(all ease .5s);
 
                 h3 {
@@ -564,39 +569,41 @@ section.social {
                 }
                 
             }
+            @include box_theme("social");
 
             /* When a social media icon is hovered, add background color and increase font size */
             .column:hover {
                 background-color: $gray;
                 h3 {
-                    font-size: 20px;
+                    // font-size: 20px;
+                    @include transform(scale(1.1));
                     color: $deepblue
                 }
             }
             
-            /* List of Social Media Links */
-            .social1, .social2, .social5, .social6, .social9, .social10 {
-                h3 {
-                    color: $deepblue;
-                }
-            }
-            .social3, .social4, .social7, .social8, .social11, .social12 {
-                h3 {
-                    color: $white;
-                }
-            }
-            .social1, .social5, .social9 {
-                background: $ashblue;
-            }
-            .social2, .social6, .social10 {
-                background: $trueblue;
-            }
-            .social3, .social7, .social11 {
-                background: $deepblue;
-            }
-            .social4, .social8, .social12 {
-                background: $brown;
-            }
+            // /* List of Social Media Links */
+            // .social1, .social2, .social5, .social6, .social9, .social10 {
+            //     h3 {
+            //         color: $deepblue;
+            //     }
+            // }
+            // .social3, .social4, .social7, .social8, .social11, .social12 {
+            //     h3 {
+            //         color: $white;
+            //     }
+            // }
+            // .social1, .social5, .social9 {
+            //     background: $ashblue;
+            // }
+            // .social2, .social6, .social10 {
+            //     background: $trueblue;
+            // }
+            // .social3, .social7, .social11 {
+            //     background: $deepblue;
+            // }
+            // .social4, .social8, .social12 {
+            //     background: $brown;
+            // }
         }
     }
 }
@@ -609,6 +616,7 @@ section.tech {
     padding-bottom: 60px;
     background-color: $white;
     box-shadow: $dropshadow;
+    z-index: 1;
 
     .techwrapper {
         position: relative;
@@ -638,9 +646,9 @@ section.tech {
             @include flexbox();
             @include flex-wrap(wrap);
             @include justify-content(center);
-            width: 100%;
-            
             @include transition(all ease .5s);
+            width: 100%;
+
             .column {
                 @include flex(auto);
                 height: 80px;
@@ -650,7 +658,7 @@ section.tech {
                 background: $gray;
                 box-shadow: $dropshadow;
                 @include transition(all ease .5s);
-
+                
                 h3 {
                     text-align: center;
                     font-weight: 300;
@@ -658,30 +666,31 @@ section.tech {
                     line-height: 80px;
                 }
             }
+            @include box_theme("tech");
             
             /* List of Tech Stack */
-            .tech1, .tech2, .tech5, .tech6, .tech9, .tech10 {
-                h3 {
-                    color: $deepblue;
-                }
-            }
-            .tech3, .tech4, .tech7, .tech8, .tech11, .tech12 {
-                h3 {
-                    color: $white;
-                }
-            }
-            .tech1, .tech5, .tech9 {
-                background: $ashblue;
-            }
-            .tech2, .tech6, .tech10 {
-                background: $trueblue;
-            }
-            .tech3, .tech7, .tech11 {
-                background: $deepblue;
-            }
-            .tech4, .tech8, .tech12 {
-                background: $brown;
-            }
+            // .tech1, .tech2, .tech5, .tech6, .tech9, .tech10 {
+            //     h3 {
+            //         color: $deepblue;
+            //     }
+            // }
+            // .tech3, .tech4, .tech7, .tech8, .tech11, .tech12 {
+            //     h3 {
+            //         color: $white;
+            //     }
+            // }
+            // .tech1, .tech5, .tech9 {
+            //     background: $ashblue;
+            // }
+            // .tech2, .tech6, .tech10 {
+            //     background: $trueblue;
+            // }
+            // .tech3, .tech7, .tech11 {
+            //     background: $deepblue;
+            // }
+            // .tech4, .tech8, .tech12 {
+            //     background: $brown;
+            // }
         }
     }
 }
@@ -723,8 +732,8 @@ section.projects {
             @include flexbox();
             @include flex-wrap(wrap);
             @include justify-content(center);
-            width: 100%;
             @include transition(all ease .5s);
+            width: 100%;
 
             .column {
                 position: relative;
@@ -744,7 +753,6 @@ section.projects {
                     height: 100px;
                     width: 100%;
                     background-size: cover;
-
                     h3 {
                         padding-top: 13px;
                         font-family: $changa;
@@ -762,7 +770,7 @@ section.projects {
                         color: $deepblue;
                     }
                 }
-                .gitlink {
+                .viewlink {
                     position: absolute;
                     bottom: 10px;
                     right: 10px;
@@ -780,7 +788,6 @@ section.projects {
                             color: $white;
                             text-align: center;
                             @include transition(all ease .5s);
-                            box-shadow: $dropshadow;
                         }
                     }
 
@@ -789,6 +796,7 @@ section.projects {
                         .view {
                             background: $gray;
                             color: $deepblue;
+                            @include transform(scale(1.1));
                         }
                     }
                 }
@@ -879,6 +887,7 @@ section.resume {
     padding-bottom: 60px;
     background-color: $white;
     box-shadow: $dropshadow;
+    z-index: 1;
 
     .resumewrapper {
         position: relative;
@@ -941,6 +950,7 @@ section.resume {
             button[type=button]:hover {
                 background-color: $gray;
                 color: $deepblue;
+                @include transform(scale(1.1));
             }
         }
     }
@@ -1050,6 +1060,7 @@ section.contact {
                 button[type=submit]:hover {
                     background-color: $gray;
                     color: $deepblue;
+                    @include transform(scale(1.1));
                 }
 
                 /* Add a background color and some padding around the form */
@@ -1095,9 +1106,6 @@ section.footer {
                 text-decoration: none;
                 color: $white;
             }
-            a:hover {
-                color: $gray;
-            }
             .fa {
                 padding-left: 5px;
             }
@@ -1128,9 +1136,6 @@ section.footer {
                 font-size: 14px;
                 color: $white;
                 text-shadow: $dropshadow;
-            }
-            a:hover {
-                color: $gray;
             }
         }
     }

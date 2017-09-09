@@ -1,5 +1,5 @@
 /*
-*   Mixins for Cross-browser Border Radius
+*   Mixin for Cross-browser Border Radius
 */
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
@@ -8,7 +8,7 @@
 }
 
 /*
-*   Mixins for Cross-browser Transition
+*   Mixin for Cross-browser Transition
 */
 @mixin transition($value) {
     -webkit-transition: $value;
@@ -19,10 +19,60 @@
 }
 
 /*
-* Mixins for Cross-browser Transform
+*   Mixin for Cross-browser Transform
 */
 @mixin transform($value) {
     -ms-transform: $value;
     -webkit-transform: $value;
     transform: $value;
+}
+
+/*
+*   Mixin for Box Color Scheme Mixins
+*/
+@mixin box_color($background) {
+    @if $background == $trueblue {
+        background: $trueblue;
+        color: $deepblue;
+    }
+    @else if $background == $ashblue {
+        background: $ashblue;
+        color: $deepblue;
+    }
+    @else if $background == $deepblue {
+        background: $deepblue;
+        color: $white;
+    }
+    @else if $background == $brown {
+        background: $brown;
+        color: $white;
+    }
+}
+
+/*
+*   Mixin for Box Color and Font Color
+*/
+@mixin box_theme($className) {
+    @for $i from 1 through 100 {
+        @if $i % 4 == 1 {
+            .#{$className}#{$i} {
+                @include box_color($ashblue);
+            }
+        }
+        @else if $i % 4 == 2 {
+            .#{$className}#{$i} {
+                @include box_color($trueblue);
+            }
+        }
+        @else if $i % 4 == 3 {
+            .#{$className}#{$i} {
+                @include box_color($deepblue);
+            }
+        }
+        @else if $i % 4 == 0 {
+            .#{$className}#{$i} {
+                @include box_color($brown);
+            }
+        }
+    }
 }

@@ -18,6 +18,19 @@ var mobile_navigation_displayed = false;
 */
 $(window).scroll(function() {
 
+	loadIcons();
+
+	if(mobile_navigation_displayed == false) {
+		// setTimeout(function() {
+			hasScrolled();
+		// }, 250);
+	}
+});
+
+/*
+*	Load service icons
+*/
+function loadIcons() {
 	/* Load first icon */
 	$('#dev').each(function(){
 		var imagePos = $(this).offset().top;
@@ -46,33 +59,14 @@ $(window).scroll(function() {
 	});
 
 	/* Load fourth icon */
-	$('#tpl').each(function(){
+	$('#ppl').each(function(){
 		var imagePos = $(this).offset().top;
 		var topOfWindow = $(window).scrollTop();
 		if (imagePos < topOfWindow+500) {
 			$(this).addClass("fadeIn4");
 		}
 	});
-
-	if(mobile_navigation_displayed == false) {
-		setTimeout(function() {
-			hasScrolled();
-		}, 250);
-	}
-	// didScroll = true;
-});
-
-// setInterval(function() {
-// 	/* If mobile navigation is off */
-// 	if(mobile_navigation_displayed == false) {
-		
-// 		/* Detect Scrolling */
-// 		if (didScroll) {
-// 			hasScrolled();
-// 			didScroll = false;
-// 		}
-// 	}
-// }, 250);
+}
 
 /*
 * When page is scrolled
