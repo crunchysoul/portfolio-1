@@ -31,7 +31,7 @@ $noshadow: 0 2px 5px rgba(0,0,0,0);
 *   Special Variables for Counting Classes
 */
 $social_count: 12;
-$tech_count: 12;
+$tech_count: 15;
 
 /*
 *   Other SCSS Files
@@ -877,6 +877,14 @@ section.projects {
             .project9 {
                 .title {
                     background: url(/assets/img/projects/rails-installfest-quick-blog.png) no-repeat $deepblue;
+                    h3 {
+                        font-size: 30px;
+                    }
+                }
+            }
+            .project10 {
+                .title {
+                    background: url(/assets/img/projects/deluxe-mug-shop-website.png) no-repeat $brown;
                     h3 {
                         font-size: 30px;
                     }
