@@ -75,7 +75,7 @@ My typography was inspired by typography from hipster clothing, barber shops, ha
 For my mockup design, I used Figma while my colour scheme is extracted from [colormind.io](colormind.io). Designing my website from Figma was a wonderful experience as I could visually predict the outcome of my website without having to code anything with some exceptions like animations or optimising responsive breakpoints.   
 
 The full figma project can be viewed at the following [link](https://www.figma.com/file/VNYTgiznPFjlymYOYqoL6rDv/Portfolio)     
-    
+
 ![](http://www.glenndimaliwat.com/assets/screenshots/figma.png)      
 
 [Back to Top](#top)
@@ -208,15 +208,17 @@ I tried my best to bring up the scores for both Desktop and Mobile by optimising
     ![](http://www.glenndimaliwat.com/assets/screenshots/google-pagespeed-insights-mobile.png)      
 
 + HTML Code validation using W3 Validator
-Apparently, font awesome icons were not recognised as valid texts for Heading 4 elements. I simply ignored these warnings because I already liked what my icons looked like.        
+Apparently, font awesome icons were not recognised as valid texts for Heading 4 elements. I simply ignored these warnings because I already liked what my icons looked like and they are already coupled with the load animations I set for them.        
 ![](http://www.glenndimaliwat.com/assets/screenshots/w3-validator.png)
 
-+ Page Load Performance testing on public wifi
++ Page Load Performance testing on public wifi      
+One of my objectives was to thoroughly test my website in worst case scenarios. As such, I tested my website on the following locations with public wifi.       
     - Chadstone Shopping Centre        
     - Southern Cross Station      
     - Telstra Air Access Points       
 
-+ Usability Testing on multiple mobile devices
++ Usability Testing on multiple mobile devices      
+Another objective was to test my website in different mobile devices to see the actual outcome and usability. As a special consideration for mobile devices, I have made the button sizes just right for touch presses. This makes navigation more comfortable for the viewer.      
     - Google Chrome Developer Tool         
     - Samsung Galaxy Note 4      
     - Apple iPhone/iPad Simulator (X-Code)       
@@ -225,10 +227,11 @@ Apparently, font awesome icons were not recognised as valid texts for Heading 4 
     - Apple iPhone 6s       
     - Asus Zenfone 3      
 
-+ Usability Testing on different browsers
++ Usability Testing on different browsers       
+Testing on multiple browsers actually happened while I was developing the website. I had 3 browsers open at one time and it made all the difference while I was coding my SCSS mixins.
     - Google Chrome (Version 60.0.3112.113) - Ok
     - Mozilla Firefox (Version 55.0.3) - Ok
-    - Mozilla Firefox Focus - Ok
+    - Mozilla Firefox Focus (Mobile Only) - Ok
     - Safari (Version 10.1.2 (12603.3.8) - Ok
     - Internet Explorer 11 - Ok, but google fonts not loading
     - Internet Explorer 10 - Ok, but google fonts not loading
