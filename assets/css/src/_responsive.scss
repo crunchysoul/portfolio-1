@@ -141,6 +141,9 @@
     }
 }
 
+/*
+*  Let the Short Bio and Profile Photo have their own row.
+*/
 @media (max-width: 730px) {
     section.about {
         .aboutwrapper {
@@ -159,6 +162,9 @@
     }     
 }
 
+/*
+*   Move the moon closer to the center
+*/
 @media (max-width: 570px) {
     section.hero {
         .bannerwrapper {
@@ -169,6 +175,9 @@
     }
 }
 
+/* 
+*   Reposition hello message
+*/
 @media (max-width: 500px) {
     section.hello {
         h2 {
@@ -177,6 +186,9 @@
     }
 }
 
+/*
+*   Mobile size for the Hero elements
+*/
 @media (max-width: 480px) {
     section.hero {
         height: 471px;
@@ -215,6 +227,9 @@
     }
 }
 
+/*
+*   Resize contact form. Add a margin for the tech skills.
+*/
 @media (max-width: 400px) {
     section.contact {
         .contactwrapper {
@@ -236,6 +251,9 @@
     }
 }
 
+/*
+*   Lowest breakpoint for mobile
+*/
 @media (max-width: 320px) {
     
     nav.primary-nav {

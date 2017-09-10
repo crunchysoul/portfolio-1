@@ -99,10 +99,10 @@ Optimising my website with Google PageSpeed Insights was also quite a challenge 
 # <a id="Coding"></a>Coding
 I coded small parts of my website as I went through my design because I needed to know my options in terms of CSS possibilities and my limited knowledge to implement them on time. This resulted in me having multiple versions of my designs. Each version is a milestone of certain decisions such as "Should I use flexbox to list down my skills?", "Should I create a separate section for my Instagram photos?", or "What would happen to this photo if I hit a certain screen size breakpoint?".       
 
-This strategy worked for me as every time I am in doubt, I would just create a new version of my design in Figma.       
+This strategy worked for me, as every time I am in doubt of my design, I would just create a new version of my design in Figma.       
 When my design and theme was already established, I would find myself in situations where I prefer to update my Figma after I updated my CSS. This maybe a bad habit but I am hoping to overcome this with more practice.       
             
-The most fun I had when coding this website was when I was using Mixins and using iteration logic to colour my elements. At one point, I had to code the logic first in ruby before translating them to the actual SCSS.
+The most fun I had when coding this website was when I was using SCSS. I was able to learn how to do mixins and iteration logic to manipulate the colour of my elements. At one point, I had to code the logic first in ruby before translating them to the actual SCSS.
 
 In Ruby:
 ```
@@ -185,15 +185,19 @@ I incorporated Google Analytics as early as when I created my minimum viable pro
     ![](http://www.glenndimaliwat.com/assets/screenshots/google-analytics.png)     
 
 + [Sitemap Generator](https://www.xml-sitemaps.com)     
+My sitemap was generated using [XML Sitemaps](xml-sitemaps.com). This allowed me to easily generate sitemap files and it also instructed me to bind my sitemap to my Google Webmaster account which allowed me to identify ownership of my domain www.glenndimaliwat.com.
+    ![](http://www.glenndimaliwat.com/assets/screenshots/sitemap.png)     
 
 + [Personalised Domain Name](https://www.namecheap.com)      
 I also bought my domain name [www.glenndimaliwat.com](www.glenndimaliwat.com) as early as when I started the project. This motivated me more to work on the project as I did not want to waste the annual subscription fee on an empty domain.      
 
 + [Facebook Debugger](https://developers.facebook.com/tools/debug)      
+This tool allowed me to test my opengraph image which appears when my website is being shared on facebook.
     ![](http://www.glenndimaliwat.com/assets/screenshots/facebook-debugger.png)     
 
 
 + [Twitshot](http://twitshot.com)       
+This tool allowed me to test my twitter card image which appears when my website is being shared on twitter.
     ![](http://www.glenndimaliwat.com/assets/screenshots/twitshot.png)     
 
 
@@ -202,7 +206,7 @@ I also bought my domain name [www.glenndimaliwat.com](www.glenndimaliwat.com) as
 # <a id="Optimisation"></a>Optimisation
 
 + Optimized images using [Optimizilla](http://www.optimizilla.com)     
-I wanted to improve the page load of my images and discovered this website. It dramatically reduced my main background image from 3.1 megabytes to 306 kilobytes. It also effectively reduced the size of my profile photo from 1 megabyte to 309 kilobytes.        
+I wanted to improve the load time of my images and discovered this website in the process. It dramatically reduced my main background image from 3.1 megabytes to 306 kilobytes. It also effectively reduced the size of my profile photo from 1 megabyte to 309 kilobytes.        
 
 + Optimized CSS and JavaScript using [Minify](https://www.npmjs.com/package/minifier)        
 Like my images, I needed to improve the page load by minifying my CSS and JavaScript files. Minify allowed me to do this easily:        
@@ -271,14 +275,21 @@ The following browsers were used for testing usability:
 
 
 # <a id="Final"></a>Final Product
+I am quite happy with my final product. It may not have the most amazing animations or catchy theme, but in terms of usability and being lightweight, I believe that it will not fail me in getting my brand and identity across employers. I am also quite happy to say that I understand every moving part of the website as I made sure that I understood everything that I put in it.       
 
+In the near future, I want to update this website with new technologies like Node.js and React. It is a bit ambitious but my goal is now already set to be able to do that.
+
+Overall, I enjoyed working on this project especially when I was collaborating ideas with my colleagues.        
+        
+Desktop:     
+![](http://www.glenndimaliwat.com/assets/screenshots/laptop-screenshot.png)     
 ![](http://www.glenndimaliwat.com/assets/screenshots/final-product.png)     
+
+
+Mobile:     
+![](http://www.glenndimaliwat.com/assets/screenshots/mobile-screenshot.png)     
 ![](http://www.glenndimaliwat.com/assets/screenshots/final-product-mobile.png)      
 
 
-Desktop/Laptop:     
-![](http://www.glenndimaliwat.com/assets/screenshots/laptop-screenshot.png)     
-Mobile:     
-![](http://www.glenndimaliwat.com/assets/screenshots/mobile-screenshot.png)     
 
 [Back to Top](#top)
