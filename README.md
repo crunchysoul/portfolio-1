@@ -64,6 +64,8 @@ My tagline "Aim for the moon. Move fast, fail better and break stuff" is inspire
 ![](http://www.glenndimaliwat.com/assets/screenshots/zuckerberg.jpg)        
 
 *"Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better."* — Samuel Beckett      
+![](http://www.glenndimaliwat.com/assets/screenshots/evertried-everfailed.jpg)           
+
 Other popular *fail fast* slogan - [link](https://www.startupinstitute.com/blog/2015-5-6-inspirational-quotes-about-failure)      
 
 ## Denise Chandler
