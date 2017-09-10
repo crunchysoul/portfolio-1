@@ -182,6 +182,7 @@ JQuery is something that I wanted to avoid for this portfolio until I needed it 
 
 + Google Analytics      
 I incorporated Google Analytics as early as when I created my minimum viable product because it was easy to implement and Netlify allows me to insert the code snippet in every page of the website.        
+    ![](http://www.glenndimaliwat.com/assets/screenshots/google-analytics.png)     
 
 + [Sitemap Generator](https://www.xml-sitemaps.com)     
 
@@ -216,6 +217,10 @@ Like my images, I needed to improve the page load by minifying my CSS and JavaSc
 It does not do much but it reduced my index.html by a few kilobytes.    
     ```npm install -g html-minifier```
     ```html-minifier test.html --output index.html```
+
++ Other Considerations for Optimisation:
+    - Replaced background-attachment:fixed for the hero image as it was being displayed incorrectly on mobile devices. Apparently, this is disabled on mobile browsers because it was costly and it decimates scrolling perforamance.       
+    - Removed fog effects on the hero image. For some reason, when I have the fog effects on, my CPU fan runs extremely loud. Upon researching this scenario, I found that some CSS keyframes with infinite animations can cause high CPU usage. As my priority is to have a lightweight website, I removed the fog animations.
 
 [Back to Top](#top)
 
