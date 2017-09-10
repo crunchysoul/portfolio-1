@@ -38,10 +38,11 @@ The spotify playlist can be found at this [link](https://goo.gl/qkK2sU)
 [Back to Top](#top)
 
 # <a id="MVP"></a>Minimum Viable Product
-My MVP was created before I had any good content. It basically copied the short bio from my resume and used font awesome links for social media.
+My MVP was created before I had any good content. It basically copied the short bio from my resume and used font awesome links for social media.    
 
-![](http://www.glenndimaliwat.com/assets/screenshots/mvp.png)          
 The mvp is still up and running at this [link](http://www.glenndimaliwat.com/mvp.html)      
+        
+![](http://www.glenndimaliwat.com/assets/screenshots/mvp.png)          
 
 [Back to Top](#top)
 
@@ -82,9 +83,9 @@ The full figma project can be viewed at the following [link](https://www.figma.c
 
 
 # <a id="Challenges"></a>Challenges
-The challenge for me initially was that I did not understand what a mood board does or how it serves a purpose in selecting my theme, colour scheme and typography. I eventually overcame this when it became clear to me that music is also part of creating the mood board.       
+The challenge for me initially was that I did not understand what a mood board does or how it serves a purpose in selecting my theme, colour scheme and typography. I eventually overcame this when it became clear to me that music is also part of creating the mood board. Music was a big part of me when I was growing up and not only did it kept me productive with this project, it also helped me understand the theme that I want to portray for my website.       
 
-Optimising my website with Google PageSpeed Insights was also quite a challenge especially for mobile. I was eventually able to get better scores by following the optimisation guidelines recommended by Google.       
+Optimising my website with Google PageSpeed Insights was also quite a challenge especially for mobile. I was eventually able to get better scores by following the optimisation guidelines recommended by Google but it has been nowhere close to perfect. I may need to research more on how this can be improved and apply it later on as I improve my website.      
 
 [Back to Top](#top)
 
