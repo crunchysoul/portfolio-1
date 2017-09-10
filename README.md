@@ -184,7 +184,7 @@ I also bought my domain name [www.glenndimaliwat.com](www.glenndimaliwat.com) as
 
 # <a id="Optimisation"></a>Optimisation
 
-+ Optimized images using [Optimizilla](http://www.optimizilla.com) and SASS Compression     
++ Optimized images using [Optimizilla](http://www.optimizilla.com)     
 I wanted to improve the page load of my images and discovered this website. It dramatically reduced my main background image from 3.1 megabytes to 306 kilobytes. It also effectively reduced the size of my profile photo from 1 megabyte to 309 kilobytes.        
 
 + Optimized CSS and JavaScript using [Minify](https://www.npmjs.com/package/minifier)        
@@ -196,6 +196,10 @@ Like my images, I needed to improve the page load by minifying my CSS and JavaSc
 + For CSS, SASS compression was able to optimise my SCSS automatically using the following syntax       
     ```sass --watch src/style.scss:dest/style.css --style compressed```
 
++ For HTML, I used [html-minifier](https://github.com/kangax/html-minifier)     
+It does not do much but it reduced my index.html by a few kilobytes.    
+    ```npm install -g html-minifier```
+    ```html-minifier test.html --output index.html```
 
 [Back to Top](#top)
 
@@ -219,6 +223,7 @@ One of my objectives was to thoroughly test my website in worst case scenarios. 
 
 + Usability Testing on multiple mobile devices      
 Another objective was to test my website on different mobile devices to see the actual outcome and usability. As a special consideration for mobile devices, I have made the button sizes just right for touch presses. This makes navigation more comfortable for the viewer.      
+The following devices were used for testing usability:      
     - Google Chrome Developer Tool         
     - Samsung Galaxy Note 4      
     - Apple iPhone/iPad Simulator (X-Code)       
@@ -228,7 +233,8 @@ Another objective was to test my website on different mobile devices to see the 
     - Asus Zenfone 3      
 
 + Usability Testing on different browsers       
-Testing on multiple browsers actually happened while I was developing the website. I had 3 browsers open at one time and it made all the difference while I was coding my SCSS mixins.
+Testing on multiple browsers actually happened while I was developing the website. I had 3 browsers open at one time and it made all the difference while I was coding my SCSS mixins.      
+The following browsers were used for testing usability:
     - Google Chrome (Version 60.0.3112.113) - Ok
     - Mozilla Firefox (Version 55.0.3) - Ok
     - Mozilla Firefox Focus (Mobile Only) - Ok
