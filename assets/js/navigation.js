@@ -5,6 +5,8 @@ function navigate(btn) {
 		$('html, body').animate({
 			scrollTop: $("#hero").offset().top
 		}, 1000);
+		// Top of the page -- Hide Colored Mobile Nav Since Home is top of the page
+		$('nav.primary-nav').removeClass('nav-down').removeClass('nav-up').addClass('nav-top');;
 	}
 	else if (btn == "#aboutbtn") {
 		$('html, body').animate({
@@ -85,5 +87,7 @@ function navigate(btn) {
 			scrollTop: $("#hero").offset().top
 		}, 1000);
 		hide_mobile_navigation();
+		// Top of the page -- Hide Colored Mobile Nav Since Home is top of the page
+		$('nav.primary-nav').removeClass('nav-down').removeClass('nav-up').addClass('nav-top');;
     }
 }
