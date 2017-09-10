@@ -74,11 +74,8 @@ My typography was inspired by typography from hipster clothing, barber shops, ha
 # <a id="Wireframes"></a>Style Guide and Wireframes
 For my mockup design, I used Figma while my colour scheme is extracted from [colormind.io](colormind.io). Designing my website from Figma was a wonderful experience as I could visually predict the outcome of my website without having to code anything with some exceptions like animations or optimising responsive breakpoints.   
 
-(https://www.figma.com/file/VNYTgiznPFjlymYOYqoL6rDv/Portfolio)     
-![](http://www.glenndimaliwat.com/assets/screenshots/style-guide.png)   
-
-
 The full figma project can be viewed at the following [link](https://www.figma.com/file/VNYTgiznPFjlymYOYqoL6rDv/Portfolio)     
+    
 ![](http://www.glenndimaliwat.com/assets/screenshots/figma.png)      
 
 [Back to Top](#top)
