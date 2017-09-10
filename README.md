@@ -186,7 +186,7 @@ I incorporated Google Analytics as early as when I created my minimum viable pro
     ![](http://www.glenndimaliwat.com/assets/screenshots/google-analytics.png)     
 
 + [Sitemap Generator](https://www.xml-sitemaps.com)     
-My sitemap was generated using [XML Sitemaps](xml-sitemaps.com). This allowed me to easily generate sitemap files and it also instructed me to bind my sitemap to my Google Webmaster account which allowed me to identify ownership of my domain www.glenndimaliwat.com.
+My sitemap was generated using [XML Sitemaps](xml-sitemaps.com). This allowed me to easily generate sitemap files and it also instructed me to bind my sitemap to my Google Webmaster account which allowed me to identify ownership of my domain www.glenndimaliwat.com.       
     ![](http://www.glenndimaliwat.com/assets/screenshots/sitemap.png)     
 
 + [Personalised Domain Name](https://www.namecheap.com)      
