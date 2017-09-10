@@ -27,15 +27,21 @@ The trello board can be found at this [link](https://trello.com/b/pEZaMjod)
 
 [Back to Top](#top)
 
+
 # <a id="MoodBoard"></a>Mood Board
 My Pinterest mood board is composed of photos from keywords "Winter", "Wolf", "Hipster", "Vikings" and "Beards". Mostly, what I got on this board are the Runic Typography and symbols for my logo and the Hazy Nature background idea for my hero image.       
 
 My pinterest mood board can be found at this [link](https://au.pinterest.com/glenndimaliwat/portfolio-moodboard/)               
+![](http://www.glenndimaliwat.com/assets/screenshots/pinterest.png)            
+
 My Spotify playlist set most of the mood on my website. I believe it has created a very calm ambience and a good balance between content and theme. I appreciated this mood board more than the Pinterest because the music also kept me productive as I was designing my mockup in Figma.      
 
 The spotify playlist can be found at this [link](https://goo.gl/qkK2sU)     
 
+![](http://www.glenndimaliwat.com/assets/screenshots/pinterest.png)           
+
 [Back to Top](#top)
+
 
 # <a id="MVP"></a>Minimum Viable Product
 My MVP was created before I had any good content. It basically copied the short bio from my resume and used font awesome links for social media.    
@@ -183,6 +189,11 @@ I incorporated Google Analytics as early as when I created my minimum viable pro
 I also bought my domain name [www.glenndimaliwat.com](www.glenndimaliwat.com) as early as when I started the project. This motivated me more to work on the project as I did not want to waste the annual subscription fee on an empty domain.      
 
 + [Facebook Debugger](https://developers.facebook.com/tools/debug)      
+    ![](http://www.glenndimaliwat.com/assets/screenshots/facebook-debugger.png)     
+
+
++ [Twitshot](http://twitshot.com)       
+    ![](http://www.glenndimaliwat.com/assets/screenshots/twitshot.png)     
 
 
 [Back to Top](#top)
