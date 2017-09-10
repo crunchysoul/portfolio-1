@@ -190,7 +190,7 @@ I tried my best to bring up the scores for both Desktop and Mobile by optimising
 
     ![](http://www.glenndimaliwat.com/assets/screenshots/google-pagespeed-insights-desktop.png)     
     ![](http://www.glenndimaliwat.com/assets/screenshots/google-pagespeed-insights-mobile.png)      
-        
+
 + HTML Code validation using W3 Validator
 Apparently, font awesome icons were not recognised as valid texts for Heading 4 elements. I simply ignored these warnings because I already liked what my icons looked like.        
 ![](http://www.glenndimaliwat.com/assets/screenshots/w3-validator.png)
@@ -214,8 +214,8 @@ Apparently, font awesome icons were not recognised as valid texts for Heading 4 
     - Mozilla Firefox (Version 55.0.3) - Ok
     - Mozilla Firefox Focus - Ok
     - Safari (Version 10.1.2 (12603.3.8) - Ok
-    - Internet Explorer 11 - Ok
-    - Internet Explorer 10 - Ok
+    - Internet Explorer 11 - Ok, but google fonts not loading
+    - Internet Explorer 10 - Ok, but google fonts not loading
     - Internet Explorer 9 - Not supported
     - Internet Explorer 8 - Not supported
 
