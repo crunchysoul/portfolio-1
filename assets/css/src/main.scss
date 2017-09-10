@@ -249,8 +249,8 @@ section.hero {
     height: 600px;
     background: url(/assets/img/background.min.jpg) no-repeat $trueblue;
     background-position: bottom left;
-    background-attachment: fixed;
-    background-size: cover;
+    @include background-size(cover);
+    background-attachment: scroll;
 
 
     .logo {
@@ -480,7 +480,7 @@ section.about {
             max-width: 720px;
             min-width: 320px;
             background: url(/assets/img/glenn.png) $moonblue;
-            background-size: cover;
+            @include background-size(cover);
             background-position: 50% 50%;
             @include transition(all ease .5s);
         }
@@ -765,7 +765,7 @@ section.projects {
                 .title {
                     height: 100px;
                     width: 100%;
-                    background-size: cover;
+                    @include background-size(cover);
                     h3 {
                         padding-top: 13px;
                         font-family: $changa;

@@ -38,7 +38,7 @@ My Spotify playlist set most of the mood on my website. I believe it has created
 
 The spotify playlist can be found at this [link](https://goo.gl/qkK2sU)     
 
-![](http://www.glenndimaliwat.com/assets/screenshots/pinterest.png)           
+![](http://www.glenndimaliwat.com/assets/screenshots/spotify.png)           
 
 [Back to Top](#top)
 
