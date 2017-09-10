@@ -51,7 +51,7 @@ Among all the websites that I visited, Denise's website really got my attention 
 ## Typography
 My typography was inspired by typography from hipster clothing, barber shops or handcrafted liquor while the letters in my font were inspired by the thinness of Viking runic symbols.      
 
-![](http://www.glenndimaliwat.com/assets/img/inspiration/typography.png)        
+![](http://www.glenndimaliwat.com/assets/screenshots/typography.png)        
 
 # Style Guide and Wireframes
 For my mockup design, I used Figma while my colour scheme is extracted from [colormind.io](colormind.io). Designing my website from Figma was a wonderful experience as I could visually predict the outcome of my website without having to code anything with some exceptions like animations or optimising responsive breakpoints.   
