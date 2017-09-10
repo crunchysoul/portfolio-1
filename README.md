@@ -1,8 +1,8 @@
 # <a id="top"></a> My Portfolio Website Project
 ## www.glenndimaliwat.com      
-A portfolio website is a project that will not only help me get a job, but it will also represent my brand and all the digital services I provide as a Software Developer and Designer. What I have in mind is a portfolio that can be updated over time. For me, it is a project that is never finished and more content will be added as I get more experience and projects.      
+A portfolio website is a project that will not only help me get a job, but it will also represent my brand and all the digital services I provide as a Software Developer and Designer. My idea for this portfolio is that it will never be finished and will be updated over time with new content and new technologies.     
 
-For my design, I decided to go with a cool and calm colour scheme which are multiple blue colours with a hint of grey and brown. These colours seem very flexible as they can be transformed from urban, corporate or hipster. The theme that I, however, is a modern hipster design which matches my logo and my profile photo. I want to represent my brand as someone who is familiar with the current style of the web and familiar with the popular culture. I believe that this extends my target demographic globally and it represents my identity.     
+For my design, I decided to go with a cool and calm colour scheme which are different variants of blue with a hint of grey and brown. These colours seem very flexible for me as I can use them for different themes such as urban, corporate or hipster. This time, however, the theme that I chose is a modern hipster design which matches my logo and my profile photo. I want to represent my identity and brand as someone who is familiar and in the know of the modern style of the web and popular culture. I believe that this will extend my target demographic globally and it truthfully represents my personality.     
 
 
 # Contents
