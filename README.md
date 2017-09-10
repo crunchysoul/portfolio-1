@@ -234,6 +234,7 @@ Apparently, font awesome icons were not recognised as valid texts for Heading 4 
 + Page Load Performance testing on public wifi      
 One of my objectives was to thoroughly test my website in worst case scenarios. As such, I tested my website on the following locations with public wifi.       
     - Chadstone Shopping Centre        
+    - The Well at Camberwell        
     - Southern Cross Station      
     - Telstra Air Access Points       
 
@@ -246,7 +247,8 @@ The following devices were used for testing usability:
     - Apple iPad Mini 2      
     - Apple iPhone 5s       
     - Apple iPhone 6s       
-    - Asus Zenfone 3      
+    - Asus Zenfone 3  
+    - LG G3         
 
 + Usability Testing on different browsers       
 Testing on multiple browsers actually happened while I was developing the website. I had 3 browsers open at one time and it made all the difference while I was coding my SCSS mixins.      
