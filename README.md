@@ -34,7 +34,7 @@ My Pinterest mood board is composed of photos from keywords "Winter", "Wolf", "H
 My pinterest mood board can be found at this [link](https://au.pinterest.com/glenndimaliwat/portfolio-moodboard/)               
 ![](http://www.glenndimaliwat.com/assets/screenshots/pinterest.png)            
 
-My Spotify playlist set most of the mood on my website. I believe it has created a very calm ambience and a good balance between content and theme. I appreciated this mood board more than the Pinterest because the music also kept me productive as I was designing my mockup in Figma.      
+My Spotify playlist was the key element that set most of the mood for my website. I believe it has created a very calm ambience and a good balance between content and theme. I appreciated this mood board more than the Pinterest because the music also kept me productive as I was designing my mockup in Figma.      
 
 The spotify playlist can be found at this [link](https://goo.gl/qkK2sU)     
 
@@ -44,9 +44,9 @@ The spotify playlist can be found at this [link](https://goo.gl/qkK2sU)
 
 
 # <a id="MVP"></a>Minimum Viable Product
-My MVP was created before I had any good content. It basically copied the short bio from my resume and used font awesome links for social media.    
+My MVP was created before I had any good content. It basically copied the short bio from my resume and used "font awesome" links for social media.    
 
-The mvp is still up and running at this [link](http://www.glenndimaliwat.com/mvp.html)      
+The mvp is still up and running and can be found at this [link](http://www.glenndimaliwat.com/mvp.html)      
         
 ![](http://www.glenndimaliwat.com/assets/screenshots/mvp.png)          
 
@@ -55,7 +55,7 @@ The mvp is still up and running at this [link](http://www.glenndimaliwat.com/mvp
 # <a id="Inspiration"></a>Inspiration
 
 ## Tagline
-My tagline "Aim for the moon. Move fast, fail better and break stuff" is inspired by these popular quotes. For me, a tagline creates a first impression once someone visits your website.        
+My tagline "Aim for the moon. Move fast, fail better and break stuff" is inspired by these popular quotes. For me, a tagline creates the first impression as someone enters your website and remembers it when they leave.        
 
 *“Shoot for the moon. Even if you miss, you'll land among the stars.”* ― Norman Vincent Peale     
 ![](http://www.glenndimaliwat.com/assets/screenshots/aimmoon.jpg)       
@@ -67,8 +67,9 @@ My tagline "Aim for the moon. Move fast, fail better and break stuff" is inspire
 Other popular *fail fast* slogan - [link](https://www.startupinstitute.com/blog/2015-5-6-inspirational-quotes-about-failure)      
 
 ## Denise Chandler
-Among all the websites that I visited, Denise's website really got my attention and it became my sole inspiration. Her choice of colour scheme is quite unique and it works really well with her theme. Like my design, she also incorporated a tagline "Stand Out" and a character in her theme which is a "sea monster". I believe this really represented her objective to stand out and it did as her website is among the top 15 developer portfolio website.            
-![](http://www.glenndimaliwat.com/assets/screenshots/denisechandler.png)        
+Among all the websites that I visited, Denise's website really got my attention and it became my sole inspiration. Her choice of colour scheme is quite unique and it works really well with her theme. Like my design, she also incorporated a tagline "Stand Out" and a character in her theme which is a "sea monster". I believe this really represented her objective to stand out and it resulted in the website being included among the top 15 developer portfolio website.        
+
+    ![](http://www.glenndimaliwat.com/assets/screenshots/denisechandler.png)        
 
 ## Typography
 My typography was inspired by typography from hipster clothing, barber shops, handcrafted liquor, song lyrics or simply a funny discussion that I had with my colleagues which turned into an idea. The letters in my logo were inspired by the thinness of Viking runic symbols which worked well with the other symbols in my logo.      
