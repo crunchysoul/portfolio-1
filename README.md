@@ -69,9 +69,9 @@ My tagline "Aim for the moon. Move fast, fail better and break stuff" is inspire
 Other popular *fail fast* slogan - [link](https://www.startupinstitute.com/blog/2015-5-6-inspirational-quotes-about-failure)      
 
 ## Denise Chandler
-Among all the websites that I visited, Denise's website really got my attention and it became my sole inspiration. Her choice of colour scheme is quite unique and it works really well with her theme. Like my design, she also incorporated a tagline "Stand Out" and a character in her theme which is a "sea monster". I believe this really represented her objective to stand out and it resulted in the website being included among the top 15 developer portfolio website.        
+Among all the websites that I visited, Denise's website really got my attention and it became my sole inspiration. Her choice of colour scheme is quite unique and it works really well with her theme. Like my design, she also incorporated a tagline "Stand Out" and a character in her theme which is a "sea monster". I believe this really represented her objective to stand out and it resulted in the website being included among the top 15 developer portfolio website.          
 
-    ![](http://www.glenndimaliwat.com/assets/screenshots/denisechandler.png)        
+![](http://www.glenndimaliwat.com/assets/screenshots/denisechandler.png)        
 
 ## Typography
 My typography was inspired by typography from hipster clothing, barber shops, handcrafted liquor, song lyrics or simply a funny discussion that I had with my colleagues which turned into an idea. The letters in my logo were inspired by the thinness of Viking runic symbols which worked well with the other symbols in my logo.      
