@@ -1,31 +1,33 @@
-# My Portfolio Website Project (www.glenndimaliwat.com)
+# <a id="top"></a> My Portfolio Website Project
+## www.glenndimaliwat.com      
 A portfolio website is a project that will not only help me get a job, but it will also represent my brand and all the digital services I provide as a Software Developer and Designer. What I have in mind is a portfolio that can be updated over time. For me, it is a project that is never finished and more content will be added as I get more experience and projects.      
 
 For my design, I decided to go with a cool and calm colour scheme which are multiple blue colours with a hint of grey and brown. These colours seem very flexible as they can be transformed from urban, corporate or hipster. The theme that I, however, is a modern hipster design which matches my logo and my profile photo. I want to represent my brand as someone who is familiar with the current style of the web and familiar with the popular culture. I believe that this extends my target demographic globally and it represents my identity.     
 
 
 # Contents
-- Trello board
-- Mood board
-- Minimum Viable Product
-- Inspiration
-- Style Guide and Wireframes
-- Challenges
-- Coding
-- Tools
-- Optimisation
-- Manual Testing
-- Final Product
+- **[Trello board](#TrelloBoard)**
+- **[Mood board](#MoodBoard)**
+- **[Minimum Viable Product](#MVP)**
+- **[Inspiration](#Inspiration)**
+- **[Style Guide and Wireframes](#Wireframes)**
+- **[Challenges](#Challenges)**
+- **[Coding](#Coding)**
+- **[Tools](#Tools)**
+- **[Optimisation](#Optimisation)**
+- **[Manual Testing](#Testing)**
+- **[Final Product](#Final)**
 
 
-# Trello Board
+# <a id="TrelloBoard"></a>Trello Board
 I am using agile methodologies in building my project which is why I opened a public Trello board. This kept me organized all throughout the project and minimize the stress in remembering all the details and putting them into action.               
 ![](http://www.glenndimaliwat.com/assets/screenshots/trello-board.png)        
 
 The trello board can be found at this [link](https://trello.com/b/pEZaMjod)     
 
+[Back to Top](#top)
 
-# Mood Board
+# <a id="MoodBoard"></a>Mood Board
 My Pinterest mood board is composed of photos from keywords "Winter", "Wolf", "Hipster", "Vikings" and "Beards". Mostly, what I got on this board are the Runic Typography and symbols for my logo and the Hazy Nature background idea for my hero image.       
 
 My pinterest mood board can be found at this [link](https://au.pinterest.com/glenndimaliwat/portfolio-moodboard/)               
@@ -33,13 +35,17 @@ My Spotify playlist set most of the mood on my website. I believe it has created
 
 The spotify playlist can be found at this [link](https://goo.gl/qkK2sU)     
 
-# Minimum Viable Product
+[Back to Top](#top)
+
+# <a id="MVP"></a>Minimum Viable Product
 My MVP was created before I had any good content. It basically copied the short bio from my resume and used font awesome links for social media.
 
 ![](http://www.glenndimaliwat.com/assets/screenshots/mvp.png)          
 The mvp is still up and running at this [link](http://www.glenndimaliwat.com/mvp.html)      
 
-# Inspiration
+[Back to Top](#top)
+
+# <a id="Inspiration"></a>Inspiration
 
 ## Tagline
 My tagline "Aim for the moon. Move fast, fail better and break stuff" is inspired by these popular quotes. For me, a tagline creates a first impression once someone visits your website.        
@@ -62,8 +68,10 @@ My typography was inspired by typography from hipster clothing, barber shops, ha
 
 ![](http://www.glenndimaliwat.com/assets/screenshots/typography.png)        
 
+[Back to Top](#top)
 
-# Style Guide and Wireframes
+
+# <a id="Wireframes"></a>Style Guide and Wireframes
 For my mockup design, I used Figma while my colour scheme is extracted from [colormind.io](colormind.io). Designing my website from Figma was a wonderful experience as I could visually predict the outcome of my website without having to code anything with some exceptions like animations or optimising responsive breakpoints.   
 
 (https://www.figma.com/file/VNYTgiznPFjlymYOYqoL6rDv/Portfolio)     
@@ -73,14 +81,18 @@ For my mockup design, I used Figma while my colour scheme is extracted from [col
 The full figma project can be viewed at the following [link](https://www.figma.com/file/VNYTgiznPFjlymYOYqoL6rDv/Portfolio)     
 ![](http://www.glenndimaliwat.com/assets/screenshots/figma.png)      
 
+[Back to Top](#top)
 
-# Challenges
+
+# <a id="Challenges"></a>Challenges
 The challenge for me initially was that I did not understand what a mood board does or how it serves a purpose in selecting my theme, colour scheme and typography. I eventually overcame this when it became clear to me that music is also part of creating the mood board.       
 
 Optimising my website with Google PageSpeed Insights was also quite a challenge especially for mobile. I was eventually able to get better scores by following the optimisation guidelines recommended by Google.       
 
+[Back to Top](#top)
 
-# Coding
+
+# <a id="Coding"></a>Coding
 I coded small parts of my website as I went through my design because I needed to know my options in terms of CSS possibilities and my limited knowledge to implement them on time. This resulted in me having multiple versions of my designs. Each version is a milestone of certain decisions such as "Should I use flexbox to list down my skills?", "Should I create a separate section for my Instagram photos?", or "What would happen to this photo if I hit a certain screen size breakpoint?".       
 
 This strategy worked for me as every time I am in doubt, I would just create a new version of my design in Figma.       
@@ -154,8 +166,10 @@ In SCSS:
 }
 ```
 
+[Back to Top](#top)
 
-# Tools
+
+# <a id="Tools"></a>Tools
 + SCSS      
 SCSS is a godsend feature for me as not only was I more organized in sectioning my website, I was also able to use Mixins for cross-browser CSS and Variables for Colours, Fonts and Shadows. I am really happy that I learned SCSS and used it on this project.      
 
@@ -169,7 +183,9 @@ I incorporated Google Analytics as early as when I created my minimum viable pro
 I also bought my domain name [www.glenndimaliwat.com](www.glenndimaliwat.com) as early as when I started the project. This motivated me more to work on the project as I did not want to waste the annual subscription fee on an empty domain.      
 
 
-# Optimisation
+[Back to Top](#top)
+
+# <a id="Optimisation"></a>Optimisation
 
 + Optimized images using [Optimizilla](http://www.optimizilla.com) and SASS Compression     
 I wanted to improve the page load of my images and discovered this website. It dramatically reduced my main background image from 3.1 megabytes to 306 kilobytes. It also effectively reduced the size of my profile photo from 1 megabyte to 309 kilobytes.        
@@ -184,7 +200,10 @@ Like my images, I needed to improve the page load by minifying my CSS and JavaSc
     ```sass --watch src/style.scss:dest/style.css --style compressed```
 
 
-# Manual Testing
+[Back to Top](#top)
+
+
+# <a id="Testing"></a>Manual Testing
 + Page Performance validation using Google PageSpeed Insights
 I tried my best to bring up the scores for both Desktop and Mobile by optimising every Image in my website. I also minified my CSS and JavaScript files to bring down the load time.        
 
@@ -219,7 +238,11 @@ Apparently, font awesome icons were not recognised as valid texts for Heading 4 
     - Internet Explorer 9 - Not supported
     - Internet Explorer 8 - Not supported
 
+[Back to Top](#top)
 
-# Final Product
+
+# <a id="Final"></a>Final Product
 ![](http://www.glenndimaliwat.com/assets/screenshots/laptop-screenshot.png)
 ![](http://www.glenndimaliwat.com/assets/screenshots/mobile-screenshot.png)
+
+[Back to Top](#top)
