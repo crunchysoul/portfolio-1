@@ -177,8 +177,12 @@ JQuery is something that I wanted to avoid for this portfolio until I needed it 
 + Google Analytics      
 I incorporated Google Analytics as early as when I created my minimum viable product because it was easy to implement and Netlify allows me to insert the code snippet in every page of the website.        
 
-+ Personalised Domain Name      
++ [Sitemap Generator](https://www.xml-sitemaps.com)     
+
++ [Personalised Domain Name](https://www.namecheap.com)      
 I also bought my domain name [www.glenndimaliwat.com](www.glenndimaliwat.com) as early as when I started the project. This motivated me more to work on the project as I did not want to waste the annual subscription fee on an empty domain.      
+
++ [Facebook Debugger](https://developers.facebook.com/tools/debug)      
 
 
 [Back to Top](#top)

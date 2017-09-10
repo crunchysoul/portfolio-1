@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://www.glenndimaliwat.com/</title>
+  <link>http://www.glenndimaliwat.com/</link>
+
+<item>
+     <link>http://www.glenndimaliwat.com/</link>
+     <title>Glenn Dimaliwat | Software Developer and Designer | Digitally Handcrafted Software for the Web and Mobile</title>
+     <description>Glenn Dimaliwat is a software developer and designer from Melbourne, Australia, focused on building digitally handcrafted software for the web and mobile.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
