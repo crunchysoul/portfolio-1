@@ -218,7 +218,7 @@ One of my objectives was to thoroughly test my website in worst case scenarios. 
     - Telstra Air Access Points       
 
 + Usability Testing on multiple mobile devices      
-Another objective was to test my website in different mobile devices to see the actual outcome and usability. As a special consideration for mobile devices, I have made the button sizes just right for touch presses. This makes navigation more comfortable for the viewer.      
+Another objective was to test my website on different mobile devices to see the actual outcome and usability. As a special consideration for mobile devices, I have made the button sizes just right for touch presses. This makes navigation more comfortable for the viewer.      
     - Google Chrome Developer Tool         
     - Samsung Galaxy Note 4      
     - Apple iPhone/iPad Simulator (X-Code)       
