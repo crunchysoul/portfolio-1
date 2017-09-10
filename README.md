@@ -268,6 +268,9 @@ The following browsers were used for testing usability:
 # <a id="Final"></a>Final Product
 
 ![](http://www.glenndimaliwat.com/assets/screenshots/final-product.png)     
+![](http://www.glenndimaliwat.com/assets/screenshots/final-product-mobile.png)      
+
+
 Desktop/Laptop:     
 ![](http://www.glenndimaliwat.com/assets/screenshots/laptop-screenshot.png)     
 Mobile:     
