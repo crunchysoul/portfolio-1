@@ -48,20 +48,29 @@ Other popular *fail fast* slogan - [link](https://www.startupinstitute.com/blog/
 Among all the websites that I visited, Denise's website really got my attention and it became my sole inspiration. Her choice of colour scheme is quite unique and it works really well with her theme. Like my design, she also incorporated a tagline "Stand Out" and a character in her theme which is a "sea monster". I believe this really represented her objective to stand out and it did as her website is among the top 15 developer portfolio website.            
 ![](http://www.glenndimaliwat.com/assets/img/inspiration/denisechandler.png)        
 
+## Typography
+My typography was inspired by typography from hipster clothing, barber shops or handcrafted liquor while the letters in my font were inspired by the thinness of Viking runic symbols.      
+
+![](http://www.glenndimaliwat.com/assets/img/inspiration/typography.png)        
+
 # Style Guide and Wireframes
-For my mockup design, I used Figma while my colour scheme is extracted from [colormind.io](colormind.io). Designing my website from Figma was a wonderful experience as I could visually predict the outcome of my website without having to code anything.     
+For my mockup design, I used Figma while my colour scheme is extracted from [colormind.io](colormind.io). Designing my website from Figma was a wonderful experience as I could visually predict the outcome of my website without having to code anything with some exceptions like animations or optimising responsive breakpoints.   
 
-I however coded small parts as I went through my design because I needed to know my options in terms of CSS possibilities. This resulted in me having multiple versions of my designs. Each version is a milestone of certain decisions such as "Should I use flexbox to list down my skills?", "Should I create a separate section for my Instagram photos?", or "What would happen to this photo on a certain screen size breakpoint?".       
+(https://www.figma.com/file/VNYTgiznPFjlymYOYqoL6rDv/Portfolio)     
+![](http://www.glenndimaliwat.com/assets/screenshots/style-guide.png)   
 
-This strategy worked for me as every time I am in doubt, I would just create a new version of my design in Figma.    
 
 The full figma project can be viewed at the following [link](https://www.figma.com/file/VNYTgiznPFjlymYOYqoL6rDv/Portfolio)     
 ![](http://www.glenndimaliwat.com/assets/screenshots/figma.png)      
 
 # Challenges
+The challenge for me initially was that I did not understand what a mood board does or how it serves a purpose in selecting my theme, color scheme and typography. 
 
 # Coding
+I coded small parts of my website as I went through my design because I needed to know my options in terms of CSS possibilities and my limited knowledge to implement them on time. This resulted in me having multiple versions of my designs. Each version is a milestone of certain decisions such as "Should I use flexbox to list down my skills?", "Should I create a separate section for my Instagram photos?", or "What would happen to this photo on a certain screen size breakpoint?".       
 
+This strategy worked for me as every time I am in doubt, I would just create a new version of my design in Figma. 
+            
 # Tools and Optimisation
 + SCSS      
 SCSS is a godsend feature for me as not only was I more organized in sectioning my website, I was also able to use Mixins for cross-browser CSS and Variables for Colors, Fonts and Shadows. I am really happy that I learned SCSS and used it on this project.      
@@ -110,10 +119,14 @@ Like my images, I needed to improve the page load by minifying my CSS and JavaSc
     - Asus Zenfone 3      
 
 + Usability Testing on different browsers
-    - Google Chrome (Version 60.0.3112.113)
-    - Mozilla Firefox (Version 55.0.3)
-    - Mozilla Firefox Focus
-    - Safari (Version 10.1.2 (12603.3.8)
+    - Google Chrome (Version 60.0.3112.113) - Ok
+    - Mozilla Firefox (Version 55.0.3) - Ok
+    - Mozilla Firefox Focus - Ok
+    - Safari (Version 10.1.2 (12603.3.8) - Ok
+    - Internet Explorer 11 - Ok
+    - Internet Explorer 10 - Ok
+    - Internet Explorer 9 - Not supported
+    - Internet Explorer 8 - Not supported
 
 
 # Final Product
