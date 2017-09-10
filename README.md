@@ -35,7 +35,7 @@ The spotify playlist can be found at this [link](https://goo.gl/qkK2sU)
 
 # Minimum Viable Product
 My MVP was created before I had any good content. It basically copied the short bio from my resume and used font awesome links for social media.
-        
+
 ![](http://www.glenndimaliwat.com/assets/screenshots/mvp.png)          
 The mvp is still up and running at this [link](http://www.glenndimaliwat.com/mvp.html)      
 
@@ -186,10 +186,11 @@ Like my images, I needed to improve the page load by minifying my CSS and JavaSc
 
 # Manual Testing
 + Page Performance validation using Google PageSpeed Insights
-I tried my best to bring up the scores for both Desktop and Mobile by optimising every Image in my website. I also minified my CSS and JavaScript files to bring down the load time.
-![](http://www.glenndimaliwat.com/assets/screenshots/google-pagespeed-insights-desktop.png)
-![](http://www.glenndimaliwat.com/assets/screenshots/google-pagespeed-insights-mobile.png)
+I tried my best to bring up the scores for both Desktop and Mobile by optimising every Image in my website. I also minified my CSS and JavaScript files to bring down the load time.        
 
+    ![](http://www.glenndimaliwat.com/assets/screenshots/google-pagespeed-insights-desktop.png)     
+    ![](http://www.glenndimaliwat.com/assets/screenshots/google-pagespeed-insights-mobile.png)      
+        
 + HTML Code validation using W3 Validator
 Apparently, font awesome icons were not recognised as valid texts for Heading 4 elements. I simply ignored these warnings because I already liked what my icons looked like.        
 ![](http://www.glenndimaliwat.com/assets/screenshots/w3-validator.png)
