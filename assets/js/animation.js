@@ -23,7 +23,7 @@ $(window).scroll(function() {
 	if(mobile_navigation_displayed == false) {
 		setTimeout(function() {
 			hasScrolled();
-		}, 250);
+		}, 500);
 	}
 });
 
