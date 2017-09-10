@@ -20,7 +20,7 @@ For my design, I decided to go with a cool and calm colour scheme which are diff
 
 
 # <a id="TrelloBoard"></a>Trello Board
-I am using agile methodologies in building my project which is why I opened a public Trello board. This kept me organized all throughout the project and minimize the stress in remembering all the details and putting them into action.               
+I am using agile methodologies in building my project which is why I opened a public Trello board. This kept me organized all throughout the project as it minimized the stress and it allowed me to remember all the details while I am building my ideas.               
 ![](http://www.glenndimaliwat.com/assets/screenshots/trello-board.png)        
 
 The trello board can be found at this [link](https://trello.com/b/pEZaMjod)     
