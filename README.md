@@ -258,7 +258,8 @@ The following devices were used for testing usability:
     - Apple iPhone/iPad Simulator (X-Code)       
     - Apple iPad Mini 2      
     - Apple iPhone 5s       
-    - Apple iPhone 6s       
+    - Apple iPhone 6s    
+    - Asus Zenfone 2        
     - Asus Zenfone 3  
     - LG G3         
 
